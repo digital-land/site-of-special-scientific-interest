@@ -158,13 +158,13 @@ crossorigin="" />
             </dt>
             <dd class="govuk-summary-list__value">                site-of-special-scientific-interest:TQ159692            </dd>
         </div>        <div class="govuk-summary-list__row">
-            <dt class="govuk-summary-list__key">name
-            </dt>
-            <dd class="govuk-summary-list__value">                Bushy Park and Home Park            </dd>
-        </div>        <div class="govuk-summary-list__row">
             <dt class="govuk-summary-list__key">start-date
             </dt>
             <dd class="govuk-summary-list__value">                2015-04-14            </dd>
+        </div>        <div class="govuk-summary-list__row">
+            <dt class="govuk-summary-list__key">name
+            </dt>
+            <dd class="govuk-summary-list__value">                Bushy Park and Home Park            </dd>
         </div>        <div class="govuk-summary-list__row">
             <dt class="govuk-summary-list__key">entry-date
             </dt>
@@ -209,8 +209,8 @@ crossorigin="" />
             <th>line</th>
             <th>geography</th>
             <th>geometry</th>
-            <th>name</th>
             <th>start-date</th>
+            <th>name</th>
         </tr>
     </thead>
     <tbody>        <tr>
@@ -230,27 +230,8 @@ crossorigin="" />
   </div>
 </details>
                 </td>
-                <td>Bushy Park and Home Park</td> 
                 <td>2015-04-14</td> 
-        </tr>        <tr>
-            <td>2021-05-27</td>
-            <td><a href="https://github.com/digital-land/site-of-special-scientific-interest-collection/tree/main/transformed/site-of-special-scientific-interest/58d5ad603e37f139c0d24a49567acb8d6c2101616133624c90eeb5aa196f8659.csv#L4126">58d5ad603e37...</a></td>
-            <td>4125</td>
-                <td>site-of-special-scientific-interest:TQ159692</td> 
-                <td class="data-table__notes-cell data-table__cell--min-width-4">
-                    <details class="govuk-details">
-  <summary class="govuk-details__summary">
-    <span class="govuk-details__summary-text">
-      See WKT
-    </span>
-  </summary>
-  <div class="govuk-details__text">
-    MULTIPOLYGON (((-0.342580 51.422668,-0.341146 51.422578,-0.341569 51.420975,-0.341630 51.420923,-0.341822 51.421035,-0.341888 51.421209,-0.341767 51.421607,-0.341737 51.421965,-0.341593 51.422264,-0.341650 51.422361,-0.341815 51.422447,-0.342433 51.422552,-0.343407 51.422488,-0.343621 51.422582,-0.343605 51.422748,-0.342580 51.422668)))
-  </div>
-</details>
-                </td>
                 <td>Bushy Park and Home Park</td> 
-                <td>2015-04-14</td> 
         </tr>        <tr>
             <td>2021-05-27</td>
             <td><a href="https://github.com/digital-land/site-of-special-scientific-interest-collection/tree/main/transformed/site-of-special-scientific-interest/58d5ad603e37f139c0d24a49567acb8d6c2101616133624c90eeb5aa196f8659.csv#L4125">58d5ad603e37...</a></td>
@@ -268,8 +249,27 @@ crossorigin="" />
   </div>
 </details>
                 </td>
-                <td>Bushy Park and Home Park</td> 
                 <td>2015-04-14</td> 
+                <td>Bushy Park and Home Park</td> 
+        </tr>        <tr>
+            <td>2021-05-27</td>
+            <td><a href="https://github.com/digital-land/site-of-special-scientific-interest-collection/tree/main/transformed/site-of-special-scientific-interest/58d5ad603e37f139c0d24a49567acb8d6c2101616133624c90eeb5aa196f8659.csv#L4126">58d5ad603e37...</a></td>
+            <td>4125</td>
+                <td>site-of-special-scientific-interest:TQ159692</td> 
+                <td class="data-table__notes-cell data-table__cell--min-width-4">
+                    <details class="govuk-details">
+  <summary class="govuk-details__summary">
+    <span class="govuk-details__summary-text">
+      See WKT
+    </span>
+  </summary>
+  <div class="govuk-details__text">
+    MULTIPOLYGON (((-0.342580 51.422668,-0.341146 51.422578,-0.341569 51.420975,-0.341630 51.420923,-0.341822 51.421035,-0.341888 51.421209,-0.341767 51.421607,-0.341737 51.421965,-0.341593 51.422264,-0.341650 51.422361,-0.341815 51.422447,-0.342433 51.422552,-0.343407 51.422488,-0.343621 51.422582,-0.343605 51.422748,-0.342580 51.422668)))
+  </div>
+</details>
+                </td>
+                <td>2015-04-14</td> 
+                <td>Bushy Park and Home Park</td> 
         </tr>        <tr>
             <td>2021-05-27</td>
             <td><a href="https://github.com/digital-land/site-of-special-scientific-interest-collection/tree/main/transformed/site-of-special-scientific-interest/58d5ad603e37f139c0d24a49567acb8d6c2101616133624c90eeb5aa196f8659.csv#L4127">58d5ad603e37...</a></td>
@@ -287,8 +287,8 @@ crossorigin="" />
   </div>
 </details>
                 </td>
-                <td>Bushy Park and Home Park</td> 
                 <td>2015-04-14</td> 
+                <td>Bushy Park and Home Park</td> 
         </tr>    </tbody>
 </table>
 
@@ -398,7 +398,7 @@ crossorigin="" />
     const $mapElement = document.querySelector('[data-module="boundary-map"]')
     const $nationalMapLink = document.querySelector('.dl-link-national-map')
     const mapComponent = new DLMaps.Map($mapElement).init({
-        initGeoJsonLoadCallback: function (urls, featureGroup) {
+        initZoomCallback: function (featureGroup) {
             console.log("initial load completed")
             // do we need to check there isn't more than one shape?
             const center = featureGroup.getBounds().getCenter()

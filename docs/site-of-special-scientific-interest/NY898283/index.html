@@ -207,35 +207,17 @@ crossorigin="" />
             <th>entry-date</th>
             <th>resource</th>
             <th>line</th>
-            <th>geometry</th>
             <th>geography</th>
-            <th>name</th>
+            <th>geometry</th>
             <th>start-date</th>
+            <th>name</th>
         </tr>
     </thead>
     <tbody>        <tr>
             <td>2021-05-27</td>
-            <td><a href="https://github.com/digital-land/site-of-special-scientific-interest-collection/tree/main/transformed/site-of-special-scientific-interest/58d5ad603e37f139c0d24a49567acb8d6c2101616133624c90eeb5aa196f8659.csv#L1036">58d5ad603e37...</a></td>
-            <td>1035</td>
-                <td class="data-table__notes-cell data-table__cell--min-width-4">
-                    <details class="govuk-details">
-  <summary class="govuk-details__summary">
-    <span class="govuk-details__summary-text">
-      See WKT
-    </span>
-  </summary>
-  <div class="govuk-details__text">
-    MULTIPOLYGON (((-2.160902 54.650802,-2.159004 54.650245,-2.158329 54.650788,-2.157337 54.650357,-2.156824 54.650200,-2.157137 54.649510,-2.158115 54.649489,-2.158716 54.649545,-2.159191 54.649615,-2.159217 54.649650,-2.159319 54.649632,-2.161027 54.649885,-2.162280 54.650190,-2.162031 54.650618,-2.161571 54.651000,-2.160902 54.650802)))
-  </div>
-</details>
-                </td>
-                <td>site-of-special-scientific-interest:NY898283</td> 
-                <td>Bowlees and Friar House Meadows</td> 
-                <td>2014-01-15</td> 
-        </tr>        <tr>
-            <td>2021-05-27</td>
             <td><a href="https://github.com/digital-land/site-of-special-scientific-interest-collection/tree/main/transformed/site-of-special-scientific-interest/58d5ad603e37f139c0d24a49567acb8d6c2101616133624c90eeb5aa196f8659.csv#L1037">58d5ad603e37...</a></td>
             <td>1036</td>
+                <td>site-of-special-scientific-interest:NY898283</td> 
                 <td class="data-table__notes-cell data-table__cell--min-width-4">
                     <details class="govuk-details">
   <summary class="govuk-details__summary">
@@ -248,9 +230,27 @@ crossorigin="" />
   </div>
 </details>
                 </td>
-                <td>site-of-special-scientific-interest:NY898283</td> 
-                <td>Bowlees and Friar House Meadows</td> 
                 <td>2014-01-15</td> 
+                <td>Bowlees and Friar House Meadows</td> 
+        </tr>        <tr>
+            <td>2021-05-27</td>
+            <td><a href="https://github.com/digital-land/site-of-special-scientific-interest-collection/tree/main/transformed/site-of-special-scientific-interest/58d5ad603e37f139c0d24a49567acb8d6c2101616133624c90eeb5aa196f8659.csv#L1036">58d5ad603e37...</a></td>
+            <td>1035</td>
+                <td>site-of-special-scientific-interest:NY898283</td> 
+                <td class="data-table__notes-cell data-table__cell--min-width-4">
+                    <details class="govuk-details">
+  <summary class="govuk-details__summary">
+    <span class="govuk-details__summary-text">
+      See WKT
+    </span>
+  </summary>
+  <div class="govuk-details__text">
+    MULTIPOLYGON (((-2.160902 54.650802,-2.159004 54.650245,-2.158329 54.650788,-2.157337 54.650357,-2.156824 54.650200,-2.157137 54.649510,-2.158115 54.649489,-2.158716 54.649545,-2.159191 54.649615,-2.159217 54.649650,-2.159319 54.649632,-2.161027 54.649885,-2.162280 54.650190,-2.162031 54.650618,-2.161571 54.651000,-2.160902 54.650802)))
+  </div>
+</details>
+                </td>
+                <td>2014-01-15</td> 
+                <td>Bowlees and Friar House Meadows</td> 
         </tr>    </tbody>
 </table>
 
@@ -360,7 +360,7 @@ crossorigin="" />
     const $mapElement = document.querySelector('[data-module="boundary-map"]')
     const $nationalMapLink = document.querySelector('.dl-link-national-map')
     const mapComponent = new DLMaps.Map($mapElement).init({
-        initGeoJsonLoadCallback: function (urls, featureGroup) {
+        initZoomCallback: function (featureGroup) {
             console.log("initial load completed")
             // do we need to check there isn't more than one shape?
             const center = featureGroup.getBounds().getCenter()

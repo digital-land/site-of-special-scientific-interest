@@ -154,17 +154,17 @@ crossorigin="" />
 <div class="govuk-grid-row">    <div class="govuk-grid-column-two-thirds"><article class="data-record govuk-!-margin-bottom-6">
     <h4 class="govuk-heading-s data-record__identifier">#/site-of-special-scientific-interest/site-of-special-scientific-interest/SE761474</h4>
     <dl class="govuk-summary-list data-record__properties">            <div class="govuk-summary-list__row">
-            <dt class="govuk-summary-list__key">start-date
+            <dt class="govuk-summary-list__key">name
             </dt>
-            <dd class="govuk-summary-list__value">                2016-08-15            </dd>
+            <dd class="govuk-summary-list__value">                Allerthorpe Common            </dd>
         </div>        <div class="govuk-summary-list__row">
             <dt class="govuk-summary-list__key">geography
             </dt>
             <dd class="govuk-summary-list__value">                site-of-special-scientific-interest:SE761474            </dd>
         </div>        <div class="govuk-summary-list__row">
-            <dt class="govuk-summary-list__key">name
+            <dt class="govuk-summary-list__key">start-date
             </dt>
-            <dd class="govuk-summary-list__value">                Allerthorpe Common            </dd>
+            <dd class="govuk-summary-list__value">                2016-08-15            </dd>
         </div>        <div class="govuk-summary-list__row">
             <dt class="govuk-summary-list__key">entry-date
             </dt>
@@ -208,36 +208,16 @@ crossorigin="" />
             <th>resource</th>
             <th>line</th>
             <th>geography</th>
-            <th>name</th>
             <th>geometry</th>
             <th>start-date</th>
+            <th>name</th>
         </tr>
     </thead>
     <tbody>        <tr>
             <td>2021-05-27</td>
-            <td><a href="https://github.com/digital-land/site-of-special-scientific-interest-collection/tree/main/transformed/site-of-special-scientific-interest/58d5ad603e37f139c0d24a49567acb8d6c2101616133624c90eeb5aa196f8659.csv#L9377">58d5ad603e37...</a></td>
-            <td>9376</td>
-                <td>site-of-special-scientific-interest:SE761474</td> 
-                <td>Allerthorpe Common</td> 
-                <td class="data-table__notes-cell data-table__cell--min-width-4">
-                    <details class="govuk-details">
-  <summary class="govuk-details__summary">
-    <span class="govuk-details__summary-text">
-      See WKT
-    </span>
-  </summary>
-  <div class="govuk-details__text">
-    MULTIPOLYGON (((-0.831788 53.920339,-0.832444 53.920326,-0.833251 53.921537,-0.833738 53.921984,-0.834663 53.922937,-0.835069 53.923388,-0.835152 53.923550,-0.832364 53.923644,-0.832138 53.923314,-0.831882 53.923191,-0.830720 53.923048,-0.830475 53.922610,-0.830479 53.922413,-0.830612 53.922210,-0.831009 53.921862,-0.831132 53.921691,-0.831114 53.921197,-0.831269 53.920821,-0.831590 53.920385,-0.831788 53.920339)))
-  </div>
-</details>
-                </td>
-                <td>2016-08-15</td> 
-        </tr>        <tr>
-            <td>2021-05-27</td>
             <td><a href="https://github.com/digital-land/site-of-special-scientific-interest-collection/tree/main/transformed/site-of-special-scientific-interest/58d5ad603e37f139c0d24a49567acb8d6c2101616133624c90eeb5aa196f8659.csv#L9376">58d5ad603e37...</a></td>
             <td>9375</td>
                 <td>site-of-special-scientific-interest:SE761474</td> 
-                <td>Allerthorpe Common</td> 
                 <td class="data-table__notes-cell data-table__cell--min-width-4">
                     <details class="govuk-details">
   <summary class="govuk-details__summary">
@@ -251,6 +231,26 @@ crossorigin="" />
 </details>
                 </td>
                 <td>2016-08-15</td> 
+                <td>Allerthorpe Common</td> 
+        </tr>        <tr>
+            <td>2021-05-27</td>
+            <td><a href="https://github.com/digital-land/site-of-special-scientific-interest-collection/tree/main/transformed/site-of-special-scientific-interest/58d5ad603e37f139c0d24a49567acb8d6c2101616133624c90eeb5aa196f8659.csv#L9377">58d5ad603e37...</a></td>
+            <td>9376</td>
+                <td>site-of-special-scientific-interest:SE761474</td> 
+                <td class="data-table__notes-cell data-table__cell--min-width-4">
+                    <details class="govuk-details">
+  <summary class="govuk-details__summary">
+    <span class="govuk-details__summary-text">
+      See WKT
+    </span>
+  </summary>
+  <div class="govuk-details__text">
+    MULTIPOLYGON (((-0.831788 53.920339,-0.832444 53.920326,-0.833251 53.921537,-0.833738 53.921984,-0.834663 53.922937,-0.835069 53.923388,-0.835152 53.923550,-0.832364 53.923644,-0.832138 53.923314,-0.831882 53.923191,-0.830720 53.923048,-0.830475 53.922610,-0.830479 53.922413,-0.830612 53.922210,-0.831009 53.921862,-0.831132 53.921691,-0.831114 53.921197,-0.831269 53.920821,-0.831590 53.920385,-0.831788 53.920339)))
+  </div>
+</details>
+                </td>
+                <td>2016-08-15</td> 
+                <td>Allerthorpe Common</td> 
         </tr>    </tbody>
 </table>
 
@@ -360,7 +360,7 @@ crossorigin="" />
     const $mapElement = document.querySelector('[data-module="boundary-map"]')
     const $nationalMapLink = document.querySelector('.dl-link-national-map')
     const mapComponent = new DLMaps.Map($mapElement).init({
-        initGeoJsonLoadCallback: function (urls, featureGroup) {
+        initZoomCallback: function (featureGroup) {
             console.log("initial load completed")
             // do we need to check there isn't more than one shape?
             const center = featureGroup.getBounds().getCenter()

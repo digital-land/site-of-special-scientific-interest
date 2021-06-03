@@ -154,6 +154,10 @@ crossorigin="" />
 <div class="govuk-grid-row">    <div class="govuk-grid-column-two-thirds"><article class="data-record govuk-!-margin-bottom-6">
     <h4 class="govuk-heading-s data-record__identifier">#/site-of-special-scientific-interest/site-of-special-scientific-interest/SK749826</h4>
     <dl class="govuk-summary-list data-record__properties">            <div class="govuk-summary-list__row">
+            <dt class="govuk-summary-list__key">start-date
+            </dt>
+            <dd class="govuk-summary-list__value">                2003-12-04            </dd>
+        </div>        <div class="govuk-summary-list__row">
             <dt class="govuk-summary-list__key">name
             </dt>
             <dd class="govuk-summary-list__value">                Clarborough Tunnel            </dd>
@@ -161,10 +165,6 @@ crossorigin="" />
             <dt class="govuk-summary-list__key">geography
             </dt>
             <dd class="govuk-summary-list__value">                site-of-special-scientific-interest:SK749826            </dd>
-        </div>        <div class="govuk-summary-list__row">
-            <dt class="govuk-summary-list__key">start-date
-            </dt>
-            <dd class="govuk-summary-list__value">                2003-12-04            </dd>
         </div>        <div class="govuk-summary-list__row">
             <dt class="govuk-summary-list__key">entry-date
             </dt>
@@ -209,8 +209,8 @@ crossorigin="" />
             <th>line</th>
             <th>geography</th>
             <th>geometry</th>
-            <th>name</th>
             <th>start-date</th>
+            <th>name</th>
         </tr>
     </thead>
     <tbody>        <tr>
@@ -230,8 +230,8 @@ crossorigin="" />
   </div>
 </details>
                 </td>
-                <td>Clarborough Tunnel</td> 
                 <td>2003-12-04</td> 
+                <td>Clarborough Tunnel</td> 
         </tr>    </tbody>
 </table>
 
@@ -341,7 +341,7 @@ crossorigin="" />
     const $mapElement = document.querySelector('[data-module="boundary-map"]')
     const $nationalMapLink = document.querySelector('.dl-link-national-map')
     const mapComponent = new DLMaps.Map($mapElement).init({
-        initGeoJsonLoadCallback: function (urls, featureGroup) {
+        initZoomCallback: function (featureGroup) {
             console.log("initial load completed")
             // do we need to check there isn't more than one shape?
             const center = featureGroup.getBounds().getCenter()

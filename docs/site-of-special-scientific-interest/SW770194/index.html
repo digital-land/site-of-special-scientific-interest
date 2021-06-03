@@ -154,17 +154,17 @@ crossorigin="" />
 <div class="govuk-grid-row">    <div class="govuk-grid-column-two-thirds"><article class="data-record govuk-!-margin-bottom-6">
     <h4 class="govuk-heading-s data-record__identifier">#/site-of-special-scientific-interest/site-of-special-scientific-interest/SW770194</h4>
     <dl class="govuk-summary-list data-record__properties">            <div class="govuk-summary-list__row">
-            <dt class="govuk-summary-list__key">name
+            <dt class="govuk-summary-list__key">start-date
             </dt>
-            <dd class="govuk-summary-list__value">                East Lizard Heathlands            </dd>
+            <dd class="govuk-summary-list__value">                2016-09-12            </dd>
         </div>        <div class="govuk-summary-list__row">
             <dt class="govuk-summary-list__key">geography
             </dt>
             <dd class="govuk-summary-list__value">                site-of-special-scientific-interest:SW770194            </dd>
         </div>        <div class="govuk-summary-list__row">
-            <dt class="govuk-summary-list__key">start-date
+            <dt class="govuk-summary-list__key">name
             </dt>
-            <dd class="govuk-summary-list__value">                2016-09-12            </dd>
+            <dd class="govuk-summary-list__value">                East Lizard Heathlands            </dd>
         </div>        <div class="govuk-summary-list__row">
             <dt class="govuk-summary-list__key">entry-date
             </dt>
@@ -209,30 +209,11 @@ crossorigin="" />
             <th>line</th>
             <th>geography</th>
             <th>geometry</th>
-            <th>name</th>
             <th>start-date</th>
+            <th>name</th>
         </tr>
     </thead>
     <tbody>        <tr>
-            <td>2021-05-27</td>
-            <td><a href="https://github.com/digital-land/site-of-special-scientific-interest-collection/tree/main/transformed/site-of-special-scientific-interest/58d5ad603e37f139c0d24a49567acb8d6c2101616133624c90eeb5aa196f8659.csv#L7812">58d5ad603e37...</a></td>
-            <td>7811</td>
-                <td>site-of-special-scientific-interest:SW770194</td> 
-                <td class="data-table__notes-cell data-table__cell--min-width-4">
-                    <details class="govuk-details">
-  <summary class="govuk-details__summary">
-    <span class="govuk-details__summary-text">
-      See WKT
-    </span>
-  </summary>
-  <div class="govuk-details__text">
-    MULTIPOLYGON (((-5.105623 50.037732,-5.105683 50.037706,-5.107364 50.037648,-5.107712 50.038207,-5.106368 50.038599,-5.105623 50.037732)))
-  </div>
-</details>
-                </td>
-                <td>East Lizard Heathlands</td> 
-                <td>2016-09-12</td> 
-        </tr>        <tr>
             <td>2021-05-27</td>
             <td><a href="https://github.com/digital-land/site-of-special-scientific-interest-collection/tree/main/transformed/site-of-special-scientific-interest/58d5ad603e37f139c0d24a49567acb8d6c2101616133624c90eeb5aa196f8659.csv#L7811">58d5ad603e37...</a></td>
             <td>7810</td>
@@ -249,8 +230,8 @@ crossorigin="" />
   </div>
 </details>
                 </td>
-                <td>East Lizard Heathlands</td> 
                 <td>2016-09-12</td> 
+                <td>East Lizard Heathlands</td> 
         </tr>        <tr>
             <td>2021-05-27</td>
             <td><a href="https://github.com/digital-land/site-of-special-scientific-interest-collection/tree/main/transformed/site-of-special-scientific-interest/58d5ad603e37f139c0d24a49567acb8d6c2101616133624c90eeb5aa196f8659.csv#L7810">58d5ad603e37...</a></td>
@@ -268,8 +249,27 @@ crossorigin="" />
   </div>
 </details>
                 </td>
-                <td>East Lizard Heathlands</td> 
                 <td>2016-09-12</td> 
+                <td>East Lizard Heathlands</td> 
+        </tr>        <tr>
+            <td>2021-05-27</td>
+            <td><a href="https://github.com/digital-land/site-of-special-scientific-interest-collection/tree/main/transformed/site-of-special-scientific-interest/58d5ad603e37f139c0d24a49567acb8d6c2101616133624c90eeb5aa196f8659.csv#L7812">58d5ad603e37...</a></td>
+            <td>7811</td>
+                <td>site-of-special-scientific-interest:SW770194</td> 
+                <td class="data-table__notes-cell data-table__cell--min-width-4">
+                    <details class="govuk-details">
+  <summary class="govuk-details__summary">
+    <span class="govuk-details__summary-text">
+      See WKT
+    </span>
+  </summary>
+  <div class="govuk-details__text">
+    MULTIPOLYGON (((-5.105623 50.037732,-5.105683 50.037706,-5.107364 50.037648,-5.107712 50.038207,-5.106368 50.038599,-5.105623 50.037732)))
+  </div>
+</details>
+                </td>
+                <td>2016-09-12</td> 
+                <td>East Lizard Heathlands</td> 
         </tr>    </tbody>
 </table>
 
@@ -379,7 +379,7 @@ crossorigin="" />
     const $mapElement = document.querySelector('[data-module="boundary-map"]')
     const $nationalMapLink = document.querySelector('.dl-link-national-map')
     const mapComponent = new DLMaps.Map($mapElement).init({
-        initGeoJsonLoadCallback: function (urls, featureGroup) {
+        initZoomCallback: function (featureGroup) {
             console.log("initial load completed")
             // do we need to check there isn't more than one shape?
             const center = featureGroup.getBounds().getCenter()

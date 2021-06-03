@@ -158,13 +158,13 @@ crossorigin="" />
             </dt>
             <dd class="govuk-summary-list__value">                site-of-special-scientific-interest:SX939643            </dd>
         </div>        <div class="govuk-summary-list__row">
-            <dt class="govuk-summary-list__key">name
-            </dt>
-            <dd class="govuk-summary-list__value">                Hope&#39;s Nose to Wall&#39;s Hill            </dd>
-        </div>        <div class="govuk-summary-list__row">
             <dt class="govuk-summary-list__key">start-date
             </dt>
             <dd class="govuk-summary-list__value">                2014-01-16            </dd>
+        </div>        <div class="govuk-summary-list__row">
+            <dt class="govuk-summary-list__key">name
+            </dt>
+            <dd class="govuk-summary-list__value">                Hope&#39;s Nose to Wall&#39;s Hill            </dd>
         </div>        <div class="govuk-summary-list__row">
             <dt class="govuk-summary-list__key">entry-date
             </dt>
@@ -208,9 +208,9 @@ crossorigin="" />
             <th>resource</th>
             <th>line</th>
             <th>geography</th>
-            <th>name</th>
             <th>geometry</th>
             <th>start-date</th>
+            <th>name</th>
         </tr>
     </thead>
     <tbody>        <tr>
@@ -218,7 +218,6 @@ crossorigin="" />
             <td><a href="https://github.com/digital-land/site-of-special-scientific-interest-collection/tree/main/transformed/site-of-special-scientific-interest/58d5ad603e37f139c0d24a49567acb8d6c2101616133624c90eeb5aa196f8659.csv#L1686">58d5ad603e37...</a></td>
             <td>1685</td>
                 <td>site-of-special-scientific-interest:SX939643</td> 
-                <td>Hope&#39;s Nose to Wall&#39;s Hill</td> 
                 <td class="data-table__notes-cell data-table__cell--min-width-4">
                     <details class="govuk-details">
   <summary class="govuk-details__summary">
@@ -232,12 +231,12 @@ crossorigin="" />
 </details>
                 </td>
                 <td>2014-01-16</td> 
+                <td>Hope&#39;s Nose to Wall&#39;s Hill</td> 
         </tr>        <tr>
             <td>2021-05-27</td>
             <td><a href="https://github.com/digital-land/site-of-special-scientific-interest-collection/tree/main/transformed/site-of-special-scientific-interest/58d5ad603e37f139c0d24a49567acb8d6c2101616133624c90eeb5aa196f8659.csv#L1687">58d5ad603e37...</a></td>
             <td>1686</td>
                 <td>site-of-special-scientific-interest:SX939643</td> 
-                <td>Hope&#39;s Nose to Wall&#39;s Hill</td> 
                 <td class="data-table__notes-cell data-table__cell--min-width-4">
                     <details class="govuk-details">
   <summary class="govuk-details__summary">
@@ -251,6 +250,7 @@ crossorigin="" />
 </details>
                 </td>
                 <td>2014-01-16</td> 
+                <td>Hope&#39;s Nose to Wall&#39;s Hill</td> 
         </tr>    </tbody>
 </table>
 
@@ -360,7 +360,7 @@ crossorigin="" />
     const $mapElement = document.querySelector('[data-module="boundary-map"]')
     const $nationalMapLink = document.querySelector('.dl-link-national-map')
     const mapComponent = new DLMaps.Map($mapElement).init({
-        initGeoJsonLoadCallback: function (urls, featureGroup) {
+        initZoomCallback: function (featureGroup) {
             console.log("initial load completed")
             // do we need to check there isn't more than one shape?
             const center = featureGroup.getBounds().getCenter()
