@@ -11,7 +11,10 @@
 <link rel="shortcut icon" sizes="32x32" href="/images/favicon-32x32.png" type="image/png">
 <link rel="shortcut icon" sizes="16x16" href="/images/favicon-16x16.png" type="image/png">
 <link rel="apple-touch-icon" href="/images/apple-touch-icon.png">
-	<meta name="digital-land:template" content="page-per-thing/record.html"><!-- should make this optional, no need to load if not showing a map -->
+	<meta name="digital-land:template" content="page-per-thing/record.html">
+<script src="https://polyfill.io/v3/polyfill.min.js?features=fetch%2CPromise%2Ces6%2Ces5%2Ces2015%2Ces2016%2CURL%2CURLSearchParams%2CObject.entries%2CObject.fromEntries%2CAbortController"></script>
+
+<!-- should make this optional, no need to load if not showing a map -->
 <link rel="stylesheet" href="https://unpkg.com/leaflet@1.6.0/dist/leaflet.css"
 integrity="sha512-xwE/Az9zrjBIphAcBb3F6JVqxf46+CDLwfLMHloNu6KEQCAWi6HcDUbeOfBIptF7tcCzusKFjFw2yuvEpDL9wQ=="
 crossorigin="" />
@@ -154,6 +157,10 @@ crossorigin="" />
 <div class="govuk-grid-row">    <div class="govuk-grid-column-two-thirds"><article class="data-record govuk-!-margin-bottom-6">
     <h4 class="govuk-heading-s data-record__identifier">#/site-of-special-scientific-interest/site-of-special-scientific-interest/ST951675</h4>
     <dl class="govuk-summary-list data-record__properties">            <div class="govuk-summary-list__row">
+            <dt class="govuk-summary-list__key">start-date
+            </dt>
+            <dd class="govuk-summary-list__value">                2003-09-01            </dd>
+        </div>        <div class="govuk-summary-list__row">
             <dt class="govuk-summary-list__key">geography
             </dt>
             <dd class="govuk-summary-list__value">                site-of-special-scientific-interest:ST951675            </dd>
@@ -161,10 +168,6 @@ crossorigin="" />
             <dt class="govuk-summary-list__key">name
             </dt>
             <dd class="govuk-summary-list__value">                Spye Park            </dd>
-        </div>        <div class="govuk-summary-list__row">
-            <dt class="govuk-summary-list__key">start-date
-            </dt>
-            <dd class="govuk-summary-list__value">                2003-09-01            </dd>
         </div>        <div class="govuk-summary-list__row">
             <dt class="govuk-summary-list__key">entry-date
             </dt>
@@ -207,9 +210,9 @@ crossorigin="" />
             <th>entry-date</th>
             <th>resource</th>
             <th>line</th>
-            <th>geography</th>
-            <th>name</th>
             <th>start-date</th>
+            <th>name</th>
+            <th>geography</th>
             <th>geometry</th>
         </tr>
     </thead>
@@ -217,9 +220,9 @@ crossorigin="" />
             <td>2021-05-27</td>
             <td><a href="https://github.com/digital-land/site-of-special-scientific-interest-collection/tree/main/transformed/site-of-special-scientific-interest/58d5ad603e37f139c0d24a49567acb8d6c2101616133624c90eeb5aa196f8659.csv#L3802">58d5ad603e37...</a></td>
             <td>3801</td>
-                <td>site-of-special-scientific-interest:ST951675</td> 
-                <td>Spye Park</td> 
                 <td>2003-09-01</td> 
+                <td>Spye Park</td> 
+                <td>site-of-special-scientific-interest:ST951675</td> 
                 <td class="data-table__notes-cell data-table__cell--min-width-4">
                     <details class="govuk-details">
   <summary class="govuk-details__summary">
@@ -234,11 +237,49 @@ crossorigin="" />
                 </td>
         </tr>        <tr>
             <td>2021-05-27</td>
+            <td><a href="https://github.com/digital-land/site-of-special-scientific-interest-collection/tree/main/transformed/site-of-special-scientific-interest/58d5ad603e37f139c0d24a49567acb8d6c2101616133624c90eeb5aa196f8659.csv#L3803">58d5ad603e37...</a></td>
+            <td>3802</td>
+                <td>2003-09-01</td> 
+                <td>Spye Park</td> 
+                <td>site-of-special-scientific-interest:ST951675</td> 
+                <td class="data-table__notes-cell data-table__cell--min-width-4">
+                    <details class="govuk-details">
+  <summary class="govuk-details__summary">
+    <span class="govuk-details__summary-text">
+      See WKT
+    </span>
+  </summary>
+  <div class="govuk-details__text">
+    MULTIPOLYGON (((-2.073703 51.400897,-2.073486 51.400856,-2.073183 51.400874,-2.072950 51.400954,-2.072863 51.400867,-2.072671 51.400791,-2.072544 51.400698,-2.072200 51.400253,-2.072206 51.400107,-2.072017 51.399877,-2.071806 51.399347,-2.071542 51.398876,-2.072170 51.398741,-2.073058 51.398466,-2.073388 51.398275,-2.073771 51.398139,-2.074068 51.398394,-2.075235 51.397872,-2.075391 51.397783,-2.075693 51.397492,-2.075809 51.397201,-2.075836 51.396891,-2.076695 51.396749,-2.076869 51.396755,-2.077050 51.396826,-2.077749 51.397293,-2.077400 51.397664,-2.077259 51.397966,-2.077527 51.398200,-2.077080 51.398547,-2.076690 51.398791,-2.076539 51.398964,-2.076457 51.399113,-2.076404 51.399445,-2.076483 51.399619,-2.077121 51.399571,-2.077038 51.399728,-2.076763 51.399823,-2.076779 51.399854,-2.075244 51.400088,-2.075338 51.400606,-2.075063 51.400735,-2.074902 51.400898,-2.074559 51.401133,-2.073703 51.400897)))
+  </div>
+</details>
+                </td>
+        </tr>        <tr>
+            <td>2021-05-27</td>
+            <td><a href="https://github.com/digital-land/site-of-special-scientific-interest-collection/tree/main/transformed/site-of-special-scientific-interest/58d5ad603e37f139c0d24a49567acb8d6c2101616133624c90eeb5aa196f8659.csv#L3804">58d5ad603e37...</a></td>
+            <td>3803</td>
+                <td>2003-09-01</td> 
+                <td>Spye Park</td> 
+                <td>site-of-special-scientific-interest:ST951675</td> 
+                <td class="data-table__notes-cell data-table__cell--min-width-4">
+                    <details class="govuk-details">
+  <summary class="govuk-details__summary">
+    <span class="govuk-details__summary-text">
+      See WKT
+    </span>
+  </summary>
+  <div class="govuk-details__text">
+    MULTIPOLYGON (((-2.079811 51.393492,-2.079742 51.393313,-2.081697 51.393476,-2.082457 51.393356,-2.082454 51.393428,-2.082572 51.393691,-2.082719 51.393923,-2.082747 51.394115,-2.082879 51.394193,-2.083174 51.396345,-2.079859 51.396322,-2.079886 51.395845,-2.079835 51.395844,-2.079770 51.395743,-2.079571 51.395074,-2.079384 51.394295,-2.079791 51.394193,-2.080357 51.394000,-2.079820 51.393539,-2.079811 51.393492)))
+  </div>
+</details>
+                </td>
+        </tr>        <tr>
+            <td>2021-05-27</td>
             <td><a href="https://github.com/digital-land/site-of-special-scientific-interest-collection/tree/main/transformed/site-of-special-scientific-interest/58d5ad603e37f139c0d24a49567acb8d6c2101616133624c90eeb5aa196f8659.csv#L3806">58d5ad603e37...</a></td>
             <td>3805</td>
-                <td>site-of-special-scientific-interest:ST951675</td> 
-                <td>Spye Park</td> 
                 <td>2003-09-01</td> 
+                <td>Spye Park</td> 
+                <td>site-of-special-scientific-interest:ST951675</td> 
                 <td class="data-table__notes-cell data-table__cell--min-width-4">
                     <details class="govuk-details">
   <summary class="govuk-details__summary">
@@ -255,9 +296,9 @@ crossorigin="" />
             <td>2021-05-27</td>
             <td><a href="https://github.com/digital-land/site-of-special-scientific-interest-collection/tree/main/transformed/site-of-special-scientific-interest/58d5ad603e37f139c0d24a49567acb8d6c2101616133624c90eeb5aa196f8659.csv#L3805">58d5ad603e37...</a></td>
             <td>3804</td>
-                <td>site-of-special-scientific-interest:ST951675</td> 
-                <td>Spye Park</td> 
                 <td>2003-09-01</td> 
+                <td>Spye Park</td> 
+                <td>site-of-special-scientific-interest:ST951675</td> 
                 <td class="data-table__notes-cell data-table__cell--min-width-4">
                     <details class="govuk-details">
   <summary class="govuk-details__summary">
@@ -272,49 +313,11 @@ crossorigin="" />
                 </td>
         </tr>        <tr>
             <td>2021-05-27</td>
-            <td><a href="https://github.com/digital-land/site-of-special-scientific-interest-collection/tree/main/transformed/site-of-special-scientific-interest/58d5ad603e37f139c0d24a49567acb8d6c2101616133624c90eeb5aa196f8659.csv#L3804">58d5ad603e37...</a></td>
-            <td>3803</td>
-                <td>site-of-special-scientific-interest:ST951675</td> 
-                <td>Spye Park</td> 
-                <td>2003-09-01</td> 
-                <td class="data-table__notes-cell data-table__cell--min-width-4">
-                    <details class="govuk-details">
-  <summary class="govuk-details__summary">
-    <span class="govuk-details__summary-text">
-      See WKT
-    </span>
-  </summary>
-  <div class="govuk-details__text">
-    MULTIPOLYGON (((-2.079811 51.393492,-2.079742 51.393313,-2.081697 51.393476,-2.082457 51.393356,-2.082454 51.393428,-2.082572 51.393691,-2.082719 51.393923,-2.082747 51.394115,-2.082879 51.394193,-2.083174 51.396345,-2.079859 51.396322,-2.079886 51.395845,-2.079835 51.395844,-2.079770 51.395743,-2.079571 51.395074,-2.079384 51.394295,-2.079791 51.394193,-2.080357 51.394000,-2.079820 51.393539,-2.079811 51.393492)))
-  </div>
-</details>
-                </td>
-        </tr>        <tr>
-            <td>2021-05-27</td>
-            <td><a href="https://github.com/digital-land/site-of-special-scientific-interest-collection/tree/main/transformed/site-of-special-scientific-interest/58d5ad603e37f139c0d24a49567acb8d6c2101616133624c90eeb5aa196f8659.csv#L3803">58d5ad603e37...</a></td>
-            <td>3802</td>
-                <td>site-of-special-scientific-interest:ST951675</td> 
-                <td>Spye Park</td> 
-                <td>2003-09-01</td> 
-                <td class="data-table__notes-cell data-table__cell--min-width-4">
-                    <details class="govuk-details">
-  <summary class="govuk-details__summary">
-    <span class="govuk-details__summary-text">
-      See WKT
-    </span>
-  </summary>
-  <div class="govuk-details__text">
-    MULTIPOLYGON (((-2.073703 51.400897,-2.073486 51.400856,-2.073183 51.400874,-2.072950 51.400954,-2.072863 51.400867,-2.072671 51.400791,-2.072544 51.400698,-2.072200 51.400253,-2.072206 51.400107,-2.072017 51.399877,-2.071806 51.399347,-2.071542 51.398876,-2.072170 51.398741,-2.073058 51.398466,-2.073388 51.398275,-2.073771 51.398139,-2.074068 51.398394,-2.075235 51.397872,-2.075391 51.397783,-2.075693 51.397492,-2.075809 51.397201,-2.075836 51.396891,-2.076695 51.396749,-2.076869 51.396755,-2.077050 51.396826,-2.077749 51.397293,-2.077400 51.397664,-2.077259 51.397966,-2.077527 51.398200,-2.077080 51.398547,-2.076690 51.398791,-2.076539 51.398964,-2.076457 51.399113,-2.076404 51.399445,-2.076483 51.399619,-2.077121 51.399571,-2.077038 51.399728,-2.076763 51.399823,-2.076779 51.399854,-2.075244 51.400088,-2.075338 51.400606,-2.075063 51.400735,-2.074902 51.400898,-2.074559 51.401133,-2.073703 51.400897)))
-  </div>
-</details>
-                </td>
-        </tr>        <tr>
-            <td>2021-05-27</td>
             <td><a href="https://github.com/digital-land/site-of-special-scientific-interest-collection/tree/main/transformed/site-of-special-scientific-interest/58d5ad603e37f139c0d24a49567acb8d6c2101616133624c90eeb5aa196f8659.csv#L3807">58d5ad603e37...</a></td>
             <td>3806</td>
-                <td>site-of-special-scientific-interest:ST951675</td> 
-                <td>Spye Park</td> 
                 <td>2003-09-01</td> 
+                <td>Spye Park</td> 
+                <td>site-of-special-scientific-interest:ST951675</td> 
                 <td class="data-table__notes-cell data-table__cell--min-width-4">
                     <details class="govuk-details">
   <summary class="govuk-details__summary">

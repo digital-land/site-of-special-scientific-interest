@@ -11,7 +11,10 @@
 <link rel="shortcut icon" sizes="32x32" href="/images/favicon-32x32.png" type="image/png">
 <link rel="shortcut icon" sizes="16x16" href="/images/favicon-16x16.png" type="image/png">
 <link rel="apple-touch-icon" href="/images/apple-touch-icon.png">
-	<meta name="digital-land:template" content="page-per-thing/record.html"><!-- should make this optional, no need to load if not showing a map -->
+	<meta name="digital-land:template" content="page-per-thing/record.html">
+<script src="https://polyfill.io/v3/polyfill.min.js?features=fetch%2CPromise%2Ces6%2Ces5%2Ces2015%2Ces2016%2CURL%2CURLSearchParams%2CObject.entries%2CObject.fromEntries%2CAbortController"></script>
+
+<!-- should make this optional, no need to load if not showing a map -->
 <link rel="stylesheet" href="https://unpkg.com/leaflet@1.6.0/dist/leaflet.css"
 integrity="sha512-xwE/Az9zrjBIphAcBb3F6JVqxf46+CDLwfLMHloNu6KEQCAWi6HcDUbeOfBIptF7tcCzusKFjFw2yuvEpDL9wQ=="
 crossorigin="" />
@@ -154,13 +157,13 @@ crossorigin="" />
 <div class="govuk-grid-row">    <div class="govuk-grid-column-two-thirds"><article class="data-record govuk-!-margin-bottom-6">
     <h4 class="govuk-heading-s data-record__identifier">#/site-of-special-scientific-interest/site-of-special-scientific-interest/SU830565</h4>
     <dl class="govuk-summary-list data-record__properties">            <div class="govuk-summary-list__row">
-            <dt class="govuk-summary-list__key">geography
-            </dt>
-            <dd class="govuk-summary-list__value">                site-of-special-scientific-interest:SU830565            </dd>
-        </div>        <div class="govuk-summary-list__row">
             <dt class="govuk-summary-list__key">start-date
             </dt>
             <dd class="govuk-summary-list__value">                2014-01-15            </dd>
+        </div>        <div class="govuk-summary-list__row">
+            <dt class="govuk-summary-list__key">geography
+            </dt>
+            <dd class="govuk-summary-list__value">                site-of-special-scientific-interest:SU830565            </dd>
         </div>        <div class="govuk-summary-list__row">
             <dt class="govuk-summary-list__key">name
             </dt>
@@ -207,57 +210,19 @@ crossorigin="" />
             <th>entry-date</th>
             <th>resource</th>
             <th>line</th>
-            <th>geography</th>
-            <th>name</th>
             <th>start-date</th>
+            <th>name</th>
+            <th>geography</th>
             <th>geometry</th>
         </tr>
     </thead>
     <tbody>        <tr>
             <td>2021-05-27</td>
-            <td><a href="https://github.com/digital-land/site-of-special-scientific-interest-collection/tree/main/transformed/site-of-special-scientific-interest/58d5ad603e37f139c0d24a49567acb8d6c2101616133624c90eeb5aa196f8659.csv#L1166">58d5ad603e37...</a></td>
-            <td>1165</td>
-                <td>site-of-special-scientific-interest:SU830565</td> 
-                <td>Foxlease and Ancells Meadows</td> 
-                <td>2014-01-15</td> 
-                <td class="data-table__notes-cell data-table__cell--min-width-4">
-                    <details class="govuk-details">
-  <summary class="govuk-details__summary">
-    <span class="govuk-details__summary-text">
-      See WKT
-    </span>
-  </summary>
-  <div class="govuk-details__text">
-    MULTIPOLYGON (((-0.798594 51.299493,-0.798544 51.299331,-0.797277 51.299411,-0.796893 51.297842,-0.797094 51.297542,-0.798957 51.297661,-0.799483 51.297597,-0.799597 51.297724,-0.800461 51.298287,-0.800176 51.298416,-0.799360 51.298682,-0.799339 51.298931,-0.799365 51.299217,-0.799453 51.299373,-0.798594 51.299493)))
-  </div>
-</details>
-                </td>
-        </tr>        <tr>
-            <td>2021-05-27</td>
-            <td><a href="https://github.com/digital-land/site-of-special-scientific-interest-collection/tree/main/transformed/site-of-special-scientific-interest/58d5ad603e37f139c0d24a49567acb8d6c2101616133624c90eeb5aa196f8659.csv#L1168">58d5ad603e37...</a></td>
-            <td>1167</td>
-                <td>site-of-special-scientific-interest:SU830565</td> 
-                <td>Foxlease and Ancells Meadows</td> 
-                <td>2014-01-15</td> 
-                <td class="data-table__notes-cell data-table__cell--min-width-4">
-                    <details class="govuk-details">
-  <summary class="govuk-details__summary">
-    <span class="govuk-details__summary-text">
-      See WKT
-    </span>
-  </summary>
-  <div class="govuk-details__text">
-    MULTIPOLYGON (((-0.794910 51.301032,-0.794927 51.300896,-0.794983 51.300930,-0.795021 51.300917,-0.796045 51.301485,-0.796448 51.301762,-0.796439 51.301798,-0.796501 51.301820,-0.796504 51.302042,-0.796367 51.302075,-0.795819 51.302105,-0.795311 51.302066,-0.794921 51.301976,-0.793885 51.301596,-0.794044 51.301271,-0.794560 51.301255,-0.794806 51.301150,-0.794910 51.301032)))
-  </div>
-</details>
-                </td>
-        </tr>        <tr>
-            <td>2021-05-27</td>
             <td><a href="https://github.com/digital-land/site-of-special-scientific-interest-collection/tree/main/transformed/site-of-special-scientific-interest/58d5ad603e37f139c0d24a49567acb8d6c2101616133624c90eeb5aa196f8659.csv#L1165">58d5ad603e37...</a></td>
             <td>1164</td>
-                <td>site-of-special-scientific-interest:SU830565</td> 
-                <td>Foxlease and Ancells Meadows</td> 
                 <td>2014-01-15</td> 
+                <td>Foxlease and Ancells Meadows</td> 
+                <td>site-of-special-scientific-interest:SU830565</td> 
                 <td class="data-table__notes-cell data-table__cell--min-width-4">
                     <details class="govuk-details">
   <summary class="govuk-details__summary">
@@ -274,9 +239,9 @@ crossorigin="" />
             <td>2021-05-27</td>
             <td><a href="https://github.com/digital-land/site-of-special-scientific-interest-collection/tree/main/transformed/site-of-special-scientific-interest/58d5ad603e37f139c0d24a49567acb8d6c2101616133624c90eeb5aa196f8659.csv#L1164">58d5ad603e37...</a></td>
             <td>1163</td>
-                <td>site-of-special-scientific-interest:SU830565</td> 
-                <td>Foxlease and Ancells Meadows</td> 
                 <td>2014-01-15</td> 
+                <td>Foxlease and Ancells Meadows</td> 
+                <td>site-of-special-scientific-interest:SU830565</td> 
                 <td class="data-table__notes-cell data-table__cell--min-width-4">
                     <details class="govuk-details">
   <summary class="govuk-details__summary">
@@ -291,30 +256,11 @@ crossorigin="" />
                 </td>
         </tr>        <tr>
             <td>2021-05-27</td>
-            <td><a href="https://github.com/digital-land/site-of-special-scientific-interest-collection/tree/main/transformed/site-of-special-scientific-interest/58d5ad603e37f139c0d24a49567acb8d6c2101616133624c90eeb5aa196f8659.csv#L1163">58d5ad603e37...</a></td>
-            <td>1162</td>
-                <td>site-of-special-scientific-interest:SU830565</td> 
-                <td>Foxlease and Ancells Meadows</td> 
-                <td>2014-01-15</td> 
-                <td class="data-table__notes-cell data-table__cell--min-width-4">
-                    <details class="govuk-details">
-  <summary class="govuk-details__summary">
-    <span class="govuk-details__summary-text">
-      See WKT
-    </span>
-  </summary>
-  <div class="govuk-details__text">
-    MULTIPOLYGON (((-0.815403 51.294944,-0.815517 51.294875,-0.815716 51.294904,-0.815837 51.294866,-0.816045 51.294511,-0.816067 51.294301,-0.816001 51.294037,-0.816430 51.293595,-0.816685 51.293468,-0.816981 51.293479,-0.817838 51.293905,-0.818244 51.294014,-0.819172 51.293941,-0.821206 51.293700,-0.821370 51.293694,-0.821684 51.293780,-0.821582 51.293794,-0.821514 51.293906,-0.821296 51.294046,-0.821090 51.294074,-0.821037 51.294227,-0.820701 51.294538,-0.820620 51.294658,-0.819715 51.295455,-0.819411 51.295749,-0.819457 51.295764,-0.818156 51.296951,-0.816897 51.297591,-0.816459 51.297735,-0.815889 51.297850,-0.815853 51.297843,-0.815905 51.297798,-0.815921 51.297719,-0.815845 51.297434,-0.815702 51.297249,-0.815193 51.296753,-0.814590 51.296320,-0.814267 51.296019,-0.814108 51.295942,-0.815403 51.294944)))
-  </div>
-</details>
-                </td>
-        </tr>        <tr>
-            <td>2021-05-27</td>
             <td><a href="https://github.com/digital-land/site-of-special-scientific-interest-collection/tree/main/transformed/site-of-special-scientific-interest/58d5ad603e37f139c0d24a49567acb8d6c2101616133624c90eeb5aa196f8659.csv#L1162">58d5ad603e37...</a></td>
             <td>1161</td>
-                <td>site-of-special-scientific-interest:SU830565</td> 
-                <td>Foxlease and Ancells Meadows</td> 
                 <td>2014-01-15</td> 
+                <td>Foxlease and Ancells Meadows</td> 
+                <td>site-of-special-scientific-interest:SU830565</td> 
                 <td class="data-table__notes-cell data-table__cell--min-width-4">
                     <details class="govuk-details">
   <summary class="govuk-details__summary">
@@ -329,11 +275,68 @@ crossorigin="" />
                 </td>
         </tr>        <tr>
             <td>2021-05-27</td>
+            <td><a href="https://github.com/digital-land/site-of-special-scientific-interest-collection/tree/main/transformed/site-of-special-scientific-interest/58d5ad603e37f139c0d24a49567acb8d6c2101616133624c90eeb5aa196f8659.csv#L1168">58d5ad603e37...</a></td>
+            <td>1167</td>
+                <td>2014-01-15</td> 
+                <td>Foxlease and Ancells Meadows</td> 
+                <td>site-of-special-scientific-interest:SU830565</td> 
+                <td class="data-table__notes-cell data-table__cell--min-width-4">
+                    <details class="govuk-details">
+  <summary class="govuk-details__summary">
+    <span class="govuk-details__summary-text">
+      See WKT
+    </span>
+  </summary>
+  <div class="govuk-details__text">
+    MULTIPOLYGON (((-0.794910 51.301032,-0.794927 51.300896,-0.794983 51.300930,-0.795021 51.300917,-0.796045 51.301485,-0.796448 51.301762,-0.796439 51.301798,-0.796501 51.301820,-0.796504 51.302042,-0.796367 51.302075,-0.795819 51.302105,-0.795311 51.302066,-0.794921 51.301976,-0.793885 51.301596,-0.794044 51.301271,-0.794560 51.301255,-0.794806 51.301150,-0.794910 51.301032)))
+  </div>
+</details>
+                </td>
+        </tr>        <tr>
+            <td>2021-05-27</td>
+            <td><a href="https://github.com/digital-land/site-of-special-scientific-interest-collection/tree/main/transformed/site-of-special-scientific-interest/58d5ad603e37f139c0d24a49567acb8d6c2101616133624c90eeb5aa196f8659.csv#L1166">58d5ad603e37...</a></td>
+            <td>1165</td>
+                <td>2014-01-15</td> 
+                <td>Foxlease and Ancells Meadows</td> 
+                <td>site-of-special-scientific-interest:SU830565</td> 
+                <td class="data-table__notes-cell data-table__cell--min-width-4">
+                    <details class="govuk-details">
+  <summary class="govuk-details__summary">
+    <span class="govuk-details__summary-text">
+      See WKT
+    </span>
+  </summary>
+  <div class="govuk-details__text">
+    MULTIPOLYGON (((-0.798594 51.299493,-0.798544 51.299331,-0.797277 51.299411,-0.796893 51.297842,-0.797094 51.297542,-0.798957 51.297661,-0.799483 51.297597,-0.799597 51.297724,-0.800461 51.298287,-0.800176 51.298416,-0.799360 51.298682,-0.799339 51.298931,-0.799365 51.299217,-0.799453 51.299373,-0.798594 51.299493)))
+  </div>
+</details>
+                </td>
+        </tr>        <tr>
+            <td>2021-05-27</td>
+            <td><a href="https://github.com/digital-land/site-of-special-scientific-interest-collection/tree/main/transformed/site-of-special-scientific-interest/58d5ad603e37f139c0d24a49567acb8d6c2101616133624c90eeb5aa196f8659.csv#L1163">58d5ad603e37...</a></td>
+            <td>1162</td>
+                <td>2014-01-15</td> 
+                <td>Foxlease and Ancells Meadows</td> 
+                <td>site-of-special-scientific-interest:SU830565</td> 
+                <td class="data-table__notes-cell data-table__cell--min-width-4">
+                    <details class="govuk-details">
+  <summary class="govuk-details__summary">
+    <span class="govuk-details__summary-text">
+      See WKT
+    </span>
+  </summary>
+  <div class="govuk-details__text">
+    MULTIPOLYGON (((-0.815403 51.294944,-0.815517 51.294875,-0.815716 51.294904,-0.815837 51.294866,-0.816045 51.294511,-0.816067 51.294301,-0.816001 51.294037,-0.816430 51.293595,-0.816685 51.293468,-0.816981 51.293479,-0.817838 51.293905,-0.818244 51.294014,-0.819172 51.293941,-0.821206 51.293700,-0.821370 51.293694,-0.821684 51.293780,-0.821582 51.293794,-0.821514 51.293906,-0.821296 51.294046,-0.821090 51.294074,-0.821037 51.294227,-0.820701 51.294538,-0.820620 51.294658,-0.819715 51.295455,-0.819411 51.295749,-0.819457 51.295764,-0.818156 51.296951,-0.816897 51.297591,-0.816459 51.297735,-0.815889 51.297850,-0.815853 51.297843,-0.815905 51.297798,-0.815921 51.297719,-0.815845 51.297434,-0.815702 51.297249,-0.815193 51.296753,-0.814590 51.296320,-0.814267 51.296019,-0.814108 51.295942,-0.815403 51.294944)))
+  </div>
+</details>
+                </td>
+        </tr>        <tr>
+            <td>2021-05-27</td>
             <td><a href="https://github.com/digital-land/site-of-special-scientific-interest-collection/tree/main/transformed/site-of-special-scientific-interest/58d5ad603e37f139c0d24a49567acb8d6c2101616133624c90eeb5aa196f8659.csv#L1167">58d5ad603e37...</a></td>
             <td>1166</td>
-                <td>site-of-special-scientific-interest:SU830565</td> 
-                <td>Foxlease and Ancells Meadows</td> 
                 <td>2014-01-15</td> 
+                <td>Foxlease and Ancells Meadows</td> 
+                <td>site-of-special-scientific-interest:SU830565</td> 
                 <td class="data-table__notes-cell data-table__cell--min-width-4">
                     <details class="govuk-details">
   <summary class="govuk-details__summary">

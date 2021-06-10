@@ -11,7 +11,10 @@
 <link rel="shortcut icon" sizes="32x32" href="/images/favicon-32x32.png" type="image/png">
 <link rel="shortcut icon" sizes="16x16" href="/images/favicon-16x16.png" type="image/png">
 <link rel="apple-touch-icon" href="/images/apple-touch-icon.png">
-	<meta name="digital-land:template" content="page-per-thing/record.html"><!-- should make this optional, no need to load if not showing a map -->
+	<meta name="digital-land:template" content="page-per-thing/record.html">
+<script src="https://polyfill.io/v3/polyfill.min.js?features=fetch%2CPromise%2Ces6%2Ces5%2Ces2015%2Ces2016%2CURL%2CURLSearchParams%2CObject.entries%2CObject.fromEntries%2CAbortController"></script>
+
+<!-- should make this optional, no need to load if not showing a map -->
 <link rel="stylesheet" href="https://unpkg.com/leaflet@1.6.0/dist/leaflet.css"
 integrity="sha512-xwE/Az9zrjBIphAcBb3F6JVqxf46+CDLwfLMHloNu6KEQCAWi6HcDUbeOfBIptF7tcCzusKFjFw2yuvEpDL9wQ=="
 crossorigin="" />
@@ -158,13 +161,13 @@ crossorigin="" />
             </dt>
             <dd class="govuk-summary-list__value">                Bagthorpe Meadows            </dd>
         </div>        <div class="govuk-summary-list__row">
-            <dt class="govuk-summary-list__key">start-date
-            </dt>
-            <dd class="govuk-summary-list__value">                2003-12-04            </dd>
-        </div>        <div class="govuk-summary-list__row">
             <dt class="govuk-summary-list__key">geography
             </dt>
             <dd class="govuk-summary-list__value">                site-of-special-scientific-interest:SK471519            </dd>
+        </div>        <div class="govuk-summary-list__row">
+            <dt class="govuk-summary-list__key">start-date
+            </dt>
+            <dd class="govuk-summary-list__value">                2003-12-04            </dd>
         </div>        <div class="govuk-summary-list__row">
             <dt class="govuk-summary-list__key">entry-date
             </dt>
@@ -215,6 +218,25 @@ crossorigin="" />
     </thead>
     <tbody>        <tr>
             <td>2021-05-27</td>
+            <td><a href="https://github.com/digital-land/site-of-special-scientific-interest-collection/tree/main/transformed/site-of-special-scientific-interest/58d5ad603e37f139c0d24a49567acb8d6c2101616133624c90eeb5aa196f8659.csv#L163">58d5ad603e37...</a></td>
+            <td>162</td>
+                <td>Bagthorpe Meadows</td> 
+                <td>site-of-special-scientific-interest:SK471519</td> 
+                <td>2003-12-04</td> 
+                <td class="data-table__notes-cell data-table__cell--min-width-4">
+                    <details class="govuk-details">
+  <summary class="govuk-details__summary">
+    <span class="govuk-details__summary-text">
+      See WKT
+    </span>
+  </summary>
+  <div class="govuk-details__text">
+    MULTIPOLYGON (((-1.301043 53.063383,-1.300032 53.063378,-1.300002 53.063261,-1.300031 53.063261,-1.300120 53.062077,-1.300250 53.061883,-1.300477 53.061675,-1.300536 53.061476,-1.300577 53.061437,-1.302015 53.061513,-1.302189 53.061113,-1.302238 53.060893,-1.302834 53.060929,-1.302803 53.061181,-1.302660 53.061544,-1.302259 53.062227,-1.301971 53.062845,-1.301848 53.063008,-1.301831 53.063120,-1.301701 53.063359,-1.301627 53.063416,-1.301043 53.063383)))
+  </div>
+</details>
+                </td>
+        </tr>        <tr>
+            <td>2021-05-27</td>
             <td><a href="https://github.com/digital-land/site-of-special-scientific-interest-collection/tree/main/transformed/site-of-special-scientific-interest/58d5ad603e37f139c0d24a49567acb8d6c2101616133624c90eeb5aa196f8659.csv#L164">58d5ad603e37...</a></td>
             <td>163</td>
                 <td>Bagthorpe Meadows</td> 
@@ -248,25 +270,6 @@ crossorigin="" />
   </summary>
   <div class="govuk-details__text">
     MULTIPOLYGON (((-1.288718 53.062957,-1.288391 53.063014,-1.288241 53.062969,-1.288197 53.062736,-1.288118 53.062631,-1.289286 53.062131,-1.289686 53.062450,-1.289839 53.062522,-1.289964 53.062633,-1.290016 53.062763,-1.289671 53.062817,-1.289414 53.062911,-1.289250 53.062909,-1.288886 53.063039,-1.288807 53.063036,-1.288802 53.062984,-1.288718 53.062957)))
-  </div>
-</details>
-                </td>
-        </tr>        <tr>
-            <td>2021-05-27</td>
-            <td><a href="https://github.com/digital-land/site-of-special-scientific-interest-collection/tree/main/transformed/site-of-special-scientific-interest/58d5ad603e37f139c0d24a49567acb8d6c2101616133624c90eeb5aa196f8659.csv#L163">58d5ad603e37...</a></td>
-            <td>162</td>
-                <td>Bagthorpe Meadows</td> 
-                <td>site-of-special-scientific-interest:SK471519</td> 
-                <td>2003-12-04</td> 
-                <td class="data-table__notes-cell data-table__cell--min-width-4">
-                    <details class="govuk-details">
-  <summary class="govuk-details__summary">
-    <span class="govuk-details__summary-text">
-      See WKT
-    </span>
-  </summary>
-  <div class="govuk-details__text">
-    MULTIPOLYGON (((-1.301043 53.063383,-1.300032 53.063378,-1.300002 53.063261,-1.300031 53.063261,-1.300120 53.062077,-1.300250 53.061883,-1.300477 53.061675,-1.300536 53.061476,-1.300577 53.061437,-1.302015 53.061513,-1.302189 53.061113,-1.302238 53.060893,-1.302834 53.060929,-1.302803 53.061181,-1.302660 53.061544,-1.302259 53.062227,-1.301971 53.062845,-1.301848 53.063008,-1.301831 53.063120,-1.301701 53.063359,-1.301627 53.063416,-1.301043 53.063383)))
   </div>
 </details>
                 </td>

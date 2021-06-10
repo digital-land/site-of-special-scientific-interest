@@ -11,7 +11,10 @@
 <link rel="shortcut icon" sizes="32x32" href="/images/favicon-32x32.png" type="image/png">
 <link rel="shortcut icon" sizes="16x16" href="/images/favicon-16x16.png" type="image/png">
 <link rel="apple-touch-icon" href="/images/apple-touch-icon.png">
-	<meta name="digital-land:template" content="page-per-thing/record.html"><!-- should make this optional, no need to load if not showing a map -->
+	<meta name="digital-land:template" content="page-per-thing/record.html">
+<script src="https://polyfill.io/v3/polyfill.min.js?features=fetch%2CPromise%2Ces6%2Ces5%2Ces2015%2Ces2016%2CURL%2CURLSearchParams%2CObject.entries%2CObject.fromEntries%2CAbortController"></script>
+
+<!-- should make this optional, no need to load if not showing a map -->
 <link rel="stylesheet" href="https://unpkg.com/leaflet@1.6.0/dist/leaflet.css"
 integrity="sha512-xwE/Az9zrjBIphAcBb3F6JVqxf46+CDLwfLMHloNu6KEQCAWi6HcDUbeOfBIptF7tcCzusKFjFw2yuvEpDL9wQ=="
 crossorigin="" />
@@ -154,17 +157,17 @@ crossorigin="" />
 <div class="govuk-grid-row">    <div class="govuk-grid-column-two-thirds"><article class="data-record govuk-!-margin-bottom-6">
     <h4 class="govuk-heading-s data-record__identifier">#/site-of-special-scientific-interest/site-of-special-scientific-interest/SE680242</h4>
     <dl class="govuk-summary-list data-record__properties">            <div class="govuk-summary-list__row">
-            <dt class="govuk-summary-list__key">name
+            <dt class="govuk-summary-list__key">geography
             </dt>
-            <dd class="govuk-summary-list__value">                Eskamhorn Meadows            </dd>
+            <dd class="govuk-summary-list__value">                site-of-special-scientific-interest:SE680242            </dd>
         </div>        <div class="govuk-summary-list__row">
             <dt class="govuk-summary-list__key">start-date
             </dt>
             <dd class="govuk-summary-list__value">                2010-01-05            </dd>
         </div>        <div class="govuk-summary-list__row">
-            <dt class="govuk-summary-list__key">geography
+            <dt class="govuk-summary-list__key">name
             </dt>
-            <dd class="govuk-summary-list__value">                site-of-special-scientific-interest:SE680242            </dd>
+            <dd class="govuk-summary-list__value">                Eskamhorn Meadows            </dd>
         </div>        <div class="govuk-summary-list__row">
             <dt class="govuk-summary-list__key">entry-date
             </dt>
@@ -207,19 +210,19 @@ crossorigin="" />
             <th>entry-date</th>
             <th>resource</th>
             <th>line</th>
+            <th>start-date</th>
             <th>name</th>
             <th>geography</th>
-            <th>start-date</th>
             <th>geometry</th>
         </tr>
     </thead>
     <tbody>        <tr>
             <td>2021-05-27</td>
-            <td><a href="https://github.com/digital-land/site-of-special-scientific-interest-collection/tree/main/transformed/site-of-special-scientific-interest/58d5ad603e37f139c0d24a49567acb8d6c2101616133624c90eeb5aa196f8659.csv#L1484">58d5ad603e37...</a></td>
-            <td>1483</td>
+            <td><a href="https://github.com/digital-land/site-of-special-scientific-interest-collection/tree/main/transformed/site-of-special-scientific-interest/58d5ad603e37f139c0d24a49567acb8d6c2101616133624c90eeb5aa196f8659.csv#L1485">58d5ad603e37...</a></td>
+            <td>1484</td>
+                <td>2010-01-05</td> 
                 <td>Eskamhorn Meadows</td> 
                 <td>site-of-special-scientific-interest:SE680242</td> 
-                <td>2010-01-05</td> 
                 <td class="data-table__notes-cell data-table__cell--min-width-4">
                     <details class="govuk-details">
   <summary class="govuk-details__summary">
@@ -228,7 +231,7 @@ crossorigin="" />
     </span>
   </summary>
   <div class="govuk-details__text">
-    MULTIPOLYGON (((-0.995593 53.703460,-0.995716 53.703433,-0.995956 53.703616,-0.996693 53.704556,-0.995907 53.704730,-0.996649 53.705980,-0.994196 53.706144,-0.993022 53.703859,-0.994833 53.703615,-0.995593 53.703460)))
+    MULTIPOLYGON (((-0.972924 53.706909,-0.974036 53.706827,-0.974049 53.707542,-0.974113 53.708049,-0.974173 53.708229,-0.972030 53.708382,-0.971954 53.706986,-0.972924 53.706909)))
   </div>
 </details>
                 </td>
@@ -236,9 +239,9 @@ crossorigin="" />
             <td>2021-05-27</td>
             <td><a href="https://github.com/digital-land/site-of-special-scientific-interest-collection/tree/main/transformed/site-of-special-scientific-interest/58d5ad603e37f139c0d24a49567acb8d6c2101616133624c90eeb5aa196f8659.csv#L1486">58d5ad603e37...</a></td>
             <td>1485</td>
+                <td>2010-01-05</td> 
                 <td>Eskamhorn Meadows</td> 
                 <td>site-of-special-scientific-interest:SE680242</td> 
-                <td>2010-01-05</td> 
                 <td class="data-table__notes-cell data-table__cell--min-width-4">
                     <details class="govuk-details">
   <summary class="govuk-details__summary">
@@ -253,11 +256,30 @@ crossorigin="" />
                 </td>
         </tr>        <tr>
             <td>2021-05-27</td>
-            <td><a href="https://github.com/digital-land/site-of-special-scientific-interest-collection/tree/main/transformed/site-of-special-scientific-interest/58d5ad603e37f139c0d24a49567acb8d6c2101616133624c90eeb5aa196f8659.csv#L1483">58d5ad603e37...</a></td>
-            <td>1482</td>
+            <td><a href="https://github.com/digital-land/site-of-special-scientific-interest-collection/tree/main/transformed/site-of-special-scientific-interest/58d5ad603e37f139c0d24a49567acb8d6c2101616133624c90eeb5aa196f8659.csv#L1484">58d5ad603e37...</a></td>
+            <td>1483</td>
+                <td>2010-01-05</td> 
                 <td>Eskamhorn Meadows</td> 
                 <td>site-of-special-scientific-interest:SE680242</td> 
+                <td class="data-table__notes-cell data-table__cell--min-width-4">
+                    <details class="govuk-details">
+  <summary class="govuk-details__summary">
+    <span class="govuk-details__summary-text">
+      See WKT
+    </span>
+  </summary>
+  <div class="govuk-details__text">
+    MULTIPOLYGON (((-0.995593 53.703460,-0.995716 53.703433,-0.995956 53.703616,-0.996693 53.704556,-0.995907 53.704730,-0.996649 53.705980,-0.994196 53.706144,-0.993022 53.703859,-0.994833 53.703615,-0.995593 53.703460)))
+  </div>
+</details>
+                </td>
+        </tr>        <tr>
+            <td>2021-05-27</td>
+            <td><a href="https://github.com/digital-land/site-of-special-scientific-interest-collection/tree/main/transformed/site-of-special-scientific-interest/58d5ad603e37f139c0d24a49567acb8d6c2101616133624c90eeb5aa196f8659.csv#L1483">58d5ad603e37...</a></td>
+            <td>1482</td>
                 <td>2010-01-05</td> 
+                <td>Eskamhorn Meadows</td> 
+                <td>site-of-special-scientific-interest:SE680242</td> 
                 <td class="data-table__notes-cell data-table__cell--min-width-4">
                     <details class="govuk-details">
   <summary class="govuk-details__summary">
@@ -267,25 +289,6 @@ crossorigin="" />
   </summary>
   <div class="govuk-details__text">
     MULTIPOLYGON (((-0.969135 53.710984,-0.969090 53.710789,-0.969140 53.710792,-0.968614 53.709517,-0.968615 53.709461,-0.969382 53.709460,-0.971487 53.709565,-0.971294 53.710649,-0.973367 53.710821,-0.973972 53.710902,-0.973447 53.711979,-0.971649 53.711778,-0.970684 53.711717,-0.969280 53.711686,-0.969278 53.711460,-0.969135 53.710984)))
-  </div>
-</details>
-                </td>
-        </tr>        <tr>
-            <td>2021-05-27</td>
-            <td><a href="https://github.com/digital-land/site-of-special-scientific-interest-collection/tree/main/transformed/site-of-special-scientific-interest/58d5ad603e37f139c0d24a49567acb8d6c2101616133624c90eeb5aa196f8659.csv#L1485">58d5ad603e37...</a></td>
-            <td>1484</td>
-                <td>Eskamhorn Meadows</td> 
-                <td>site-of-special-scientific-interest:SE680242</td> 
-                <td>2010-01-05</td> 
-                <td class="data-table__notes-cell data-table__cell--min-width-4">
-                    <details class="govuk-details">
-  <summary class="govuk-details__summary">
-    <span class="govuk-details__summary-text">
-      See WKT
-    </span>
-  </summary>
-  <div class="govuk-details__text">
-    MULTIPOLYGON (((-0.972924 53.706909,-0.974036 53.706827,-0.974049 53.707542,-0.974113 53.708049,-0.974173 53.708229,-0.972030 53.708382,-0.971954 53.706986,-0.972924 53.706909)))
   </div>
 </details>
                 </td>

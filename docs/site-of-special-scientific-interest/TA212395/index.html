@@ -11,7 +11,10 @@
 <link rel="shortcut icon" sizes="32x32" href="/images/favicon-32x32.png" type="image/png">
 <link rel="shortcut icon" sizes="16x16" href="/images/favicon-16x16.png" type="image/png">
 <link rel="apple-touch-icon" href="/images/apple-touch-icon.png">
-	<meta name="digital-land:template" content="page-per-thing/record.html"><!-- should make this optional, no need to load if not showing a map -->
+	<meta name="digital-land:template" content="page-per-thing/record.html">
+<script src="https://polyfill.io/v3/polyfill.min.js?features=fetch%2CPromise%2Ces6%2Ces5%2Ces2015%2Ces2016%2CURL%2CURLSearchParams%2CObject.entries%2CObject.fromEntries%2CAbortController"></script>
+
+<!-- should make this optional, no need to load if not showing a map -->
 <link rel="stylesheet" href="https://unpkg.com/leaflet@1.6.0/dist/leaflet.css"
 integrity="sha512-xwE/Az9zrjBIphAcBb3F6JVqxf46+CDLwfLMHloNu6KEQCAWi6HcDUbeOfBIptF7tcCzusKFjFw2yuvEpDL9wQ=="
 crossorigin="" />
@@ -207,38 +210,19 @@ crossorigin="" />
             <th>entry-date</th>
             <th>resource</th>
             <th>line</th>
-            <th>geography</th>
-            <th>name</th>
             <th>start-date</th>
+            <th>name</th>
+            <th>geography</th>
             <th>geometry</th>
         </tr>
     </thead>
     <tbody>        <tr>
             <td>2021-05-27</td>
-            <td><a href="https://github.com/digital-land/site-of-special-scientific-interest-collection/tree/main/transformed/site-of-special-scientific-interest/58d5ad603e37f139c0d24a49567acb8d6c2101616133624c90eeb5aa196f8659.csv#L2268">58d5ad603e37...</a></td>
-            <td>2267</td>
-                <td>site-of-special-scientific-interest:TA212395</td> 
-                <td>Lambwath Meadows</td> 
-                <td>2003-10-14</td> 
-                <td class="data-table__notes-cell data-table__cell--min-width-4">
-                    <details class="govuk-details">
-  <summary class="govuk-details__summary">
-    <span class="govuk-details__summary-text">
-      See WKT
-    </span>
-  </summary>
-  <div class="govuk-details__text">
-    MULTIPOLYGON (((-0.165381 53.841415,-0.165159 53.841446,-0.164807 53.841324,-0.164693 53.839069,-0.165780 53.839005,-0.165767 53.839435,-0.165836 53.840715,-0.165869 53.840727,-0.165893 53.841524,-0.165381 53.841415)))
-  </div>
-</details>
-                </td>
-        </tr>        <tr>
-            <td>2021-05-27</td>
             <td><a href="https://github.com/digital-land/site-of-special-scientific-interest-collection/tree/main/transformed/site-of-special-scientific-interest/58d5ad603e37f139c0d24a49567acb8d6c2101616133624c90eeb5aa196f8659.csv#L2266">58d5ad603e37...</a></td>
             <td>2265</td>
-                <td>site-of-special-scientific-interest:TA212395</td> 
-                <td>Lambwath Meadows</td> 
                 <td>2003-10-14</td> 
+                <td>Lambwath Meadows</td> 
+                <td>site-of-special-scientific-interest:TA212395</td> 
                 <td class="data-table__notes-cell data-table__cell--min-width-4">
                     <details class="govuk-details">
   <summary class="govuk-details__summary">
@@ -253,11 +237,30 @@ crossorigin="" />
                 </td>
         </tr>        <tr>
             <td>2021-05-27</td>
+            <td><a href="https://github.com/digital-land/site-of-special-scientific-interest-collection/tree/main/transformed/site-of-special-scientific-interest/58d5ad603e37f139c0d24a49567acb8d6c2101616133624c90eeb5aa196f8659.csv#L2268">58d5ad603e37...</a></td>
+            <td>2267</td>
+                <td>2003-10-14</td> 
+                <td>Lambwath Meadows</td> 
+                <td>site-of-special-scientific-interest:TA212395</td> 
+                <td class="data-table__notes-cell data-table__cell--min-width-4">
+                    <details class="govuk-details">
+  <summary class="govuk-details__summary">
+    <span class="govuk-details__summary-text">
+      See WKT
+    </span>
+  </summary>
+  <div class="govuk-details__text">
+    MULTIPOLYGON (((-0.165381 53.841415,-0.165159 53.841446,-0.164807 53.841324,-0.164693 53.839069,-0.165780 53.839005,-0.165767 53.839435,-0.165836 53.840715,-0.165869 53.840727,-0.165893 53.841524,-0.165381 53.841415)))
+  </div>
+</details>
+                </td>
+        </tr>        <tr>
+            <td>2021-05-27</td>
             <td><a href="https://github.com/digital-land/site-of-special-scientific-interest-collection/tree/main/transformed/site-of-special-scientific-interest/58d5ad603e37f139c0d24a49567acb8d6c2101616133624c90eeb5aa196f8659.csv#L2267">58d5ad603e37...</a></td>
             <td>2266</td>
-                <td>site-of-special-scientific-interest:TA212395</td> 
-                <td>Lambwath Meadows</td> 
                 <td>2003-10-14</td> 
+                <td>Lambwath Meadows</td> 
+                <td>site-of-special-scientific-interest:TA212395</td> 
                 <td class="data-table__notes-cell data-table__cell--min-width-4">
                     <details class="govuk-details">
   <summary class="govuk-details__summary">

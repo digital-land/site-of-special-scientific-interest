@@ -11,7 +11,10 @@
 <link rel="shortcut icon" sizes="32x32" href="/images/favicon-32x32.png" type="image/png">
 <link rel="shortcut icon" sizes="16x16" href="/images/favicon-16x16.png" type="image/png">
 <link rel="apple-touch-icon" href="/images/apple-touch-icon.png">
-	<meta name="digital-land:template" content="page-per-thing/record.html"><!-- should make this optional, no need to load if not showing a map -->
+	<meta name="digital-land:template" content="page-per-thing/record.html">
+<script src="https://polyfill.io/v3/polyfill.min.js?features=fetch%2CPromise%2Ces6%2Ces5%2Ces2015%2Ces2016%2CURL%2CURLSearchParams%2CObject.entries%2CObject.fromEntries%2CAbortController"></script>
+
+<!-- should make this optional, no need to load if not showing a map -->
 <link rel="stylesheet" href="https://unpkg.com/leaflet@1.6.0/dist/leaflet.css"
 integrity="sha512-xwE/Az9zrjBIphAcBb3F6JVqxf46+CDLwfLMHloNu6KEQCAWi6HcDUbeOfBIptF7tcCzusKFjFw2yuvEpDL9wQ=="
 crossorigin="" />
@@ -154,13 +157,13 @@ crossorigin="" />
 <div class="govuk-grid-row">    <div class="govuk-grid-column-two-thirds"><article class="data-record govuk-!-margin-bottom-6">
     <h4 class="govuk-heading-s data-record__identifier">#/site-of-special-scientific-interest/site-of-special-scientific-interest/TM021052</h4>
     <dl class="govuk-summary-list data-record__properties">            <div class="govuk-summary-list__row">
-            <dt class="govuk-summary-list__key">name
-            </dt>
-            <dd class="govuk-summary-list__value">                Sandbeach Meadows            </dd>
-        </div>        <div class="govuk-summary-list__row">
             <dt class="govuk-summary-list__key">start-date
             </dt>
             <dd class="govuk-summary-list__value">                2003-12-11            </dd>
+        </div>        <div class="govuk-summary-list__row">
+            <dt class="govuk-summary-list__key">name
+            </dt>
+            <dd class="govuk-summary-list__value">                Sandbeach Meadows            </dd>
         </div>        <div class="govuk-summary-list__row">
             <dt class="govuk-summary-list__key">geography
             </dt>
@@ -207,19 +210,19 @@ crossorigin="" />
             <th>entry-date</th>
             <th>resource</th>
             <th>line</th>
+            <th>start-date</th>
             <th>name</th>
             <th>geography</th>
-            <th>start-date</th>
             <th>geometry</th>
         </tr>
     </thead>
     <tbody>        <tr>
             <td>2021-05-27</td>
-            <td><a href="https://github.com/digital-land/site-of-special-scientific-interest-collection/tree/main/transformed/site-of-special-scientific-interest/58d5ad603e37f139c0d24a49567acb8d6c2101616133624c90eeb5aa196f8659.csv#L3454">58d5ad603e37...</a></td>
-            <td>3453</td>
+            <td><a href="https://github.com/digital-land/site-of-special-scientific-interest-collection/tree/main/transformed/site-of-special-scientific-interest/58d5ad603e37f139c0d24a49567acb8d6c2101616133624c90eeb5aa196f8659.csv#L3456">58d5ad603e37...</a></td>
+            <td>3455</td>
+                <td>2003-12-11</td> 
                 <td>Sandbeach Meadows</td> 
                 <td>site-of-special-scientific-interest:TM021052</td> 
-                <td>2003-12-11</td> 
                 <td class="data-table__notes-cell data-table__cell--min-width-4">
                     <details class="govuk-details">
   <summary class="govuk-details__summary">
@@ -228,7 +231,7 @@ crossorigin="" />
     </span>
   </summary>
   <div class="govuk-details__text">
-    MULTIPOLYGON (((0.928088 51.710125,0.928214 51.709993,0.928219 51.709909,0.927934 51.709533,0.927846 51.709183,0.927665 51.709088,0.927630 51.709032,0.927519 51.708487,0.927291 51.708408,0.927355 51.708194,0.927243 51.707951,0.927206 51.707740,0.926901 51.707370,0.926482 51.706981,0.926321 51.706748,0.926098 51.706595,0.925772 51.706242,0.925332 51.705954,0.925208 51.705835,0.925197 51.705708,0.925364 51.705012,0.925380 51.704808,0.925296 51.704808,0.925045 51.704921,0.924678 51.704957,0.924432 51.704937,0.923508 51.704969,0.923121 51.704849,0.922603 51.704890,0.921924 51.705163,0.921257 51.705182,0.921523 51.705995,0.921995 51.707231,0.921722 51.707329,0.922071 51.708493,0.921938 51.708500,0.921993 51.708855,0.921769 51.708898,0.921649 51.708982,0.921778 51.709115,0.921784 51.709263,0.921739 51.709385,0.921769 51.709477,0.921558 51.709553,0.921539 51.709595,0.921594 51.709687,0.921501 51.709789,0.921556 51.709918,0.921649 51.710020,0.922108 51.710036,0.922401 51.710228,0.922948 51.710025,0.923559 51.709953,0.925089 51.709981,0.927068 51.710130,0.927367 51.710094,0.927424 51.710110,0.927446 51.710174,0.927484 51.710190,0.927576 51.710128,0.928038 51.710198,0.928088 51.710125)))
+    MULTIPOLYGON (((0.928414 51.714358,0.928373 51.714218,0.927395 51.714280,0.927311 51.714011,0.925931 51.714085,0.925743 51.714122,0.925618 51.714174,0.925483 51.714302,0.925029 51.715037,0.924913 51.715118,0.924773 51.715156,0.924844 51.715264,0.924929 51.715298,0.925315 51.715362,0.926036 51.715545,0.927788 51.716150,0.928489 51.716330,0.928666 51.716338,0.928703 51.716236,0.928871 51.716055,0.928414 51.714358)))
   </div>
 </details>
                 </td>
@@ -236,9 +239,9 @@ crossorigin="" />
             <td>2021-05-27</td>
             <td><a href="https://github.com/digital-land/site-of-special-scientific-interest-collection/tree/main/transformed/site-of-special-scientific-interest/58d5ad603e37f139c0d24a49567acb8d6c2101616133624c90eeb5aa196f8659.csv#L3455">58d5ad603e37...</a></td>
             <td>3454</td>
+                <td>2003-12-11</td> 
                 <td>Sandbeach Meadows</td> 
                 <td>site-of-special-scientific-interest:TM021052</td> 
-                <td>2003-12-11</td> 
                 <td class="data-table__notes-cell data-table__cell--min-width-4">
                     <details class="govuk-details">
   <summary class="govuk-details__summary">
@@ -253,11 +256,11 @@ crossorigin="" />
                 </td>
         </tr>        <tr>
             <td>2021-05-27</td>
-            <td><a href="https://github.com/digital-land/site-of-special-scientific-interest-collection/tree/main/transformed/site-of-special-scientific-interest/58d5ad603e37f139c0d24a49567acb8d6c2101616133624c90eeb5aa196f8659.csv#L3456">58d5ad603e37...</a></td>
-            <td>3455</td>
+            <td><a href="https://github.com/digital-land/site-of-special-scientific-interest-collection/tree/main/transformed/site-of-special-scientific-interest/58d5ad603e37f139c0d24a49567acb8d6c2101616133624c90eeb5aa196f8659.csv#L3454">58d5ad603e37...</a></td>
+            <td>3453</td>
+                <td>2003-12-11</td> 
                 <td>Sandbeach Meadows</td> 
                 <td>site-of-special-scientific-interest:TM021052</td> 
-                <td>2003-12-11</td> 
                 <td class="data-table__notes-cell data-table__cell--min-width-4">
                     <details class="govuk-details">
   <summary class="govuk-details__summary">
@@ -266,7 +269,7 @@ crossorigin="" />
     </span>
   </summary>
   <div class="govuk-details__text">
-    MULTIPOLYGON (((0.928414 51.714358,0.928373 51.714218,0.927395 51.714280,0.927311 51.714011,0.925931 51.714085,0.925743 51.714122,0.925618 51.714174,0.925483 51.714302,0.925029 51.715037,0.924913 51.715118,0.924773 51.715156,0.924844 51.715264,0.924929 51.715298,0.925315 51.715362,0.926036 51.715545,0.927788 51.716150,0.928489 51.716330,0.928666 51.716338,0.928703 51.716236,0.928871 51.716055,0.928414 51.714358)))
+    MULTIPOLYGON (((0.928088 51.710125,0.928214 51.709993,0.928219 51.709909,0.927934 51.709533,0.927846 51.709183,0.927665 51.709088,0.927630 51.709032,0.927519 51.708487,0.927291 51.708408,0.927355 51.708194,0.927243 51.707951,0.927206 51.707740,0.926901 51.707370,0.926482 51.706981,0.926321 51.706748,0.926098 51.706595,0.925772 51.706242,0.925332 51.705954,0.925208 51.705835,0.925197 51.705708,0.925364 51.705012,0.925380 51.704808,0.925296 51.704808,0.925045 51.704921,0.924678 51.704957,0.924432 51.704937,0.923508 51.704969,0.923121 51.704849,0.922603 51.704890,0.921924 51.705163,0.921257 51.705182,0.921523 51.705995,0.921995 51.707231,0.921722 51.707329,0.922071 51.708493,0.921938 51.708500,0.921993 51.708855,0.921769 51.708898,0.921649 51.708982,0.921778 51.709115,0.921784 51.709263,0.921739 51.709385,0.921769 51.709477,0.921558 51.709553,0.921539 51.709595,0.921594 51.709687,0.921501 51.709789,0.921556 51.709918,0.921649 51.710020,0.922108 51.710036,0.922401 51.710228,0.922948 51.710025,0.923559 51.709953,0.925089 51.709981,0.927068 51.710130,0.927367 51.710094,0.927424 51.710110,0.927446 51.710174,0.927484 51.710190,0.927576 51.710128,0.928038 51.710198,0.928088 51.710125)))
   </div>
 </details>
                 </td>

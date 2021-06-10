@@ -11,7 +11,10 @@
 <link rel="shortcut icon" sizes="32x32" href="/images/favicon-32x32.png" type="image/png">
 <link rel="shortcut icon" sizes="16x16" href="/images/favicon-16x16.png" type="image/png">
 <link rel="apple-touch-icon" href="/images/apple-touch-icon.png">
-	<meta name="digital-land:template" content="page-per-thing/record.html"><!-- should make this optional, no need to load if not showing a map -->
+	<meta name="digital-land:template" content="page-per-thing/record.html">
+<script src="https://polyfill.io/v3/polyfill.min.js?features=fetch%2CPromise%2Ces6%2Ces5%2Ces2015%2Ces2016%2CURL%2CURLSearchParams%2CObject.entries%2CObject.fromEntries%2CAbortController"></script>
+
+<!-- should make this optional, no need to load if not showing a map -->
 <link rel="stylesheet" href="https://unpkg.com/leaflet@1.6.0/dist/leaflet.css"
 integrity="sha512-xwE/Az9zrjBIphAcBb3F6JVqxf46+CDLwfLMHloNu6KEQCAWi6HcDUbeOfBIptF7tcCzusKFjFw2yuvEpDL9wQ=="
 crossorigin="" />
@@ -154,6 +157,10 @@ crossorigin="" />
 <div class="govuk-grid-row">    <div class="govuk-grid-column-two-thirds"><article class="data-record govuk-!-margin-bottom-6">
     <h4 class="govuk-heading-s data-record__identifier">#/site-of-special-scientific-interest/site-of-special-scientific-interest/SP638425</h4>
     <dl class="govuk-summary-list data-record__properties">            <div class="govuk-summary-list__row">
+            <dt class="govuk-summary-list__key">start-date
+            </dt>
+            <dd class="govuk-summary-list__value">                2003-12-04            </dd>
+        </div>        <div class="govuk-summary-list__row">
             <dt class="govuk-summary-list__key">name
             </dt>
             <dd class="govuk-summary-list__value">                Syresham Marshy Meadows            </dd>
@@ -161,10 +168,6 @@ crossorigin="" />
             <dt class="govuk-summary-list__key">geography
             </dt>
             <dd class="govuk-summary-list__value">                site-of-special-scientific-interest:SP638425            </dd>
-        </div>        <div class="govuk-summary-list__row">
-            <dt class="govuk-summary-list__key">start-date
-            </dt>
-            <dd class="govuk-summary-list__value">                2003-12-04            </dd>
         </div>        <div class="govuk-summary-list__row">
             <dt class="govuk-summary-list__key">entry-date
             </dt>
@@ -207,38 +210,19 @@ crossorigin="" />
             <th>entry-date</th>
             <th>resource</th>
             <th>line</th>
-            <th>geography</th>
-            <th>name</th>
             <th>start-date</th>
+            <th>name</th>
+            <th>geography</th>
             <th>geometry</th>
         </tr>
     </thead>
     <tbody>        <tr>
             <td>2021-05-27</td>
-            <td><a href="https://github.com/digital-land/site-of-special-scientific-interest-collection/tree/main/transformed/site-of-special-scientific-interest/58d5ad603e37f139c0d24a49567acb8d6c2101616133624c90eeb5aa196f8659.csv#L4173">58d5ad603e37...</a></td>
-            <td>4172</td>
-                <td>site-of-special-scientific-interest:SP638425</td> 
-                <td>Syresham Marshy Meadows</td> 
-                <td>2003-12-04</td> 
-                <td class="data-table__notes-cell data-table__cell--min-width-4">
-                    <details class="govuk-details">
-  <summary class="govuk-details__summary">
-    <span class="govuk-details__summary-text">
-      See WKT
-    </span>
-  </summary>
-  <div class="govuk-details__text">
-    MULTIPOLYGON (((-1.058502 52.074852,-1.058167 52.074836,-1.056565 52.074557,-1.057000 52.074207,-1.057179 52.073988,-1.057200 52.073889,-1.057602 52.073920,-1.058660 52.073731,-1.060628 52.073521,-1.061149 52.073502,-1.061780 52.073409,-1.062303 52.074074,-1.062417 52.074307,-1.062105 52.074401,-1.061737 52.074585,-1.061260 52.074723,-1.061141 52.074814,-1.061063 52.074835,-1.060456 52.074860,-1.059814 52.074932,-1.058502 52.074852)))
-  </div>
-</details>
-                </td>
-        </tr>        <tr>
-            <td>2021-05-27</td>
             <td><a href="https://github.com/digital-land/site-of-special-scientific-interest-collection/tree/main/transformed/site-of-special-scientific-interest/58d5ad603e37f139c0d24a49567acb8d6c2101616133624c90eeb5aa196f8659.csv#L4172">58d5ad603e37...</a></td>
             <td>4171</td>
-                <td>site-of-special-scientific-interest:SP638425</td> 
-                <td>Syresham Marshy Meadows</td> 
                 <td>2003-12-04</td> 
+                <td>Syresham Marshy Meadows</td> 
+                <td>site-of-special-scientific-interest:SP638425</td> 
                 <td class="data-table__notes-cell data-table__cell--min-width-4">
                     <details class="govuk-details">
   <summary class="govuk-details__summary">
@@ -248,6 +232,25 @@ crossorigin="" />
   </summary>
   <div class="govuk-details__text">
     MULTIPOLYGON (((-1.061949 52.080244,-1.061322 52.079940,-1.062949 52.079775,-1.063710 52.079739,-1.068807 52.078758,-1.067739 52.076844,-1.069163 52.076017,-1.069915 52.075780,-1.070130 52.075841,-1.070332 52.075950,-1.070886 52.076071,-1.070996 52.076121,-1.072096 52.076319,-1.071967 52.076503,-1.071868 52.076852,-1.071840 52.077045,-1.071874 52.077351,-1.072179 52.078176,-1.072460 52.078696,-1.072619 52.078917,-1.072765 52.079060,-1.072524 52.079139,-1.072142 52.079349,-1.071788 52.079603,-1.070744 52.080113,-1.069952 52.080104,-1.069270 52.079759,-1.069217 52.079719,-1.068951 52.079083,-1.067297 52.079425,-1.067256 52.079560,-1.066582 52.079777,-1.064722 52.080240,-1.064574 52.080255,-1.064106 52.080190,-1.063059 52.080157,-1.062327 52.080167,-1.061949 52.080244)))
+  </div>
+</details>
+                </td>
+        </tr>        <tr>
+            <td>2021-05-27</td>
+            <td><a href="https://github.com/digital-land/site-of-special-scientific-interest-collection/tree/main/transformed/site-of-special-scientific-interest/58d5ad603e37f139c0d24a49567acb8d6c2101616133624c90eeb5aa196f8659.csv#L4173">58d5ad603e37...</a></td>
+            <td>4172</td>
+                <td>2003-12-04</td> 
+                <td>Syresham Marshy Meadows</td> 
+                <td>site-of-special-scientific-interest:SP638425</td> 
+                <td class="data-table__notes-cell data-table__cell--min-width-4">
+                    <details class="govuk-details">
+  <summary class="govuk-details__summary">
+    <span class="govuk-details__summary-text">
+      See WKT
+    </span>
+  </summary>
+  <div class="govuk-details__text">
+    MULTIPOLYGON (((-1.058502 52.074852,-1.058167 52.074836,-1.056565 52.074557,-1.057000 52.074207,-1.057179 52.073988,-1.057200 52.073889,-1.057602 52.073920,-1.058660 52.073731,-1.060628 52.073521,-1.061149 52.073502,-1.061780 52.073409,-1.062303 52.074074,-1.062417 52.074307,-1.062105 52.074401,-1.061737 52.074585,-1.061260 52.074723,-1.061141 52.074814,-1.061063 52.074835,-1.060456 52.074860,-1.059814 52.074932,-1.058502 52.074852)))
   </div>
 </details>
                 </td>

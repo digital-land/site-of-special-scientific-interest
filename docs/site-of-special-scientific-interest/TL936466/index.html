@@ -11,7 +11,10 @@
 <link rel="shortcut icon" sizes="32x32" href="/images/favicon-32x32.png" type="image/png">
 <link rel="shortcut icon" sizes="16x16" href="/images/favicon-16x16.png" type="image/png">
 <link rel="apple-touch-icon" href="/images/apple-touch-icon.png">
-	<meta name="digital-land:template" content="page-per-thing/record.html"><!-- should make this optional, no need to load if not showing a map -->
+	<meta name="digital-land:template" content="page-per-thing/record.html">
+<script src="https://polyfill.io/v3/polyfill.min.js?features=fetch%2CPromise%2Ces6%2Ces5%2Ces2015%2Ces2016%2CURL%2CURLSearchParams%2CObject.entries%2CObject.fromEntries%2CAbortController"></script>
+
+<!-- should make this optional, no need to load if not showing a map -->
 <link rel="stylesheet" href="https://unpkg.com/leaflet@1.6.0/dist/leaflet.css"
 integrity="sha512-xwE/Az9zrjBIphAcBb3F6JVqxf46+CDLwfLMHloNu6KEQCAWi6HcDUbeOfBIptF7tcCzusKFjFw2yuvEpDL9wQ=="
 crossorigin="" />
@@ -158,13 +161,13 @@ crossorigin="" />
             </dt>
             <dd class="govuk-summary-list__value">                site-of-special-scientific-interest:TL936466            </dd>
         </div>        <div class="govuk-summary-list__row">
-            <dt class="govuk-summary-list__key">start-date
-            </dt>
-            <dd class="govuk-summary-list__value">                2003-12-13            </dd>
-        </div>        <div class="govuk-summary-list__row">
             <dt class="govuk-summary-list__key">name
             </dt>
             <dd class="govuk-summary-list__value">                Brent Eleigh Woods            </dd>
+        </div>        <div class="govuk-summary-list__row">
+            <dt class="govuk-summary-list__key">start-date
+            </dt>
+            <dd class="govuk-summary-list__value">                2003-12-13            </dd>
         </div>        <div class="govuk-summary-list__row">
             <dt class="govuk-summary-list__key">entry-date
             </dt>
@@ -207,8 +210,8 @@ crossorigin="" />
             <th>entry-date</th>
             <th>resource</th>
             <th>line</th>
-            <th>geography</th>
             <th>name</th>
+            <th>geography</th>
             <th>start-date</th>
             <th>geometry</th>
         </tr>
@@ -217,8 +220,8 @@ crossorigin="" />
             <td>2021-05-27</td>
             <td><a href="https://github.com/digital-land/site-of-special-scientific-interest-collection/tree/main/transformed/site-of-special-scientific-interest/58d5ad603e37f139c0d24a49567acb8d6c2101616133624c90eeb5aa196f8659.csv#L495">58d5ad603e37...</a></td>
             <td>494</td>
-                <td>site-of-special-scientific-interest:TL936466</td> 
                 <td>Brent Eleigh Woods</td> 
+                <td>site-of-special-scientific-interest:TL936466</td> 
                 <td>2003-12-13</td> 
                 <td class="data-table__notes-cell data-table__cell--min-width-4">
                     <details class="govuk-details">
@@ -234,29 +237,10 @@ crossorigin="" />
                 </td>
         </tr>        <tr>
             <td>2021-05-27</td>
-            <td><a href="https://github.com/digital-land/site-of-special-scientific-interest-collection/tree/main/transformed/site-of-special-scientific-interest/58d5ad603e37f139c0d24a49567acb8d6c2101616133624c90eeb5aa196f8659.csv#L494">58d5ad603e37...</a></td>
-            <td>493</td>
-                <td>site-of-special-scientific-interest:TL936466</td> 
-                <td>Brent Eleigh Woods</td> 
-                <td>2003-12-13</td> 
-                <td class="data-table__notes-cell data-table__cell--min-width-4">
-                    <details class="govuk-details">
-  <summary class="govuk-details__summary">
-    <span class="govuk-details__summary-text">
-      See WKT
-    </span>
-  </summary>
-  <div class="govuk-details__text">
-    MULTIPOLYGON (((0.840301 52.102302,0.840360 52.102304,0.840486 52.102228,0.840672 52.101655,0.840836 52.101555,0.841693 52.101366,0.842422 52.101380,0.842610 52.101432,0.843269 52.101739,0.843322 52.101792,0.843973 52.101419,0.844830 52.101029,0.845128 52.100610,0.844770 52.100607,0.844264 52.100693,0.844026 52.100525,0.843631 52.100386,0.843586 52.100157,0.843566 52.099731,0.843608 52.099707,0.843646 52.099513,0.843556 52.099500,0.843623 52.099267,0.843602 52.099197,0.843269 52.099235,0.842804 52.099342,0.842556 52.099438,0.842160 52.099803,0.841709 52.100037,0.841515 52.100122,0.841070 52.100212,0.840555 52.100368,0.840543 52.100477,0.840315 52.100576,0.840126 52.100747,0.840122 52.100843,0.839772 52.101247,0.839726 52.101468,0.839844 52.101729,0.840048 52.101837,0.839949 52.101955,0.840113 52.102100,0.840120 52.102189,0.840084 52.102291,0.840174 52.102327,0.840301 52.102302)))
-  </div>
-</details>
-                </td>
-        </tr>        <tr>
-            <td>2021-05-27</td>
             <td><a href="https://github.com/digital-land/site-of-special-scientific-interest-collection/tree/main/transformed/site-of-special-scientific-interest/58d5ad603e37f139c0d24a49567acb8d6c2101616133624c90eeb5aa196f8659.csv#L493">58d5ad603e37...</a></td>
             <td>492</td>
-                <td>site-of-special-scientific-interest:TL936466</td> 
                 <td>Brent Eleigh Woods</td> 
+                <td>site-of-special-scientific-interest:TL936466</td> 
                 <td>2003-12-13</td> 
                 <td class="data-table__notes-cell data-table__cell--min-width-4">
                     <details class="govuk-details">
@@ -267,6 +251,25 @@ crossorigin="" />
   </summary>
   <div class="govuk-details__text">
     MULTIPOLYGON (((0.830048 52.086259,0.831287 52.085952,0.831533 52.085842,0.831206 52.085600,0.830501 52.084945,0.830146 52.085022,0.829414 52.084759,0.829314 52.084646,0.829187 52.084602,0.828980 52.084572,0.828791 52.084605,0.828162 52.084601,0.827924 52.084503,0.827817 52.084405,0.827686 52.084350,0.827374 52.084030,0.827297 52.083836,0.827305 52.083487,0.827207 52.083446,0.826783 52.083385,0.826573 52.083290,0.826497 52.083201,0.826334 52.082800,0.826243 52.082701,0.825850 52.082984,0.825326 52.082599,0.825090 52.082563,0.824553 52.082289,0.824341 52.082219,0.824170 52.082488,0.824083 52.082501,0.824051 52.082539,0.823411 52.082808,0.822906 52.082976,0.822679 52.082981,0.822182 52.082770,0.822849 52.082206,0.823353 52.081662,0.822831 52.081513,0.823117 52.081087,0.823140 52.080994,0.823000 52.080993,0.822976 52.081020,0.822837 52.080960,0.822095 52.080897,0.821689 52.080960,0.821176 52.081149,0.821524 52.081430,0.821299 52.081608,0.821154 52.081793,0.821545 52.081921,0.821575 52.081985,0.821360 52.082253,0.820936 52.082493,0.820070 52.082770,0.820493 52.083040,0.821338 52.083486,0.821045 52.083669,0.820780 52.083884,0.821293 52.084094,0.820122 52.085013,0.820632 52.085283,0.821342 52.085757,0.821400 52.085758,0.822002 52.085483,0.822131 52.085489,0.822385 52.085641,0.823140 52.086196,0.823662 52.086459,0.824138 52.086132,0.824586 52.085692,0.824745 52.085443,0.825481 52.085693,0.825633 52.085796,0.826237 52.086077,0.827032 52.085311,0.827152 52.085293,0.828067 52.085460,0.828667 52.085661,0.829300 52.086231,0.829612 52.086389,0.830048 52.086259)))
+  </div>
+</details>
+                </td>
+        </tr>        <tr>
+            <td>2021-05-27</td>
+            <td><a href="https://github.com/digital-land/site-of-special-scientific-interest-collection/tree/main/transformed/site-of-special-scientific-interest/58d5ad603e37f139c0d24a49567acb8d6c2101616133624c90eeb5aa196f8659.csv#L494">58d5ad603e37...</a></td>
+            <td>493</td>
+                <td>Brent Eleigh Woods</td> 
+                <td>site-of-special-scientific-interest:TL936466</td> 
+                <td>2003-12-13</td> 
+                <td class="data-table__notes-cell data-table__cell--min-width-4">
+                    <details class="govuk-details">
+  <summary class="govuk-details__summary">
+    <span class="govuk-details__summary-text">
+      See WKT
+    </span>
+  </summary>
+  <div class="govuk-details__text">
+    MULTIPOLYGON (((0.840301 52.102302,0.840360 52.102304,0.840486 52.102228,0.840672 52.101655,0.840836 52.101555,0.841693 52.101366,0.842422 52.101380,0.842610 52.101432,0.843269 52.101739,0.843322 52.101792,0.843973 52.101419,0.844830 52.101029,0.845128 52.100610,0.844770 52.100607,0.844264 52.100693,0.844026 52.100525,0.843631 52.100386,0.843586 52.100157,0.843566 52.099731,0.843608 52.099707,0.843646 52.099513,0.843556 52.099500,0.843623 52.099267,0.843602 52.099197,0.843269 52.099235,0.842804 52.099342,0.842556 52.099438,0.842160 52.099803,0.841709 52.100037,0.841515 52.100122,0.841070 52.100212,0.840555 52.100368,0.840543 52.100477,0.840315 52.100576,0.840126 52.100747,0.840122 52.100843,0.839772 52.101247,0.839726 52.101468,0.839844 52.101729,0.840048 52.101837,0.839949 52.101955,0.840113 52.102100,0.840120 52.102189,0.840084 52.102291,0.840174 52.102327,0.840301 52.102302)))
   </div>
 </details>
                 </td>

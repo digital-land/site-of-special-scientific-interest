@@ -11,7 +11,10 @@
 <link rel="shortcut icon" sizes="32x32" href="/images/favicon-32x32.png" type="image/png">
 <link rel="shortcut icon" sizes="16x16" href="/images/favicon-16x16.png" type="image/png">
 <link rel="apple-touch-icon" href="/images/apple-touch-icon.png">
-	<meta name="digital-land:template" content="page-per-thing/record.html"><!-- should make this optional, no need to load if not showing a map -->
+	<meta name="digital-land:template" content="page-per-thing/record.html">
+<script src="https://polyfill.io/v3/polyfill.min.js?features=fetch%2CPromise%2Ces6%2Ces5%2Ces2015%2Ces2016%2CURL%2CURLSearchParams%2CObject.entries%2CObject.fromEntries%2CAbortController"></script>
+
+<!-- should make this optional, no need to load if not showing a map -->
 <link rel="stylesheet" href="https://unpkg.com/leaflet@1.6.0/dist/leaflet.css"
 integrity="sha512-xwE/Az9zrjBIphAcBb3F6JVqxf46+CDLwfLMHloNu6KEQCAWi6HcDUbeOfBIptF7tcCzusKFjFw2yuvEpDL9wQ=="
 crossorigin="" />
@@ -158,13 +161,13 @@ crossorigin="" />
             </dt>
             <dd class="govuk-summary-list__value">                2004-01-30            </dd>
         </div>        <div class="govuk-summary-list__row">
-            <dt class="govuk-summary-list__key">name
-            </dt>
-            <dd class="govuk-summary-list__value">                Stokeford Heaths            </dd>
-        </div>        <div class="govuk-summary-list__row">
             <dt class="govuk-summary-list__key">geography
             </dt>
             <dd class="govuk-summary-list__value">                site-of-special-scientific-interest:SY854903            </dd>
+        </div>        <div class="govuk-summary-list__row">
+            <dt class="govuk-summary-list__key">name
+            </dt>
+            <dd class="govuk-summary-list__value">                Stokeford Heaths            </dd>
         </div>        <div class="govuk-summary-list__row">
             <dt class="govuk-summary-list__key">entry-date
             </dt>
@@ -207,38 +210,19 @@ crossorigin="" />
             <th>entry-date</th>
             <th>resource</th>
             <th>line</th>
+            <th>start-date</th>
             <th>name</th>
             <th>geography</th>
-            <th>start-date</th>
             <th>geometry</th>
         </tr>
     </thead>
     <tbody>        <tr>
             <td>2021-05-27</td>
-            <td><a href="https://github.com/digital-land/site-of-special-scientific-interest-collection/tree/main/transformed/site-of-special-scientific-interest/58d5ad603e37f139c0d24a49567acb8d6c2101616133624c90eeb5aa196f8659.csv#L7863">58d5ad603e37...</a></td>
-            <td>7862</td>
-                <td>Stokeford Heaths</td> 
-                <td>site-of-special-scientific-interest:SY854903</td> 
-                <td>2004-01-30</td> 
-                <td class="data-table__notes-cell data-table__cell--min-width-4">
-                    <details class="govuk-details">
-  <summary class="govuk-details__summary">
-    <span class="govuk-details__summary-text">
-      See WKT
-    </span>
-  </summary>
-  <div class="govuk-details__text">
-    MULTIPOLYGON (((-2.192959 50.699046,-2.192106 50.699029,-2.192098 50.698698,-2.192238 50.698496,-2.192223 50.698241,-2.192153 50.698035,-2.192337 50.697679,-2.192578 50.697339,-2.192747 50.697231,-2.193002 50.697262,-2.193232 50.697346,-2.193742 50.697630,-2.194301 50.698104,-2.194148 50.698230,-2.194164 50.698267,-2.194490 50.698423,-2.193248 50.699130,-2.192959 50.699046)))
-  </div>
-</details>
-                </td>
-        </tr>        <tr>
-            <td>2021-05-27</td>
             <td><a href="https://github.com/digital-land/site-of-special-scientific-interest-collection/tree/main/transformed/site-of-special-scientific-interest/58d5ad603e37f139c0d24a49567acb8d6c2101616133624c90eeb5aa196f8659.csv#L7858">58d5ad603e37...</a></td>
             <td>7857</td>
+                <td>2004-01-30</td> 
                 <td>Stokeford Heaths</td> 
                 <td>site-of-special-scientific-interest:SY854903</td> 
-                <td>2004-01-30</td> 
                 <td class="data-table__notes-cell data-table__cell--min-width-4">
                     <details class="govuk-details">
   <summary class="govuk-details__summary">
@@ -253,11 +237,11 @@ crossorigin="" />
                 </td>
         </tr>        <tr>
             <td>2021-05-27</td>
-            <td><a href="https://github.com/digital-land/site-of-special-scientific-interest-collection/tree/main/transformed/site-of-special-scientific-interest/58d5ad603e37f139c0d24a49567acb8d6c2101616133624c90eeb5aa196f8659.csv#L7865">58d5ad603e37...</a></td>
-            <td>7864</td>
+            <td><a href="https://github.com/digital-land/site-of-special-scientific-interest-collection/tree/main/transformed/site-of-special-scientific-interest/58d5ad603e37f139c0d24a49567acb8d6c2101616133624c90eeb5aa196f8659.csv#L7855">58d5ad603e37...</a></td>
+            <td>7854</td>
+                <td>2004-01-30</td> 
                 <td>Stokeford Heaths</td> 
                 <td>site-of-special-scientific-interest:SY854903</td> 
-                <td>2004-01-30</td> 
                 <td class="data-table__notes-cell data-table__cell--min-width-4">
                     <details class="govuk-details">
   <summary class="govuk-details__summary">
@@ -266,17 +250,17 @@ crossorigin="" />
     </span>
   </summary>
   <div class="govuk-details__text">
-    MULTIPOLYGON (((-2.204052 50.693814,-2.204123 50.693737,-2.204170 50.693903,-2.204520 50.694229,-2.204886 50.694457,-2.205027 50.694626,-2.205036 50.694761,-2.204932 50.695265,-2.204871 50.695426,-2.204803 50.695878,-2.204361 50.695593,-2.203936 50.695238,-2.203756 50.694877,-2.203700 50.694530,-2.203842 50.694109,-2.204052 50.693814)))
+    MULTIPOLYGON (((-2.202223 50.712369,-2.204015 50.711186,-2.202349 50.709617,-2.202049 50.709565,-2.203497 50.709039,-2.205115 50.708658,-2.205833 50.708452,-2.206411 50.708792,-2.206356 50.708906,-2.206488 50.709070,-2.206759 50.709203,-2.206926 50.709223,-2.207400 50.709047,-2.207639 50.709000,-2.207876 50.709047,-2.207865 50.709083,-2.208045 50.709319,-2.208042 50.709521,-2.208232 50.709730,-2.208035 50.709946,-2.208079 50.710111,-2.208766 50.710201,-2.209221 50.710409,-2.209456 50.710655,-2.209578 50.710953,-2.209558 50.711158,-2.209715 50.711233,-2.209969 50.711246,-2.210438 50.711108,-2.210717 50.710901,-2.211145 50.709950,-2.213099 50.710752,-2.213104 50.710832,-2.213035 50.710856,-2.213126 50.710900,-2.213096 50.710960,-2.213004 50.710997,-2.212259 50.711020,-2.211525 50.711108,-2.211344 50.711158,-2.211313 50.711195,-2.211642 50.711401,-2.212049 50.711488,-2.212394 50.711491,-2.212724 50.711596,-2.212486 50.711877,-2.212511 50.712144,-2.212426 50.712387,-2.212340 50.712529,-2.211698 50.713042,-2.211269 50.713325,-2.206326 50.717360,-2.206147 50.717187,-2.203827 50.714364,-2.202549 50.712909,-2.202392 50.712540,-2.202223 50.712369)))
   </div>
 </details>
                 </td>
         </tr>        <tr>
             <td>2021-05-27</td>
-            <td><a href="https://github.com/digital-land/site-of-special-scientific-interest-collection/tree/main/transformed/site-of-special-scientific-interest/58d5ad603e37f139c0d24a49567acb8d6c2101616133624c90eeb5aa196f8659.csv#L7867">58d5ad603e37...</a></td>
-            <td>7866</td>
+            <td><a href="https://github.com/digital-land/site-of-special-scientific-interest-collection/tree/main/transformed/site-of-special-scientific-interest/58d5ad603e37f139c0d24a49567acb8d6c2101616133624c90eeb5aa196f8659.csv#L7861">58d5ad603e37...</a></td>
+            <td>7860</td>
+                <td>2004-01-30</td> 
                 <td>Stokeford Heaths</td> 
                 <td>site-of-special-scientific-interest:SY854903</td> 
-                <td>2004-01-30</td> 
                 <td class="data-table__notes-cell data-table__cell--min-width-4">
                     <details class="govuk-details">
   <summary class="govuk-details__summary">
@@ -285,7 +269,7 @@ crossorigin="" />
     </span>
   </summary>
   <div class="govuk-details__text">
-    MULTIPOLYGON (((-2.204297 50.693818,-2.204257 50.693736,-2.204636 50.693751,-2.204948 50.693788,-2.205348 50.693908,-2.205519 50.694074,-2.205559 50.694295,-2.205497 50.694410,-2.205203 50.694561,-2.205197 50.694484,-2.204970 50.694387,-2.204538 50.694089,-2.204297 50.693818)))
+    MULTIPOLYGON (((-2.185946 50.697262,-2.186037 50.697135,-2.189657 50.698847,-2.190504 50.699174,-2.191269 50.699421,-2.191312 50.699452,-2.191315 50.699506,-2.188885 50.701432,-2.185707 50.700483,-2.186382 50.699034,-2.185380 50.698889,-2.185570 50.698107,-2.185727 50.697697,-2.185946 50.697262)))
   </div>
 </details>
                 </td>
@@ -293,9 +277,9 @@ crossorigin="" />
             <td>2021-05-27</td>
             <td><a href="https://github.com/digital-land/site-of-special-scientific-interest-collection/tree/main/transformed/site-of-special-scientific-interest/58d5ad603e37f139c0d24a49567acb8d6c2101616133624c90eeb5aa196f8659.csv#L7860">58d5ad603e37...</a></td>
             <td>7859</td>
+                <td>2004-01-30</td> 
                 <td>Stokeford Heaths</td> 
                 <td>site-of-special-scientific-interest:SY854903</td> 
-                <td>2004-01-30</td> 
                 <td class="data-table__notes-cell data-table__cell--min-width-4">
                     <details class="govuk-details">
   <summary class="govuk-details__summary">
@@ -312,9 +296,9 @@ crossorigin="" />
             <td>2021-05-27</td>
             <td><a href="https://github.com/digital-land/site-of-special-scientific-interest-collection/tree/main/transformed/site-of-special-scientific-interest/58d5ad603e37f139c0d24a49567acb8d6c2101616133624c90eeb5aa196f8659.csv#L7859">58d5ad603e37...</a></td>
             <td>7858</td>
+                <td>2004-01-30</td> 
                 <td>Stokeford Heaths</td> 
                 <td>site-of-special-scientific-interest:SY854903</td> 
-                <td>2004-01-30</td> 
                 <td class="data-table__notes-cell data-table__cell--min-width-4">
                     <details class="govuk-details">
   <summary class="govuk-details__summary">
@@ -331,9 +315,9 @@ crossorigin="" />
             <td>2021-05-27</td>
             <td><a href="https://github.com/digital-land/site-of-special-scientific-interest-collection/tree/main/transformed/site-of-special-scientific-interest/58d5ad603e37f139c0d24a49567acb8d6c2101616133624c90eeb5aa196f8659.csv#L7868">58d5ad603e37...</a></td>
             <td>7867</td>
+                <td>2004-01-30</td> 
                 <td>Stokeford Heaths</td> 
                 <td>site-of-special-scientific-interest:SY854903</td> 
-                <td>2004-01-30</td> 
                 <td class="data-table__notes-cell data-table__cell--min-width-4">
                     <details class="govuk-details">
   <summary class="govuk-details__summary">
@@ -348,11 +332,11 @@ crossorigin="" />
                 </td>
         </tr>        <tr>
             <td>2021-05-27</td>
-            <td><a href="https://github.com/digital-land/site-of-special-scientific-interest-collection/tree/main/transformed/site-of-special-scientific-interest/58d5ad603e37f139c0d24a49567acb8d6c2101616133624c90eeb5aa196f8659.csv#L7861">58d5ad603e37...</a></td>
-            <td>7860</td>
+            <td><a href="https://github.com/digital-land/site-of-special-scientific-interest-collection/tree/main/transformed/site-of-special-scientific-interest/58d5ad603e37f139c0d24a49567acb8d6c2101616133624c90eeb5aa196f8659.csv#L7862">58d5ad603e37...</a></td>
+            <td>7861</td>
+                <td>2004-01-30</td> 
                 <td>Stokeford Heaths</td> 
                 <td>site-of-special-scientific-interest:SY854903</td> 
-                <td>2004-01-30</td> 
                 <td class="data-table__notes-cell data-table__cell--min-width-4">
                     <details class="govuk-details">
   <summary class="govuk-details__summary">
@@ -361,7 +345,102 @@ crossorigin="" />
     </span>
   </summary>
   <div class="govuk-details__text">
-    MULTIPOLYGON (((-2.185946 50.697262,-2.186037 50.697135,-2.189657 50.698847,-2.190504 50.699174,-2.191269 50.699421,-2.191312 50.699452,-2.191315 50.699506,-2.188885 50.701432,-2.185707 50.700483,-2.186382 50.699034,-2.185380 50.698889,-2.185570 50.698107,-2.185727 50.697697,-2.185946 50.697262)))
+    MULTIPOLYGON (((-2.200955 50.703873,-2.200877 50.703795,-2.200810 50.703615,-2.201142 50.703248,-2.201169 50.703092,-2.201439 50.702641,-2.201679 50.702510,-2.201682 50.702283,-2.201805 50.702144,-2.201748 50.702045,-2.201784 50.701905,-2.202230 50.701884,-2.202893 50.701789,-2.203116 50.701802,-2.203968 50.702183,-2.203874 50.702224,-2.203396 50.702291,-2.203083 50.702243,-2.202729 50.702354,-2.202272 50.702438,-2.202143 50.702568,-2.202114 50.702896,-2.202152 50.703187,-2.202279 50.703467,-2.202324 50.703491,-2.202670 50.703587,-2.203448 50.703615,-2.203653 50.703670,-2.203895 50.703494,-2.205098 50.703284,-2.205387 50.703304,-2.205434 50.703225,-2.205646 50.703150,-2.205824 50.703017,-2.206630 50.703379,-2.206696 50.703446,-2.206500 50.703753,-2.206101 50.704192,-2.205309 50.703863,-2.205338 50.703897,-2.205034 50.703859,-2.204423 50.704439,-2.205544 50.704890,-2.204721 50.705840,-2.203532 50.705961,-2.203194 50.705881,-2.201419 50.705097,-2.201515 50.705027,-2.201552 50.704945,-2.201483 50.704802,-2.200796 50.704325,-2.200615 50.704152,-2.200635 50.704103,-2.200985 50.703949,-2.200996 50.703911,-2.200955 50.703873)))
+  </div>
+</details>
+                </td>
+        </tr>        <tr>
+            <td>2021-05-27</td>
+            <td><a href="https://github.com/digital-land/site-of-special-scientific-interest-collection/tree/main/transformed/site-of-special-scientific-interest/58d5ad603e37f139c0d24a49567acb8d6c2101616133624c90eeb5aa196f8659.csv#L7867">58d5ad603e37...</a></td>
+            <td>7866</td>
+                <td>2004-01-30</td> 
+                <td>Stokeford Heaths</td> 
+                <td>site-of-special-scientific-interest:SY854903</td> 
+                <td class="data-table__notes-cell data-table__cell--min-width-4">
+                    <details class="govuk-details">
+  <summary class="govuk-details__summary">
+    <span class="govuk-details__summary-text">
+      See WKT
+    </span>
+  </summary>
+  <div class="govuk-details__text">
+    MULTIPOLYGON (((-2.204297 50.693818,-2.204257 50.693736,-2.204636 50.693751,-2.204948 50.693788,-2.205348 50.693908,-2.205519 50.694074,-2.205559 50.694295,-2.205497 50.694410,-2.205203 50.694561,-2.205197 50.694484,-2.204970 50.694387,-2.204538 50.694089,-2.204297 50.693818)))
+  </div>
+</details>
+                </td>
+        </tr>        <tr>
+            <td>2021-05-27</td>
+            <td><a href="https://github.com/digital-land/site-of-special-scientific-interest-collection/tree/main/transformed/site-of-special-scientific-interest/58d5ad603e37f139c0d24a49567acb8d6c2101616133624c90eeb5aa196f8659.csv#L7863">58d5ad603e37...</a></td>
+            <td>7862</td>
+                <td>2004-01-30</td> 
+                <td>Stokeford Heaths</td> 
+                <td>site-of-special-scientific-interest:SY854903</td> 
+                <td class="data-table__notes-cell data-table__cell--min-width-4">
+                    <details class="govuk-details">
+  <summary class="govuk-details__summary">
+    <span class="govuk-details__summary-text">
+      See WKT
+    </span>
+  </summary>
+  <div class="govuk-details__text">
+    MULTIPOLYGON (((-2.192959 50.699046,-2.192106 50.699029,-2.192098 50.698698,-2.192238 50.698496,-2.192223 50.698241,-2.192153 50.698035,-2.192337 50.697679,-2.192578 50.697339,-2.192747 50.697231,-2.193002 50.697262,-2.193232 50.697346,-2.193742 50.697630,-2.194301 50.698104,-2.194148 50.698230,-2.194164 50.698267,-2.194490 50.698423,-2.193248 50.699130,-2.192959 50.699046)))
+  </div>
+</details>
+                </td>
+        </tr>        <tr>
+            <td>2021-05-27</td>
+            <td><a href="https://github.com/digital-land/site-of-special-scientific-interest-collection/tree/main/transformed/site-of-special-scientific-interest/58d5ad603e37f139c0d24a49567acb8d6c2101616133624c90eeb5aa196f8659.csv#L7866">58d5ad603e37...</a></td>
+            <td>7865</td>
+                <td>2004-01-30</td> 
+                <td>Stokeford Heaths</td> 
+                <td>site-of-special-scientific-interest:SY854903</td> 
+                <td class="data-table__notes-cell data-table__cell--min-width-4">
+                    <details class="govuk-details">
+  <summary class="govuk-details__summary">
+    <span class="govuk-details__summary-text">
+      See WKT
+    </span>
+  </summary>
+  <div class="govuk-details__text">
+    MULTIPOLYGON (((-2.202095 50.701820,-2.201816 50.701785,-2.201662 50.701695,-2.201605 50.701582,-2.201775 50.701452,-2.201388 50.701121,-2.201248 50.701053,-2.201069 50.701006,-2.200740 50.700994,-2.200110 50.701219,-2.200050 50.701222,-2.200020 50.701184,-2.200172 50.701093,-2.200398 50.701030,-2.200627 50.700880,-2.200783 50.700679,-2.200802 50.700583,-2.200777 50.700496,-2.203169 50.701742,-2.203043 50.701728,-2.202095 50.701820)))
+  </div>
+</details>
+                </td>
+        </tr>        <tr>
+            <td>2021-05-27</td>
+            <td><a href="https://github.com/digital-land/site-of-special-scientific-interest-collection/tree/main/transformed/site-of-special-scientific-interest/58d5ad603e37f139c0d24a49567acb8d6c2101616133624c90eeb5aa196f8659.csv#L7865">58d5ad603e37...</a></td>
+            <td>7864</td>
+                <td>2004-01-30</td> 
+                <td>Stokeford Heaths</td> 
+                <td>site-of-special-scientific-interest:SY854903</td> 
+                <td class="data-table__notes-cell data-table__cell--min-width-4">
+                    <details class="govuk-details">
+  <summary class="govuk-details__summary">
+    <span class="govuk-details__summary-text">
+      See WKT
+    </span>
+  </summary>
+  <div class="govuk-details__text">
+    MULTIPOLYGON (((-2.204052 50.693814,-2.204123 50.693737,-2.204170 50.693903,-2.204520 50.694229,-2.204886 50.694457,-2.205027 50.694626,-2.205036 50.694761,-2.204932 50.695265,-2.204871 50.695426,-2.204803 50.695878,-2.204361 50.695593,-2.203936 50.695238,-2.203756 50.694877,-2.203700 50.694530,-2.203842 50.694109,-2.204052 50.693814)))
+  </div>
+</details>
+                </td>
+        </tr>        <tr>
+            <td>2021-05-27</td>
+            <td><a href="https://github.com/digital-land/site-of-special-scientific-interest-collection/tree/main/transformed/site-of-special-scientific-interest/58d5ad603e37f139c0d24a49567acb8d6c2101616133624c90eeb5aa196f8659.csv#L7856">58d5ad603e37...</a></td>
+            <td>7855</td>
+                <td>2004-01-30</td> 
+                <td>Stokeford Heaths</td> 
+                <td>site-of-special-scientific-interest:SY854903</td> 
+                <td class="data-table__notes-cell data-table__cell--min-width-4">
+                    <details class="govuk-details">
+  <summary class="govuk-details__summary">
+    <span class="govuk-details__summary-text">
+      See WKT
+    </span>
+  </summary>
+  <div class="govuk-details__text">
+    MULTIPOLYGON (((-2.199630 50.708162,-2.193193 50.704487,-2.192647 50.704248,-2.192277 50.704149,-2.189878 50.702327,-2.189798 50.702324,-2.189131 50.701508,-2.188974 50.701458,-2.190173 50.700509,-2.190635 50.700715,-2.191183 50.701018,-2.192174 50.701461,-2.192442 50.701620,-2.193518 50.701289,-2.194076 50.701151,-2.194626 50.701079,-2.195078 50.701072,-2.196620 50.701944,-2.197525 50.702517,-2.197533 50.702658,-2.197412 50.702814,-2.197290 50.702794,-2.197004 50.702677,-2.196681 50.702670,-2.196545 50.702729,-2.196327 50.702970,-2.196326 50.703239,-2.196685 50.703246,-2.196901 50.703322,-2.196716 50.703939,-2.197389 50.704380,-2.197260 50.704415,-2.197444 50.704668,-2.197935 50.704891,-2.198304 50.705228,-2.198520 50.705329,-2.198754 50.705384,-2.198980 50.705352,-2.199189 50.705378,-2.199790 50.705840,-2.199881 50.705954,-2.199933 50.706101,-2.199907 50.706211,-2.199817 50.706337,-2.199844 50.706419,-2.200298 50.706830,-2.200510 50.706916,-2.200841 50.706949,-2.200917 50.706852,-2.201217 50.706758,-2.202418 50.706013,-2.203015 50.706417,-2.203129 50.706441,-2.203763 50.706744,-2.203953 50.706871,-2.204389 50.707063,-2.204606 50.707118,-2.206601 50.708010,-2.206670 50.708084,-2.206517 50.708184,-2.205221 50.708596,-2.203470 50.708981,-2.202007 50.709537,-2.201978 50.709523,-2.201960 50.709404,-2.201332 50.709127,-2.199630 50.708162)))
   </div>
 </details>
                 </td>
@@ -369,9 +448,9 @@ crossorigin="" />
             <td>2021-05-27</td>
             <td><a href="https://github.com/digital-land/site-of-special-scientific-interest-collection/tree/main/transformed/site-of-special-scientific-interest/58d5ad603e37f139c0d24a49567acb8d6c2101616133624c90eeb5aa196f8659.csv#L7857">58d5ad603e37...</a></td>
             <td>7856</td>
+                <td>2004-01-30</td> 
                 <td>Stokeford Heaths</td> 
                 <td>site-of-special-scientific-interest:SY854903</td> 
-                <td>2004-01-30</td> 
                 <td class="data-table__notes-cell data-table__cell--min-width-4">
                     <details class="govuk-details">
   <summary class="govuk-details__summary">
@@ -388,9 +467,9 @@ crossorigin="" />
             <td>2021-05-27</td>
             <td><a href="https://github.com/digital-land/site-of-special-scientific-interest-collection/tree/main/transformed/site-of-special-scientific-interest/58d5ad603e37f139c0d24a49567acb8d6c2101616133624c90eeb5aa196f8659.csv#L7864">58d5ad603e37...</a></td>
             <td>7863</td>
+                <td>2004-01-30</td> 
                 <td>Stokeford Heaths</td> 
                 <td>site-of-special-scientific-interest:SY854903</td> 
-                <td>2004-01-30</td> 
                 <td class="data-table__notes-cell data-table__cell--min-width-4">
                     <details class="govuk-details">
   <summary class="govuk-details__summary">
@@ -400,82 +479,6 @@ crossorigin="" />
   </summary>
   <div class="govuk-details__text">
     MULTIPOLYGON (((-2.200743 50.695940,-2.200770 50.695917,-2.202079 50.696308,-2.202217 50.696312,-2.202200 50.696703,-2.202130 50.696895,-2.202158 50.697321,-2.201927 50.697614,-2.201755 50.697893,-2.201751 50.697586,-2.201786 50.697501,-2.201792 50.697298,-2.201850 50.697186,-2.201832 50.697095,-2.200192 50.696653,-2.200743 50.695940)))
-  </div>
-</details>
-                </td>
-        </tr>        <tr>
-            <td>2021-05-27</td>
-            <td><a href="https://github.com/digital-land/site-of-special-scientific-interest-collection/tree/main/transformed/site-of-special-scientific-interest/58d5ad603e37f139c0d24a49567acb8d6c2101616133624c90eeb5aa196f8659.csv#L7866">58d5ad603e37...</a></td>
-            <td>7865</td>
-                <td>Stokeford Heaths</td> 
-                <td>site-of-special-scientific-interest:SY854903</td> 
-                <td>2004-01-30</td> 
-                <td class="data-table__notes-cell data-table__cell--min-width-4">
-                    <details class="govuk-details">
-  <summary class="govuk-details__summary">
-    <span class="govuk-details__summary-text">
-      See WKT
-    </span>
-  </summary>
-  <div class="govuk-details__text">
-    MULTIPOLYGON (((-2.202095 50.701820,-2.201816 50.701785,-2.201662 50.701695,-2.201605 50.701582,-2.201775 50.701452,-2.201388 50.701121,-2.201248 50.701053,-2.201069 50.701006,-2.200740 50.700994,-2.200110 50.701219,-2.200050 50.701222,-2.200020 50.701184,-2.200172 50.701093,-2.200398 50.701030,-2.200627 50.700880,-2.200783 50.700679,-2.200802 50.700583,-2.200777 50.700496,-2.203169 50.701742,-2.203043 50.701728,-2.202095 50.701820)))
-  </div>
-</details>
-                </td>
-        </tr>        <tr>
-            <td>2021-05-27</td>
-            <td><a href="https://github.com/digital-land/site-of-special-scientific-interest-collection/tree/main/transformed/site-of-special-scientific-interest/58d5ad603e37f139c0d24a49567acb8d6c2101616133624c90eeb5aa196f8659.csv#L7862">58d5ad603e37...</a></td>
-            <td>7861</td>
-                <td>Stokeford Heaths</td> 
-                <td>site-of-special-scientific-interest:SY854903</td> 
-                <td>2004-01-30</td> 
-                <td class="data-table__notes-cell data-table__cell--min-width-4">
-                    <details class="govuk-details">
-  <summary class="govuk-details__summary">
-    <span class="govuk-details__summary-text">
-      See WKT
-    </span>
-  </summary>
-  <div class="govuk-details__text">
-    MULTIPOLYGON (((-2.200955 50.703873,-2.200877 50.703795,-2.200810 50.703615,-2.201142 50.703248,-2.201169 50.703092,-2.201439 50.702641,-2.201679 50.702510,-2.201682 50.702283,-2.201805 50.702144,-2.201748 50.702045,-2.201784 50.701905,-2.202230 50.701884,-2.202893 50.701789,-2.203116 50.701802,-2.203968 50.702183,-2.203874 50.702224,-2.203396 50.702291,-2.203083 50.702243,-2.202729 50.702354,-2.202272 50.702438,-2.202143 50.702568,-2.202114 50.702896,-2.202152 50.703187,-2.202279 50.703467,-2.202324 50.703491,-2.202670 50.703587,-2.203448 50.703615,-2.203653 50.703670,-2.203895 50.703494,-2.205098 50.703284,-2.205387 50.703304,-2.205434 50.703225,-2.205646 50.703150,-2.205824 50.703017,-2.206630 50.703379,-2.206696 50.703446,-2.206500 50.703753,-2.206101 50.704192,-2.205309 50.703863,-2.205338 50.703897,-2.205034 50.703859,-2.204423 50.704439,-2.205544 50.704890,-2.204721 50.705840,-2.203532 50.705961,-2.203194 50.705881,-2.201419 50.705097,-2.201515 50.705027,-2.201552 50.704945,-2.201483 50.704802,-2.200796 50.704325,-2.200615 50.704152,-2.200635 50.704103,-2.200985 50.703949,-2.200996 50.703911,-2.200955 50.703873)))
-  </div>
-</details>
-                </td>
-        </tr>        <tr>
-            <td>2021-05-27</td>
-            <td><a href="https://github.com/digital-land/site-of-special-scientific-interest-collection/tree/main/transformed/site-of-special-scientific-interest/58d5ad603e37f139c0d24a49567acb8d6c2101616133624c90eeb5aa196f8659.csv#L7855">58d5ad603e37...</a></td>
-            <td>7854</td>
-                <td>Stokeford Heaths</td> 
-                <td>site-of-special-scientific-interest:SY854903</td> 
-                <td>2004-01-30</td> 
-                <td class="data-table__notes-cell data-table__cell--min-width-4">
-                    <details class="govuk-details">
-  <summary class="govuk-details__summary">
-    <span class="govuk-details__summary-text">
-      See WKT
-    </span>
-  </summary>
-  <div class="govuk-details__text">
-    MULTIPOLYGON (((-2.202223 50.712369,-2.204015 50.711186,-2.202349 50.709617,-2.202049 50.709565,-2.203497 50.709039,-2.205115 50.708658,-2.205833 50.708452,-2.206411 50.708792,-2.206356 50.708906,-2.206488 50.709070,-2.206759 50.709203,-2.206926 50.709223,-2.207400 50.709047,-2.207639 50.709000,-2.207876 50.709047,-2.207865 50.709083,-2.208045 50.709319,-2.208042 50.709521,-2.208232 50.709730,-2.208035 50.709946,-2.208079 50.710111,-2.208766 50.710201,-2.209221 50.710409,-2.209456 50.710655,-2.209578 50.710953,-2.209558 50.711158,-2.209715 50.711233,-2.209969 50.711246,-2.210438 50.711108,-2.210717 50.710901,-2.211145 50.709950,-2.213099 50.710752,-2.213104 50.710832,-2.213035 50.710856,-2.213126 50.710900,-2.213096 50.710960,-2.213004 50.710997,-2.212259 50.711020,-2.211525 50.711108,-2.211344 50.711158,-2.211313 50.711195,-2.211642 50.711401,-2.212049 50.711488,-2.212394 50.711491,-2.212724 50.711596,-2.212486 50.711877,-2.212511 50.712144,-2.212426 50.712387,-2.212340 50.712529,-2.211698 50.713042,-2.211269 50.713325,-2.206326 50.717360,-2.206147 50.717187,-2.203827 50.714364,-2.202549 50.712909,-2.202392 50.712540,-2.202223 50.712369)))
-  </div>
-</details>
-                </td>
-        </tr>        <tr>
-            <td>2021-05-27</td>
-            <td><a href="https://github.com/digital-land/site-of-special-scientific-interest-collection/tree/main/transformed/site-of-special-scientific-interest/58d5ad603e37f139c0d24a49567acb8d6c2101616133624c90eeb5aa196f8659.csv#L7856">58d5ad603e37...</a></td>
-            <td>7855</td>
-                <td>Stokeford Heaths</td> 
-                <td>site-of-special-scientific-interest:SY854903</td> 
-                <td>2004-01-30</td> 
-                <td class="data-table__notes-cell data-table__cell--min-width-4">
-                    <details class="govuk-details">
-  <summary class="govuk-details__summary">
-    <span class="govuk-details__summary-text">
-      See WKT
-    </span>
-  </summary>
-  <div class="govuk-details__text">
-    MULTIPOLYGON (((-2.199630 50.708162,-2.193193 50.704487,-2.192647 50.704248,-2.192277 50.704149,-2.189878 50.702327,-2.189798 50.702324,-2.189131 50.701508,-2.188974 50.701458,-2.190173 50.700509,-2.190635 50.700715,-2.191183 50.701018,-2.192174 50.701461,-2.192442 50.701620,-2.193518 50.701289,-2.194076 50.701151,-2.194626 50.701079,-2.195078 50.701072,-2.196620 50.701944,-2.197525 50.702517,-2.197533 50.702658,-2.197412 50.702814,-2.197290 50.702794,-2.197004 50.702677,-2.196681 50.702670,-2.196545 50.702729,-2.196327 50.702970,-2.196326 50.703239,-2.196685 50.703246,-2.196901 50.703322,-2.196716 50.703939,-2.197389 50.704380,-2.197260 50.704415,-2.197444 50.704668,-2.197935 50.704891,-2.198304 50.705228,-2.198520 50.705329,-2.198754 50.705384,-2.198980 50.705352,-2.199189 50.705378,-2.199790 50.705840,-2.199881 50.705954,-2.199933 50.706101,-2.199907 50.706211,-2.199817 50.706337,-2.199844 50.706419,-2.200298 50.706830,-2.200510 50.706916,-2.200841 50.706949,-2.200917 50.706852,-2.201217 50.706758,-2.202418 50.706013,-2.203015 50.706417,-2.203129 50.706441,-2.203763 50.706744,-2.203953 50.706871,-2.204389 50.707063,-2.204606 50.707118,-2.206601 50.708010,-2.206670 50.708084,-2.206517 50.708184,-2.205221 50.708596,-2.203470 50.708981,-2.202007 50.709537,-2.201978 50.709523,-2.201960 50.709404,-2.201332 50.709127,-2.199630 50.708162)))
   </div>
 </details>
                 </td>

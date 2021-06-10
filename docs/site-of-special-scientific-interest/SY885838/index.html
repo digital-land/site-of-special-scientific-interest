@@ -11,7 +11,10 @@
 <link rel="shortcut icon" sizes="32x32" href="/images/favicon-32x32.png" type="image/png">
 <link rel="shortcut icon" sizes="16x16" href="/images/favicon-16x16.png" type="image/png">
 <link rel="apple-touch-icon" href="/images/apple-touch-icon.png">
-	<meta name="digital-land:template" content="page-per-thing/record.html"><!-- should make this optional, no need to load if not showing a map -->
+	<meta name="digital-land:template" content="page-per-thing/record.html">
+<script src="https://polyfill.io/v3/polyfill.min.js?features=fetch%2CPromise%2Ces6%2Ces5%2Ces2015%2Ces2016%2CURL%2CURLSearchParams%2CObject.entries%2CObject.fromEntries%2CAbortController"></script>
+
+<!-- should make this optional, no need to load if not showing a map -->
 <link rel="stylesheet" href="https://unpkg.com/leaflet@1.6.0/dist/leaflet.css"
 integrity="sha512-xwE/Az9zrjBIphAcBb3F6JVqxf46+CDLwfLMHloNu6KEQCAWi6HcDUbeOfBIptF7tcCzusKFjFw2yuvEpDL9wQ=="
 crossorigin="" />
@@ -158,13 +161,13 @@ crossorigin="" />
             </dt>
             <dd class="govuk-summary-list__value">                2014-01-16            </dd>
         </div>        <div class="govuk-summary-list__row">
-            <dt class="govuk-summary-list__key">geography
-            </dt>
-            <dd class="govuk-summary-list__value">                site-of-special-scientific-interest:SY885838            </dd>
-        </div>        <div class="govuk-summary-list__row">
             <dt class="govuk-summary-list__key">name
             </dt>
             <dd class="govuk-summary-list__value">                Povington and Grange Heaths            </dd>
+        </div>        <div class="govuk-summary-list__row">
+            <dt class="govuk-summary-list__key">geography
+            </dt>
+            <dd class="govuk-summary-list__value">                site-of-special-scientific-interest:SY885838            </dd>
         </div>        <div class="govuk-summary-list__row">
             <dt class="govuk-summary-list__key">entry-date
             </dt>
@@ -207,19 +210,38 @@ crossorigin="" />
             <th>entry-date</th>
             <th>resource</th>
             <th>line</th>
+            <th>start-date</th>
             <th>name</th>
             <th>geography</th>
-            <th>start-date</th>
             <th>geometry</th>
         </tr>
     </thead>
     <tbody>        <tr>
             <td>2021-05-27</td>
-            <td><a href="https://github.com/digital-land/site-of-special-scientific-interest-collection/tree/main/transformed/site-of-special-scientific-interest/58d5ad603e37f139c0d24a49567acb8d6c2101616133624c90eeb5aa196f8659.csv#L7832">58d5ad603e37...</a></td>
-            <td>7831</td>
+            <td><a href="https://github.com/digital-land/site-of-special-scientific-interest-collection/tree/main/transformed/site-of-special-scientific-interest/58d5ad603e37f139c0d24a49567acb8d6c2101616133624c90eeb5aa196f8659.csv#L7834">58d5ad603e37...</a></td>
+            <td>7833</td>
+                <td>2014-01-16</td> 
                 <td>Povington and Grange Heaths</td> 
                 <td>site-of-special-scientific-interest:SY885838</td> 
+                <td class="data-table__notes-cell data-table__cell--min-width-4">
+                    <details class="govuk-details">
+  <summary class="govuk-details__summary">
+    <span class="govuk-details__summary-text">
+      See WKT
+    </span>
+  </summary>
+  <div class="govuk-details__text">
+    MULTIPOLYGON (((-2.135118 50.666092,-2.134582 50.666410,-2.132767 50.667045,-2.132335 50.667138,-2.129856 50.666609,-2.129338 50.666530,-2.129337 50.666505,-2.128668 50.666069,-2.128080 50.665576,-2.127761 50.665351,-2.127121 50.665003,-2.127180 50.664974,-2.127235 50.664990,-2.127250 50.664917,-2.127755 50.664624,-2.128056 50.664499,-2.132771 50.665625,-2.135118 50.666092)))
+  </div>
+</details>
+                </td>
+        </tr>        <tr>
+            <td>2021-05-27</td>
+            <td><a href="https://github.com/digital-land/site-of-special-scientific-interest-collection/tree/main/transformed/site-of-special-scientific-interest/58d5ad603e37f139c0d24a49567acb8d6c2101616133624c90eeb5aa196f8659.csv#L7832">58d5ad603e37...</a></td>
+            <td>7831</td>
                 <td>2014-01-16</td> 
+                <td>Povington and Grange Heaths</td> 
+                <td>site-of-special-scientific-interest:SY885838</td> 
                 <td class="data-table__notes-cell data-table__cell--min-width-4">
                     <details class="govuk-details">
   <summary class="govuk-details__summary">
@@ -234,11 +256,11 @@ crossorigin="" />
                 </td>
         </tr>        <tr>
             <td>2021-05-27</td>
-            <td><a href="https://github.com/digital-land/site-of-special-scientific-interest-collection/tree/main/transformed/site-of-special-scientific-interest/58d5ad603e37f139c0d24a49567acb8d6c2101616133624c90eeb5aa196f8659.csv#L7835">58d5ad603e37...</a></td>
-            <td>7834</td>
+            <td><a href="https://github.com/digital-land/site-of-special-scientific-interest-collection/tree/main/transformed/site-of-special-scientific-interest/58d5ad603e37f139c0d24a49567acb8d6c2101616133624c90eeb5aa196f8659.csv#L7837">58d5ad603e37...</a></td>
+            <td>7836</td>
+                <td>2014-01-16</td> 
                 <td>Povington and Grange Heaths</td> 
                 <td>site-of-special-scientific-interest:SY885838</td> 
-                <td>2014-01-16</td> 
                 <td class="data-table__notes-cell data-table__cell--min-width-4">
                     <details class="govuk-details">
   <summary class="govuk-details__summary">
@@ -247,7 +269,7 @@ crossorigin="" />
     </span>
   </summary>
   <div class="govuk-details__text">
-    MULTIPOLYGON (((-2.152497 50.665434,-2.152473 50.665454,-2.152458 50.665661,-2.152507 50.665854,-2.152761 50.666145,-2.152934 50.666438,-2.153117 50.666603,-2.153147 50.666690,-2.153129 50.667039,-2.153063 50.667459,-2.153067 50.667687,-2.153215 50.667831,-2.153592 50.667879,-2.153637 50.668079,-2.153188 50.668041,-2.152719 50.668095,-2.152479 50.667665,-2.152088 50.668365,-2.151825 50.668168,-2.151378 50.667729,-2.150752 50.666582,-2.151063 50.666123,-2.151620 50.666048,-2.151500 50.665883,-2.151541 50.665820,-2.151535 50.665724,-2.151398 50.664988,-2.151344 50.664865,-2.151217 50.664706,-2.151207 50.664611,-2.151350 50.664349,-2.151634 50.663949,-2.151666 50.663785,-2.151644 50.663550,-2.152019 50.663128,-2.152015 50.663028,-2.151843 50.662622,-2.152275 50.662579,-2.152306 50.662739,-2.152397 50.662814,-2.152481 50.663060,-2.152679 50.664411,-2.152767 50.664420,-2.152867 50.664331,-2.153037 50.664290,-2.153625 50.664250,-2.153439 50.664370,-2.153380 50.664559,-2.153389 50.664692,-2.153172 50.664892,-2.152716 50.665192,-2.152455 50.665420,-2.152497 50.665434)))
+    MULTIPOLYGON (((-2.189811 50.650713,-2.189953 50.650446,-2.190001 50.650470,-2.190168 50.650890,-2.189959 50.651014,-2.190473 50.652065,-2.190530 50.652337,-2.190727 50.652764,-2.190705 50.652779,-2.191686 50.654344,-2.189203 50.654013,-2.188731 50.653695,-2.188966 50.652749,-2.188936 50.652728,-2.188949 50.652687,-2.189436 50.651463,-2.189811 50.650713)))
   </div>
 </details>
                 </td>
@@ -255,9 +277,9 @@ crossorigin="" />
             <td>2021-05-27</td>
             <td><a href="https://github.com/digital-land/site-of-special-scientific-interest-collection/tree/main/transformed/site-of-special-scientific-interest/58d5ad603e37f139c0d24a49567acb8d6c2101616133624c90eeb5aa196f8659.csv#L7838">58d5ad603e37...</a></td>
             <td>7837</td>
+                <td>2014-01-16</td> 
                 <td>Povington and Grange Heaths</td> 
                 <td>site-of-special-scientific-interest:SY885838</td> 
-                <td>2014-01-16</td> 
                 <td class="data-table__notes-cell data-table__cell--min-width-4">
                     <details class="govuk-details">
   <summary class="govuk-details__summary">
@@ -274,9 +296,9 @@ crossorigin="" />
             <td>2021-05-27</td>
             <td><a href="https://github.com/digital-land/site-of-special-scientific-interest-collection/tree/main/transformed/site-of-special-scientific-interest/58d5ad603e37f139c0d24a49567acb8d6c2101616133624c90eeb5aa196f8659.csv#L7833">58d5ad603e37...</a></td>
             <td>7832</td>
+                <td>2014-01-16</td> 
                 <td>Povington and Grange Heaths</td> 
                 <td>site-of-special-scientific-interest:SY885838</td> 
-                <td>2014-01-16</td> 
                 <td class="data-table__notes-cell data-table__cell--min-width-4">
                     <details class="govuk-details">
   <summary class="govuk-details__summary">
@@ -291,11 +313,11 @@ crossorigin="" />
                 </td>
         </tr>        <tr>
             <td>2021-05-27</td>
-            <td><a href="https://github.com/digital-land/site-of-special-scientific-interest-collection/tree/main/transformed/site-of-special-scientific-interest/58d5ad603e37f139c0d24a49567acb8d6c2101616133624c90eeb5aa196f8659.csv#L7837">58d5ad603e37...</a></td>
-            <td>7836</td>
+            <td><a href="https://github.com/digital-land/site-of-special-scientific-interest-collection/tree/main/transformed/site-of-special-scientific-interest/58d5ad603e37f139c0d24a49567acb8d6c2101616133624c90eeb5aa196f8659.csv#L7835">58d5ad603e37...</a></td>
+            <td>7834</td>
+                <td>2014-01-16</td> 
                 <td>Povington and Grange Heaths</td> 
                 <td>site-of-special-scientific-interest:SY885838</td> 
-                <td>2014-01-16</td> 
                 <td class="data-table__notes-cell data-table__cell--min-width-4">
                     <details class="govuk-details">
   <summary class="govuk-details__summary">
@@ -304,7 +326,7 @@ crossorigin="" />
     </span>
   </summary>
   <div class="govuk-details__text">
-    MULTIPOLYGON (((-2.189811 50.650713,-2.189953 50.650446,-2.190001 50.650470,-2.190168 50.650890,-2.189959 50.651014,-2.190473 50.652065,-2.190530 50.652337,-2.190727 50.652764,-2.190705 50.652779,-2.191686 50.654344,-2.189203 50.654013,-2.188731 50.653695,-2.188966 50.652749,-2.188936 50.652728,-2.188949 50.652687,-2.189436 50.651463,-2.189811 50.650713)))
+    MULTIPOLYGON (((-2.152497 50.665434,-2.152473 50.665454,-2.152458 50.665661,-2.152507 50.665854,-2.152761 50.666145,-2.152934 50.666438,-2.153117 50.666603,-2.153147 50.666690,-2.153129 50.667039,-2.153063 50.667459,-2.153067 50.667687,-2.153215 50.667831,-2.153592 50.667879,-2.153637 50.668079,-2.153188 50.668041,-2.152719 50.668095,-2.152479 50.667665,-2.152088 50.668365,-2.151825 50.668168,-2.151378 50.667729,-2.150752 50.666582,-2.151063 50.666123,-2.151620 50.666048,-2.151500 50.665883,-2.151541 50.665820,-2.151535 50.665724,-2.151398 50.664988,-2.151344 50.664865,-2.151217 50.664706,-2.151207 50.664611,-2.151350 50.664349,-2.151634 50.663949,-2.151666 50.663785,-2.151644 50.663550,-2.152019 50.663128,-2.152015 50.663028,-2.151843 50.662622,-2.152275 50.662579,-2.152306 50.662739,-2.152397 50.662814,-2.152481 50.663060,-2.152679 50.664411,-2.152767 50.664420,-2.152867 50.664331,-2.153037 50.664290,-2.153625 50.664250,-2.153439 50.664370,-2.153380 50.664559,-2.153389 50.664692,-2.153172 50.664892,-2.152716 50.665192,-2.152455 50.665420,-2.152497 50.665434)))
   </div>
 </details>
                 </td>
@@ -312,9 +334,9 @@ crossorigin="" />
             <td>2021-05-27</td>
             <td><a href="https://github.com/digital-land/site-of-special-scientific-interest-collection/tree/main/transformed/site-of-special-scientific-interest/58d5ad603e37f139c0d24a49567acb8d6c2101616133624c90eeb5aa196f8659.csv#L7836">58d5ad603e37...</a></td>
             <td>7835</td>
+                <td>2014-01-16</td> 
                 <td>Povington and Grange Heaths</td> 
                 <td>site-of-special-scientific-interest:SY885838</td> 
-                <td>2014-01-16</td> 
                 <td class="data-table__notes-cell data-table__cell--min-width-4">
                     <details class="govuk-details">
   <summary class="govuk-details__summary">
@@ -324,25 +346,6 @@ crossorigin="" />
   </summary>
   <div class="govuk-details__text">
     MULTIPOLYGON (((-2.123074 50.672882,-2.123032 50.672862,-2.123194 50.672571,-2.123721 50.671205,-2.123477 50.671002,-2.123332 50.670802,-2.122872 50.669732,-2.123339 50.669845,-2.123895 50.669867,-2.125284 50.669752,-2.126058 50.670439,-2.126280 50.670707,-2.126542 50.670921,-2.125372 50.671889,-2.124531 50.672507,-2.124232 50.672766,-2.124027 50.672380,-2.123373 50.672503,-2.123310 50.672544,-2.123074 50.672882)))
-  </div>
-</details>
-                </td>
-        </tr>        <tr>
-            <td>2021-05-27</td>
-            <td><a href="https://github.com/digital-land/site-of-special-scientific-interest-collection/tree/main/transformed/site-of-special-scientific-interest/58d5ad603e37f139c0d24a49567acb8d6c2101616133624c90eeb5aa196f8659.csv#L7834">58d5ad603e37...</a></td>
-            <td>7833</td>
-                <td>Povington and Grange Heaths</td> 
-                <td>site-of-special-scientific-interest:SY885838</td> 
-                <td>2014-01-16</td> 
-                <td class="data-table__notes-cell data-table__cell--min-width-4">
-                    <details class="govuk-details">
-  <summary class="govuk-details__summary">
-    <span class="govuk-details__summary-text">
-      See WKT
-    </span>
-  </summary>
-  <div class="govuk-details__text">
-    MULTIPOLYGON (((-2.135118 50.666092,-2.134582 50.666410,-2.132767 50.667045,-2.132335 50.667138,-2.129856 50.666609,-2.129338 50.666530,-2.129337 50.666505,-2.128668 50.666069,-2.128080 50.665576,-2.127761 50.665351,-2.127121 50.665003,-2.127180 50.664974,-2.127235 50.664990,-2.127250 50.664917,-2.127755 50.664624,-2.128056 50.664499,-2.132771 50.665625,-2.135118 50.666092)))
   </div>
 </details>
                 </td>

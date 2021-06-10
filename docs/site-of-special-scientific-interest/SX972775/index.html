@@ -11,7 +11,10 @@
 <link rel="shortcut icon" sizes="32x32" href="/images/favicon-32x32.png" type="image/png">
 <link rel="shortcut icon" sizes="16x16" href="/images/favicon-16x16.png" type="image/png">
 <link rel="apple-touch-icon" href="/images/apple-touch-icon.png">
-	<meta name="digital-land:template" content="page-per-thing/record.html"><!-- should make this optional, no need to load if not showing a map -->
+	<meta name="digital-land:template" content="page-per-thing/record.html">
+<script src="https://polyfill.io/v3/polyfill.min.js?features=fetch%2CPromise%2Ces6%2Ces5%2Ces2015%2Ces2016%2CURL%2CURLSearchParams%2CObject.entries%2CObject.fromEntries%2CAbortController"></script>
+
+<!-- should make this optional, no need to load if not showing a map -->
 <link rel="stylesheet" href="https://unpkg.com/leaflet@1.6.0/dist/leaflet.css"
 integrity="sha512-xwE/Az9zrjBIphAcBb3F6JVqxf46+CDLwfLMHloNu6KEQCAWi6HcDUbeOfBIptF7tcCzusKFjFw2yuvEpDL9wQ=="
 crossorigin="" />
@@ -154,10 +157,6 @@ crossorigin="" />
 <div class="govuk-grid-row">    <div class="govuk-grid-column-two-thirds"><article class="data-record govuk-!-margin-bottom-6">
     <h4 class="govuk-heading-s data-record__identifier">#/site-of-special-scientific-interest/site-of-special-scientific-interest/SX972775</h4>
     <dl class="govuk-summary-list data-record__properties">            <div class="govuk-summary-list__row">
-            <dt class="govuk-summary-list__key">start-date
-            </dt>
-            <dd class="govuk-summary-list__value">                2003-08-14            </dd>
-        </div>        <div class="govuk-summary-list__row">
             <dt class="govuk-summary-list__key">geography
             </dt>
             <dd class="govuk-summary-list__value">                site-of-special-scientific-interest:SX972775            </dd>
@@ -165,6 +164,10 @@ crossorigin="" />
             <dt class="govuk-summary-list__key">name
             </dt>
             <dd class="govuk-summary-list__value">                Dawlish Cliffs            </dd>
+        </div>        <div class="govuk-summary-list__row">
+            <dt class="govuk-summary-list__key">start-date
+            </dt>
+            <dd class="govuk-summary-list__value">                2003-08-14            </dd>
         </div>        <div class="govuk-summary-list__row">
             <dt class="govuk-summary-list__key">entry-date
             </dt>
@@ -207,8 +210,8 @@ crossorigin="" />
             <th>entry-date</th>
             <th>resource</th>
             <th>line</th>
-            <th>geography</th>
             <th>name</th>
+            <th>geography</th>
             <th>start-date</th>
             <th>geometry</th>
         </tr>
@@ -217,8 +220,8 @@ crossorigin="" />
             <td>2021-05-27</td>
             <td><a href="https://github.com/digital-land/site-of-special-scientific-interest-collection/tree/main/transformed/site-of-special-scientific-interest/58d5ad603e37f139c0d24a49567acb8d6c2101616133624c90eeb5aa196f8659.csv#L1346">58d5ad603e37...</a></td>
             <td>1345</td>
-                <td>site-of-special-scientific-interest:SX972775</td> 
                 <td>Dawlish Cliffs</td> 
+                <td>site-of-special-scientific-interest:SX972775</td> 
                 <td>2003-08-14</td> 
                 <td class="data-table__notes-cell data-table__cell--min-width-4">
                     <details class="govuk-details">
@@ -236,8 +239,8 @@ crossorigin="" />
             <td>2021-05-27</td>
             <td><a href="https://github.com/digital-land/site-of-special-scientific-interest-collection/tree/main/transformed/site-of-special-scientific-interest/58d5ad603e37f139c0d24a49567acb8d6c2101616133624c90eeb5aa196f8659.csv#L1348">58d5ad603e37...</a></td>
             <td>1347</td>
-                <td>site-of-special-scientific-interest:SX972775</td> 
                 <td>Dawlish Cliffs</td> 
+                <td>site-of-special-scientific-interest:SX972775</td> 
                 <td>2003-08-14</td> 
                 <td class="data-table__notes-cell data-table__cell--min-width-4">
                     <details class="govuk-details">
@@ -255,8 +258,8 @@ crossorigin="" />
             <td>2021-05-27</td>
             <td><a href="https://github.com/digital-land/site-of-special-scientific-interest-collection/tree/main/transformed/site-of-special-scientific-interest/58d5ad603e37f139c0d24a49567acb8d6c2101616133624c90eeb5aa196f8659.csv#L1345">58d5ad603e37...</a></td>
             <td>1344</td>
-                <td>site-of-special-scientific-interest:SX972775</td> 
                 <td>Dawlish Cliffs</td> 
+                <td>site-of-special-scientific-interest:SX972775</td> 
                 <td>2003-08-14</td> 
                 <td class="data-table__notes-cell data-table__cell--min-width-4">
                     <details class="govuk-details">
@@ -272,29 +275,10 @@ crossorigin="" />
                 </td>
         </tr>        <tr>
             <td>2021-05-27</td>
-            <td><a href="https://github.com/digital-land/site-of-special-scientific-interest-collection/tree/main/transformed/site-of-special-scientific-interest/58d5ad603e37f139c0d24a49567acb8d6c2101616133624c90eeb5aa196f8659.csv#L1349">58d5ad603e37...</a></td>
-            <td>1348</td>
-                <td>site-of-special-scientific-interest:SX972775</td> 
-                <td>Dawlish Cliffs</td> 
-                <td>2003-08-14</td> 
-                <td class="data-table__notes-cell data-table__cell--min-width-4">
-                    <details class="govuk-details">
-  <summary class="govuk-details__summary">
-    <span class="govuk-details__summary-text">
-      See WKT
-    </span>
-  </summary>
-  <div class="govuk-details__text">
-    MULTIPOLYGON (((-3.456335 50.586350,-3.457330 50.585732,-3.457386 50.585817,-3.457380 50.585987,-3.457339 50.586034,-3.456998 50.586213,-3.456302 50.586475,-3.455824 50.586758,-3.455725 50.586840,-3.455665 50.586944,-3.455501 50.587034,-3.455286 50.587071,-3.455210 50.587018,-3.456335 50.586350)))
-  </div>
-</details>
-                </td>
-        </tr>        <tr>
-            <td>2021-05-27</td>
             <td><a href="https://github.com/digital-land/site-of-special-scientific-interest-collection/tree/main/transformed/site-of-special-scientific-interest/58d5ad603e37f139c0d24a49567acb8d6c2101616133624c90eeb5aa196f8659.csv#L1347">58d5ad603e37...</a></td>
             <td>1346</td>
-                <td>site-of-special-scientific-interest:SX972775</td> 
                 <td>Dawlish Cliffs</td> 
+                <td>site-of-special-scientific-interest:SX972775</td> 
                 <td>2003-08-14</td> 
                 <td class="data-table__notes-cell data-table__cell--min-width-4">
                     <details class="govuk-details">
@@ -305,6 +289,25 @@ crossorigin="" />
   </summary>
   <div class="govuk-details__text">
     MULTIPOLYGON (((-3.467762 50.576912,-3.467595 50.576728,-3.467522 50.576560,-3.467449 50.576531,-3.467413 50.576417,-3.467512 50.576130,-3.467787 50.575747,-3.467832 50.575756,-3.467859 50.575677,-3.467886 50.575688,-3.468165 50.575427,-3.468371 50.575459,-3.468546 50.575363,-3.468767 50.575406,-3.468969 50.574995,-3.469267 50.574771,-3.469197 50.574605,-3.469377 50.574065,-3.469488 50.574006,-3.469557 50.573911,-3.470001 50.574096,-3.470072 50.574069,-3.469586 50.574677,-3.469397 50.574781,-3.469224 50.574931,-3.469354 50.575460,-3.469320 50.575545,-3.469218 50.575627,-3.469125 50.575651,-3.468304 50.575592,-3.468319 50.575748,-3.468260 50.575871,-3.467788 50.576222,-3.467768 50.576356,-3.467916 50.576549,-3.467995 50.576719,-3.468087 50.576816,-3.468077 50.577013,-3.468244 50.577609,-3.468191 50.577927,-3.468069 50.577907,-3.467955 50.577238,-3.467879 50.577034,-3.467760 50.576949,-3.467781 50.576936,-3.467762 50.576912)))
+  </div>
+</details>
+                </td>
+        </tr>        <tr>
+            <td>2021-05-27</td>
+            <td><a href="https://github.com/digital-land/site-of-special-scientific-interest-collection/tree/main/transformed/site-of-special-scientific-interest/58d5ad603e37f139c0d24a49567acb8d6c2101616133624c90eeb5aa196f8659.csv#L1349">58d5ad603e37...</a></td>
+            <td>1348</td>
+                <td>Dawlish Cliffs</td> 
+                <td>site-of-special-scientific-interest:SX972775</td> 
+                <td>2003-08-14</td> 
+                <td class="data-table__notes-cell data-table__cell--min-width-4">
+                    <details class="govuk-details">
+  <summary class="govuk-details__summary">
+    <span class="govuk-details__summary-text">
+      See WKT
+    </span>
+  </summary>
+  <div class="govuk-details__text">
+    MULTIPOLYGON (((-3.456335 50.586350,-3.457330 50.585732,-3.457386 50.585817,-3.457380 50.585987,-3.457339 50.586034,-3.456998 50.586213,-3.456302 50.586475,-3.455824 50.586758,-3.455725 50.586840,-3.455665 50.586944,-3.455501 50.587034,-3.455286 50.587071,-3.455210 50.587018,-3.456335 50.586350)))
   </div>
 </details>
                 </td>

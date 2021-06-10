@@ -11,7 +11,10 @@
 <link rel="shortcut icon" sizes="32x32" href="/images/favicon-32x32.png" type="image/png">
 <link rel="shortcut icon" sizes="16x16" href="/images/favicon-16x16.png" type="image/png">
 <link rel="apple-touch-icon" href="/images/apple-touch-icon.png">
-	<meta name="digital-land:template" content="page-per-thing/record.html"><!-- should make this optional, no need to load if not showing a map -->
+	<meta name="digital-land:template" content="page-per-thing/record.html">
+<script src="https://polyfill.io/v3/polyfill.min.js?features=fetch%2CPromise%2Ces6%2Ces5%2Ces2015%2Ces2016%2CURL%2CURLSearchParams%2CObject.entries%2CObject.fromEntries%2CAbortController"></script>
+
+<!-- should make this optional, no need to load if not showing a map -->
 <link rel="stylesheet" href="https://unpkg.com/leaflet@1.6.0/dist/leaflet.css"
 integrity="sha512-xwE/Az9zrjBIphAcBb3F6JVqxf46+CDLwfLMHloNu6KEQCAWi6HcDUbeOfBIptF7tcCzusKFjFw2yuvEpDL9wQ=="
 crossorigin="" />
@@ -207,38 +210,19 @@ crossorigin="" />
             <th>entry-date</th>
             <th>resource</th>
             <th>line</th>
-            <th>geography</th>
-            <th>name</th>
             <th>start-date</th>
+            <th>name</th>
+            <th>geography</th>
             <th>geometry</th>
         </tr>
     </thead>
     <tbody>        <tr>
             <td>2021-05-27</td>
-            <td><a href="https://github.com/digital-land/site-of-special-scientific-interest-collection/tree/main/transformed/site-of-special-scientific-interest/58d5ad603e37f139c0d24a49567acb8d6c2101616133624c90eeb5aa196f8659.csv#L7026">58d5ad603e37...</a></td>
-            <td>7025</td>
-                <td>site-of-special-scientific-interest:TF537402</td> 
-                <td>The Wash</td> 
-                <td>2015-10-05</td> 
-                <td class="data-table__notes-cell data-table__cell--min-width-4">
-                    <details class="govuk-details">
-  <summary class="govuk-details__summary">
-    <span class="govuk-details__summary-text">
-      See WKT
-    </span>
-  </summary>
-  <div class="govuk-details__text">
-    MULTIPOLYGON (((0.214352 52.822046,0.214308 52.821961,0.214269 52.821704,0.214171 52.821547,0.214156 52.821400,0.214107 52.821392,0.213938 52.821469,0.213821 52.821383,0.213547 52.821326,0.212844 52.820839,0.212539 52.820711,0.212485 52.820653,0.212510 52.820267,0.212470 52.819938,0.212500 52.819653,0.212477 52.817178,0.212393 52.817045,0.212350 52.816559,0.211299 52.817803,0.211040 52.818080,0.210738 52.818333,0.210691 52.818432,0.210592 52.818489,0.210582 52.818565,0.210500 52.818667,0.210539 52.818744,0.210402 52.818728,0.210474 52.818838,0.210321 52.818895,0.210252 52.818882,0.210252 52.818940,0.210165 52.819027,0.209949 52.819109,0.210067 52.819169,0.210108 52.819260,0.209678 52.819597,0.209562 52.819985,0.209735 52.820144,0.209759 52.820259,0.210008 52.820360,0.210727 52.821017,0.211196 52.821276,0.211653 52.821688,0.212011 52.821883,0.212634 52.822055,0.213554 52.822007,0.213979 52.822026,0.214345 52.822175,0.214391 52.822139,0.214352 52.822046)))
-  </div>
-</details>
-                </td>
-        </tr>        <tr>
-            <td>2021-05-27</td>
             <td><a href="https://github.com/digital-land/site-of-special-scientific-interest-collection/tree/main/transformed/site-of-special-scientific-interest/58d5ad603e37f139c0d24a49567acb8d6c2101616133624c90eeb5aa196f8659.csv#L7027">58d5ad603e37...</a></td>
             <td>7026</td>
-                <td>site-of-special-scientific-interest:TF537402</td> 
-                <td>The Wash</td> 
                 <td>2015-10-05</td> 
+                <td>The Wash</td> 
+                <td>site-of-special-scientific-interest:TF537402</td> 
                 <td class="data-table__notes-cell data-table__cell--min-width-4">
                     <details class="govuk-details">
   <summary class="govuk-details__summary">
@@ -253,11 +237,30 @@ crossorigin="" />
                 </td>
         </tr>        <tr>
             <td>2021-05-27</td>
+            <td><a href="https://github.com/digital-land/site-of-special-scientific-interest-collection/tree/main/transformed/site-of-special-scientific-interest/58d5ad603e37f139c0d24a49567acb8d6c2101616133624c90eeb5aa196f8659.csv#L7026">58d5ad603e37...</a></td>
+            <td>7025</td>
+                <td>2015-10-05</td> 
+                <td>The Wash</td> 
+                <td>site-of-special-scientific-interest:TF537402</td> 
+                <td class="data-table__notes-cell data-table__cell--min-width-4">
+                    <details class="govuk-details">
+  <summary class="govuk-details__summary">
+    <span class="govuk-details__summary-text">
+      See WKT
+    </span>
+  </summary>
+  <div class="govuk-details__text">
+    MULTIPOLYGON (((0.214352 52.822046,0.214308 52.821961,0.214269 52.821704,0.214171 52.821547,0.214156 52.821400,0.214107 52.821392,0.213938 52.821469,0.213821 52.821383,0.213547 52.821326,0.212844 52.820839,0.212539 52.820711,0.212485 52.820653,0.212510 52.820267,0.212470 52.819938,0.212500 52.819653,0.212477 52.817178,0.212393 52.817045,0.212350 52.816559,0.211299 52.817803,0.211040 52.818080,0.210738 52.818333,0.210691 52.818432,0.210592 52.818489,0.210582 52.818565,0.210500 52.818667,0.210539 52.818744,0.210402 52.818728,0.210474 52.818838,0.210321 52.818895,0.210252 52.818882,0.210252 52.818940,0.210165 52.819027,0.209949 52.819109,0.210067 52.819169,0.210108 52.819260,0.209678 52.819597,0.209562 52.819985,0.209735 52.820144,0.209759 52.820259,0.210008 52.820360,0.210727 52.821017,0.211196 52.821276,0.211653 52.821688,0.212011 52.821883,0.212634 52.822055,0.213554 52.822007,0.213979 52.822026,0.214345 52.822175,0.214391 52.822139,0.214352 52.822046)))
+  </div>
+</details>
+                </td>
+        </tr>        <tr>
+            <td>2021-05-27</td>
             <td><a href="https://github.com/digital-land/site-of-special-scientific-interest-collection/tree/main/transformed/site-of-special-scientific-interest/58d5ad603e37f139c0d24a49567acb8d6c2101616133624c90eeb5aa196f8659.csv#L7025">58d5ad603e37...</a></td>
             <td>7024</td>
-                <td>site-of-special-scientific-interest:TF537402</td> 
-                <td>The Wash</td> 
                 <td>2015-10-05</td> 
+                <td>The Wash</td> 
+                <td>site-of-special-scientific-interest:TF537402</td> 
                 <td class="data-table__notes-cell data-table__cell--min-width-4">
                     <details class="govuk-details">
   <summary class="govuk-details__summary">

@@ -11,7 +11,10 @@
 <link rel="shortcut icon" sizes="32x32" href="/images/favicon-32x32.png" type="image/png">
 <link rel="shortcut icon" sizes="16x16" href="/images/favicon-16x16.png" type="image/png">
 <link rel="apple-touch-icon" href="/images/apple-touch-icon.png">
-	<meta name="digital-land:template" content="page-per-thing/record.html"><!-- should make this optional, no need to load if not showing a map -->
+	<meta name="digital-land:template" content="page-per-thing/record.html">
+<script src="https://polyfill.io/v3/polyfill.min.js?features=fetch%2CPromise%2Ces6%2Ces5%2Ces2015%2Ces2016%2CURL%2CURLSearchParams%2CObject.entries%2CObject.fromEntries%2CAbortController"></script>
+
+<!-- should make this optional, no need to load if not showing a map -->
 <link rel="stylesheet" href="https://unpkg.com/leaflet@1.6.0/dist/leaflet.css"
 integrity="sha512-xwE/Az9zrjBIphAcBb3F6JVqxf46+CDLwfLMHloNu6KEQCAWi6HcDUbeOfBIptF7tcCzusKFjFw2yuvEpDL9wQ=="
 crossorigin="" />
@@ -154,13 +157,13 @@ crossorigin="" />
 <div class="govuk-grid-row">    <div class="govuk-grid-column-two-thirds"><article class="data-record govuk-!-margin-bottom-6">
     <h4 class="govuk-heading-s data-record__identifier">#/site-of-special-scientific-interest/site-of-special-scientific-interest/TM193313</h4>
     <dl class="govuk-summary-list data-record__properties">            <div class="govuk-summary-list__row">
-            <dt class="govuk-summary-list__key">start-date
-            </dt>
-            <dd class="govuk-summary-list__value">                2014-01-16            </dd>
-        </div>        <div class="govuk-summary-list__row">
             <dt class="govuk-summary-list__key">name
             </dt>
             <dd class="govuk-summary-list__value">                Stour and Copperas Woods, Ramsey            </dd>
+        </div>        <div class="govuk-summary-list__row">
+            <dt class="govuk-summary-list__key">start-date
+            </dt>
+            <dd class="govuk-summary-list__value">                2014-01-16            </dd>
         </div>        <div class="govuk-summary-list__row">
             <dt class="govuk-summary-list__key">geography
             </dt>
@@ -215,25 +218,6 @@ crossorigin="" />
     </thead>
     <tbody>        <tr>
             <td>2021-05-27</td>
-            <td><a href="https://github.com/digital-land/site-of-special-scientific-interest-collection/tree/main/transformed/site-of-special-scientific-interest/58d5ad603e37f139c0d24a49567acb8d6c2101616133624c90eeb5aa196f8659.csv#L1363">58d5ad603e37...</a></td>
-            <td>1362</td>
-                <td>Stour and Copperas Woods, Ramsey</td> 
-                <td>site-of-special-scientific-interest:TM193313</td> 
-                <td>2014-01-16</td> 
-                <td class="data-table__notes-cell data-table__cell--min-width-4">
-                    <details class="govuk-details">
-  <summary class="govuk-details__summary">
-    <span class="govuk-details__summary-text">
-      See WKT
-    </span>
-  </summary>
-  <div class="govuk-details__text">
-    MULTIPOLYGON (((1.179625 51.940591,1.181079 51.940478,1.181794 51.940360,1.182220 51.940354,1.183833 51.940050,1.184295 51.940017,1.184874 51.940059,1.185267 51.940024,1.186812 51.939763,1.186363 51.939535,1.185496 51.939457,1.184165 51.939560,1.183834 51.939632,1.183018 51.939964,1.182647 51.940009,1.182003 51.939938,1.180844 51.939713,1.179016 51.939679,1.179203 51.939914,1.179364 51.940314,1.179521 51.940579,1.179625 51.940591)))
-  </div>
-</details>
-                </td>
-        </tr>        <tr>
-            <td>2021-05-27</td>
             <td><a href="https://github.com/digital-land/site-of-special-scientific-interest-collection/tree/main/transformed/site-of-special-scientific-interest/58d5ad603e37f139c0d24a49567acb8d6c2101616133624c90eeb5aa196f8659.csv#L1362">58d5ad603e37...</a></td>
             <td>1361</td>
                 <td>Stour and Copperas Woods, Ramsey</td> 
@@ -248,6 +232,25 @@ crossorigin="" />
   </summary>
   <div class="govuk-details__text">
     MULTIPOLYGON (((1.203940 51.941039,1.205541 51.940225,1.204835 51.940183,1.204159 51.940103,1.202886 51.940158,1.200897 51.940090,1.199565 51.939969,1.197949 51.939914,1.197446 51.939854,1.197286 51.939807,1.197007 51.940302,1.196683 51.940571,1.196647 51.940837,1.197211 51.940856,1.197574 51.940905,1.197981 51.940893,1.198650 51.940979,1.198970 51.941045,1.199108 51.941108,1.199467 51.941146,1.199505 51.941085,1.199711 51.941140,1.199881 51.941111,1.200177 51.941160,1.200329 51.941204,1.200799 51.941475,1.201540 51.941686,1.202025 51.941897,1.202776 51.942050,1.202676 51.941866,1.202759 51.941640,1.203940 51.941039)))
+  </div>
+</details>
+                </td>
+        </tr>        <tr>
+            <td>2021-05-27</td>
+            <td><a href="https://github.com/digital-land/site-of-special-scientific-interest-collection/tree/main/transformed/site-of-special-scientific-interest/58d5ad603e37f139c0d24a49567acb8d6c2101616133624c90eeb5aa196f8659.csv#L1363">58d5ad603e37...</a></td>
+            <td>1362</td>
+                <td>Stour and Copperas Woods, Ramsey</td> 
+                <td>site-of-special-scientific-interest:TM193313</td> 
+                <td>2014-01-16</td> 
+                <td class="data-table__notes-cell data-table__cell--min-width-4">
+                    <details class="govuk-details">
+  <summary class="govuk-details__summary">
+    <span class="govuk-details__summary-text">
+      See WKT
+    </span>
+  </summary>
+  <div class="govuk-details__text">
+    MULTIPOLYGON (((1.179625 51.940591,1.181079 51.940478,1.181794 51.940360,1.182220 51.940354,1.183833 51.940050,1.184295 51.940017,1.184874 51.940059,1.185267 51.940024,1.186812 51.939763,1.186363 51.939535,1.185496 51.939457,1.184165 51.939560,1.183834 51.939632,1.183018 51.939964,1.182647 51.940009,1.182003 51.939938,1.180844 51.939713,1.179016 51.939679,1.179203 51.939914,1.179364 51.940314,1.179521 51.940579,1.179625 51.940591)))
   </div>
 </details>
                 </td>

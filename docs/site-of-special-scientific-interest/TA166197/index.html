@@ -11,7 +11,10 @@
 <link rel="shortcut icon" sizes="32x32" href="/images/favicon-32x32.png" type="image/png">
 <link rel="shortcut icon" sizes="16x16" href="/images/favicon-16x16.png" type="image/png">
 <link rel="apple-touch-icon" href="/images/apple-touch-icon.png">
-	<meta name="digital-land:template" content="page-per-thing/record.html"><!-- should make this optional, no need to load if not showing a map -->
+	<meta name="digital-land:template" content="page-per-thing/record.html">
+<script src="https://polyfill.io/v3/polyfill.min.js?features=fetch%2CPromise%2Ces6%2Ces5%2Ces2015%2Ces2016%2CURL%2CURLSearchParams%2CObject.entries%2CObject.fromEntries%2CAbortController"></script>
+
+<!-- should make this optional, no need to load if not showing a map -->
 <link rel="stylesheet" href="https://unpkg.com/leaflet@1.6.0/dist/leaflet.css"
 integrity="sha512-xwE/Az9zrjBIphAcBb3F6JVqxf46+CDLwfLMHloNu6KEQCAWi6HcDUbeOfBIptF7tcCzusKFjFw2yuvEpDL9wQ=="
 crossorigin="" />
@@ -154,13 +157,13 @@ crossorigin="" />
 <div class="govuk-grid-row">    <div class="govuk-grid-column-two-thirds"><article class="data-record govuk-!-margin-bottom-6">
     <h4 class="govuk-heading-s data-record__identifier">#/site-of-special-scientific-interest/site-of-special-scientific-interest/TA166197</h4>
     <dl class="govuk-summary-list data-record__properties">            <div class="govuk-summary-list__row">
-            <dt class="govuk-summary-list__key">start-date
-            </dt>
-            <dd class="govuk-summary-list__value">                2004-01-26            </dd>
-        </div>        <div class="govuk-summary-list__row">
             <dt class="govuk-summary-list__key">name
             </dt>
             <dd class="govuk-summary-list__value">                North Killingholme Haven Pits            </dd>
+        </div>        <div class="govuk-summary-list__row">
+            <dt class="govuk-summary-list__key">start-date
+            </dt>
+            <dd class="govuk-summary-list__value">                2004-01-26            </dd>
         </div>        <div class="govuk-summary-list__row">
             <dt class="govuk-summary-list__key">geography
             </dt>
@@ -215,25 +218,6 @@ crossorigin="" />
     </thead>
     <tbody>        <tr>
             <td>2021-05-27</td>
-            <td><a href="https://github.com/digital-land/site-of-special-scientific-interest-collection/tree/main/transformed/site-of-special-scientific-interest/58d5ad603e37f139c0d24a49567acb8d6c2101616133624c90eeb5aa196f8659.csv#L3275">58d5ad603e37...</a></td>
-            <td>3274</td>
-                <td>North Killingholme Haven Pits</td> 
-                <td>site-of-special-scientific-interest:TA166197</td> 
-                <td>2004-01-26</td> 
-                <td class="data-table__notes-cell data-table__cell--min-width-4">
-                    <details class="govuk-details">
-  <summary class="govuk-details__summary">
-    <span class="govuk-details__summary-text">
-      See WKT
-    </span>
-  </summary>
-  <div class="govuk-details__text">
-    MULTIPOLYGON (((-0.240815 53.658724,-0.240855 53.658712,-0.242118 53.661144,-0.240685 53.661981,-0.239980 53.661540,-0.239208 53.661005,-0.238679 53.660612,-0.237689 53.659782,-0.240815 53.658724)))
-  </div>
-</details>
-                </td>
-        </tr>        <tr>
-            <td>2021-05-27</td>
             <td><a href="https://github.com/digital-land/site-of-special-scientific-interest-collection/tree/main/transformed/site-of-special-scientific-interest/58d5ad603e37f139c0d24a49567acb8d6c2101616133624c90eeb5aa196f8659.csv#L3274">58d5ad603e37...</a></td>
             <td>3273</td>
                 <td>North Killingholme Haven Pits</td> 
@@ -248,6 +232,25 @@ crossorigin="" />
   </summary>
   <div class="govuk-details__text">
     MULTIPOLYGON (((-0.237921 53.663502,-0.235424 53.663180,-0.234637 53.663019,-0.234254 53.662813,-0.233398 53.662082,-0.233208 53.661964,-0.232242 53.661175,-0.230918 53.660474,-0.230505 53.660226,-0.230391 53.660125,-0.232852 53.659269,-0.233374 53.659648,-0.233663 53.659535,-0.234703 53.660228,-0.235166 53.660627,-0.237492 53.659848,-0.238266 53.660513,-0.238921 53.661023,-0.239893 53.661691,-0.240519 53.662076,-0.239004 53.662960,-0.237962 53.663519,-0.237921 53.663502)))
+  </div>
+</details>
+                </td>
+        </tr>        <tr>
+            <td>2021-05-27</td>
+            <td><a href="https://github.com/digital-land/site-of-special-scientific-interest-collection/tree/main/transformed/site-of-special-scientific-interest/58d5ad603e37f139c0d24a49567acb8d6c2101616133624c90eeb5aa196f8659.csv#L3275">58d5ad603e37...</a></td>
+            <td>3274</td>
+                <td>North Killingholme Haven Pits</td> 
+                <td>site-of-special-scientific-interest:TA166197</td> 
+                <td>2004-01-26</td> 
+                <td class="data-table__notes-cell data-table__cell--min-width-4">
+                    <details class="govuk-details">
+  <summary class="govuk-details__summary">
+    <span class="govuk-details__summary-text">
+      See WKT
+    </span>
+  </summary>
+  <div class="govuk-details__text">
+    MULTIPOLYGON (((-0.240815 53.658724,-0.240855 53.658712,-0.242118 53.661144,-0.240685 53.661981,-0.239980 53.661540,-0.239208 53.661005,-0.238679 53.660612,-0.237689 53.659782,-0.240815 53.658724)))
   </div>
 </details>
                 </td>

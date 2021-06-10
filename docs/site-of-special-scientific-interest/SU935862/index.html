@@ -11,7 +11,10 @@
 <link rel="shortcut icon" sizes="32x32" href="/images/favicon-32x32.png" type="image/png">
 <link rel="shortcut icon" sizes="16x16" href="/images/favicon-16x16.png" type="image/png">
 <link rel="apple-touch-icon" href="/images/apple-touch-icon.png">
-	<meta name="digital-land:template" content="page-per-thing/record.html"><!-- should make this optional, no need to load if not showing a map -->
+	<meta name="digital-land:template" content="page-per-thing/record.html">
+<script src="https://polyfill.io/v3/polyfill.min.js?features=fetch%2CPromise%2Ces6%2Ces5%2Ces2015%2Ces2016%2CURL%2CURLSearchParams%2CObject.entries%2CObject.fromEntries%2CAbortController"></script>
+
+<!-- should make this optional, no need to load if not showing a map -->
 <link rel="stylesheet" href="https://unpkg.com/leaflet@1.6.0/dist/leaflet.css"
 integrity="sha512-xwE/Az9zrjBIphAcBb3F6JVqxf46+CDLwfLMHloNu6KEQCAWi6HcDUbeOfBIptF7tcCzusKFjFw2yuvEpDL9wQ=="
 crossorigin="" />
@@ -207,9 +210,9 @@ crossorigin="" />
             <th>entry-date</th>
             <th>resource</th>
             <th>line</th>
+            <th>start-date</th>
             <th>name</th>
             <th>geography</th>
-            <th>start-date</th>
             <th>geometry</th>
         </tr>
     </thead>
@@ -217,9 +220,9 @@ crossorigin="" />
             <td>2021-05-27</td>
             <td><a href="https://github.com/digital-land/site-of-special-scientific-interest-collection/tree/main/transformed/site-of-special-scientific-interest/58d5ad603e37f139c0d24a49567acb8d6c2101616133624c90eeb5aa196f8659.csv#L2642">58d5ad603e37...</a></td>
             <td>2641</td>
+                <td>2003-12-05</td> 
                 <td>Littleworth Common</td> 
                 <td>site-of-special-scientific-interest:SU935862</td> 
-                <td>2003-12-05</td> 
                 <td class="data-table__notes-cell data-table__cell--min-width-4">
                     <details class="govuk-details">
   <summary class="govuk-details__summary">
@@ -234,11 +237,30 @@ crossorigin="" />
                 </td>
         </tr>        <tr>
             <td>2021-05-27</td>
-            <td><a href="https://github.com/digital-land/site-of-special-scientific-interest-collection/tree/main/transformed/site-of-special-scientific-interest/58d5ad603e37f139c0d24a49567acb8d6c2101616133624c90eeb5aa196f8659.csv#L2644">58d5ad603e37...</a></td>
-            <td>2643</td>
+            <td><a href="https://github.com/digital-land/site-of-special-scientific-interest-collection/tree/main/transformed/site-of-special-scientific-interest/58d5ad603e37f139c0d24a49567acb8d6c2101616133624c90eeb5aa196f8659.csv#L2643">58d5ad603e37...</a></td>
+            <td>2642</td>
+                <td>2003-12-05</td> 
                 <td>Littleworth Common</td> 
                 <td>site-of-special-scientific-interest:SU935862</td> 
+                <td class="data-table__notes-cell data-table__cell--min-width-4">
+                    <details class="govuk-details">
+  <summary class="govuk-details__summary">
+    <span class="govuk-details__summary-text">
+      See WKT
+    </span>
+  </summary>
+  <div class="govuk-details__text">
+    MULTIPOLYGON (((-0.649728 51.569795,-0.649183 51.569742,-0.648646 51.569632,-0.648216 51.569598,-0.648374 51.569561,-0.652538 51.569169,-0.652632 51.569474,-0.652706 51.569569,-0.652451 51.569678,-0.652322 51.569667,-0.652149 51.569602,-0.651859 51.569601,-0.651668 51.569681,-0.650821 51.569804,-0.649988 51.569837,-0.649728 51.569795)))
+  </div>
+</details>
+                </td>
+        </tr>        <tr>
+            <td>2021-05-27</td>
+            <td><a href="https://github.com/digital-land/site-of-special-scientific-interest-collection/tree/main/transformed/site-of-special-scientific-interest/58d5ad603e37f139c0d24a49567acb8d6c2101616133624c90eeb5aa196f8659.csv#L2644">58d5ad603e37...</a></td>
+            <td>2643</td>
                 <td>2003-12-05</td> 
+                <td>Littleworth Common</td> 
+                <td>site-of-special-scientific-interest:SU935862</td> 
                 <td class="data-table__notes-cell data-table__cell--min-width-4">
                     <details class="govuk-details">
   <summary class="govuk-details__summary">
@@ -255,9 +277,9 @@ crossorigin="" />
             <td>2021-05-27</td>
             <td><a href="https://github.com/digital-land/site-of-special-scientific-interest-collection/tree/main/transformed/site-of-special-scientific-interest/58d5ad603e37f139c0d24a49567acb8d6c2101616133624c90eeb5aa196f8659.csv#L2641">58d5ad603e37...</a></td>
             <td>2640</td>
+                <td>2003-12-05</td> 
                 <td>Littleworth Common</td> 
                 <td>site-of-special-scientific-interest:SU935862</td> 
-                <td>2003-12-05</td> 
                 <td class="data-table__notes-cell data-table__cell--min-width-4">
                     <details class="govuk-details">
   <summary class="govuk-details__summary">
@@ -267,25 +289,6 @@ crossorigin="" />
   </summary>
   <div class="govuk-details__text">
     MULTIPOLYGON (((-0.649953 51.567839,-0.650056 51.567696,-0.650133 51.567712,-0.650133 51.567796,-0.650163 51.567817,-0.650255 51.567827,-0.650298 51.567800,-0.650078 51.567537,-0.650170 51.567240,-0.650715 51.566472,-0.650851 51.566078,-0.651015 51.565834,-0.651250 51.565604,-0.651516 51.565434,-0.652355 51.565136,-0.652509 51.565091,-0.652587 51.565101,-0.652632 51.565140,-0.652719 51.565359,-0.653847 51.568548,-0.653932 51.568748,-0.654056 51.568935,-0.653959 51.568987,-0.648386 51.569519,-0.648414 51.569468,-0.649052 51.568977,-0.649487 51.568544,-0.649636 51.568355,-0.649953 51.567839)))
-  </div>
-</details>
-                </td>
-        </tr>        <tr>
-            <td>2021-05-27</td>
-            <td><a href="https://github.com/digital-land/site-of-special-scientific-interest-collection/tree/main/transformed/site-of-special-scientific-interest/58d5ad603e37f139c0d24a49567acb8d6c2101616133624c90eeb5aa196f8659.csv#L2643">58d5ad603e37...</a></td>
-            <td>2642</td>
-                <td>Littleworth Common</td> 
-                <td>site-of-special-scientific-interest:SU935862</td> 
-                <td>2003-12-05</td> 
-                <td class="data-table__notes-cell data-table__cell--min-width-4">
-                    <details class="govuk-details">
-  <summary class="govuk-details__summary">
-    <span class="govuk-details__summary-text">
-      See WKT
-    </span>
-  </summary>
-  <div class="govuk-details__text">
-    MULTIPOLYGON (((-0.649728 51.569795,-0.649183 51.569742,-0.648646 51.569632,-0.648216 51.569598,-0.648374 51.569561,-0.652538 51.569169,-0.652632 51.569474,-0.652706 51.569569,-0.652451 51.569678,-0.652322 51.569667,-0.652149 51.569602,-0.651859 51.569601,-0.651668 51.569681,-0.650821 51.569804,-0.649988 51.569837,-0.649728 51.569795)))
   </div>
 </details>
                 </td>

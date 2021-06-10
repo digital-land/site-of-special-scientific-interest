@@ -11,7 +11,10 @@
 <link rel="shortcut icon" sizes="32x32" href="/images/favicon-32x32.png" type="image/png">
 <link rel="shortcut icon" sizes="16x16" href="/images/favicon-16x16.png" type="image/png">
 <link rel="apple-touch-icon" href="/images/apple-touch-icon.png">
-	<meta name="digital-land:template" content="page-per-thing/record.html"><!-- should make this optional, no need to load if not showing a map -->
+	<meta name="digital-land:template" content="page-per-thing/record.html">
+<script src="https://polyfill.io/v3/polyfill.min.js?features=fetch%2CPromise%2Ces6%2Ces5%2Ces2015%2Ces2016%2CURL%2CURLSearchParams%2CObject.entries%2CObject.fromEntries%2CAbortController"></script>
+
+<!-- should make this optional, no need to load if not showing a map -->
 <link rel="stylesheet" href="https://unpkg.com/leaflet@1.6.0/dist/leaflet.css"
 integrity="sha512-xwE/Az9zrjBIphAcBb3F6JVqxf46+CDLwfLMHloNu6KEQCAWi6HcDUbeOfBIptF7tcCzusKFjFw2yuvEpDL9wQ=="
 crossorigin="" />
@@ -154,10 +157,6 @@ crossorigin="" />
 <div class="govuk-grid-row">    <div class="govuk-grid-column-two-thirds"><article class="data-record govuk-!-margin-bottom-6">
     <h4 class="govuk-heading-s data-record__identifier">#/site-of-special-scientific-interest/site-of-special-scientific-interest/SP826969</h4>
     <dl class="govuk-summary-list data-record__properties">            <div class="govuk-summary-list__row">
-            <dt class="govuk-summary-list__key">name
-            </dt>
-            <dd class="govuk-summary-list__value">                Eye Brook Valley Woods            </dd>
-        </div>        <div class="govuk-summary-list__row">
             <dt class="govuk-summary-list__key">start-date
             </dt>
             <dd class="govuk-summary-list__value">                2003-12-04            </dd>
@@ -165,6 +164,10 @@ crossorigin="" />
             <dt class="govuk-summary-list__key">geography
             </dt>
             <dd class="govuk-summary-list__value">                site-of-special-scientific-interest:SP826969            </dd>
+        </div>        <div class="govuk-summary-list__row">
+            <dt class="govuk-summary-list__key">name
+            </dt>
+            <dd class="govuk-summary-list__value">                Eye Brook Valley Woods            </dd>
         </div>        <div class="govuk-summary-list__row">
             <dt class="govuk-summary-list__key">entry-date
             </dt>
@@ -207,38 +210,19 @@ crossorigin="" />
             <th>entry-date</th>
             <th>resource</th>
             <th>line</th>
+            <th>start-date</th>
             <th>name</th>
             <th>geography</th>
-            <th>start-date</th>
             <th>geometry</th>
         </tr>
     </thead>
     <tbody>        <tr>
             <td>2021-05-27</td>
-            <td><a href="https://github.com/digital-land/site-of-special-scientific-interest-collection/tree/main/transformed/site-of-special-scientific-interest/58d5ad603e37f139c0d24a49567acb8d6c2101616133624c90eeb5aa196f8659.csv#L1546">58d5ad603e37...</a></td>
-            <td>1545</td>
-                <td>Eye Brook Valley Woods</td> 
-                <td>site-of-special-scientific-interest:SP826969</td> 
-                <td>2003-12-04</td> 
-                <td class="data-table__notes-cell data-table__cell--min-width-4">
-                    <details class="govuk-details">
-  <summary class="govuk-details__summary">
-    <span class="govuk-details__summary-text">
-      See WKT
-    </span>
-  </summary>
-  <div class="govuk-details__text">
-    MULTIPOLYGON (((-0.779679 52.565826,-0.779831 52.565639,-0.779637 52.565552,-0.778669 52.564711,-0.778128 52.564300,-0.777780 52.564080,-0.777143 52.563451,-0.776791 52.563041,-0.777093 52.562731,-0.777528 52.562486,-0.779728 52.561466,-0.780311 52.561256,-0.780599 52.561272,-0.781073 52.561364,-0.781594 52.561367,-0.781985 52.561317,-0.782147 52.561356,-0.782326 52.561340,-0.782621 52.561392,-0.782766 52.561511,-0.782979 52.561594,-0.783277 52.561906,-0.783546 52.561955,-0.783666 52.562018,-0.783941 52.562048,-0.784202 52.562126,-0.784272 52.562213,-0.784547 52.562245,-0.784777 52.562328,-0.784850 52.562417,-0.785033 52.562531,-0.785101 52.562531,-0.785305 52.562665,-0.785421 52.562678,-0.785590 52.562753,-0.785643 52.562846,-0.785746 52.562883,-0.785937 52.563022,-0.786342 52.563169,-0.786613 52.563350,-0.786714 52.563483,-0.787041 52.563540,-0.787346 52.563675,-0.787423 52.563778,-0.787510 52.563805,-0.787562 52.563868,-0.787687 52.563935,-0.787683 52.564009,-0.787883 52.564105,-0.788101 52.564268,-0.788242 52.564541,-0.788306 52.564552,-0.788391 52.564676,-0.788037 52.564860,-0.787896 52.564866,-0.787551 52.565021,-0.787171 52.565081,-0.787043 52.565140,-0.786719 52.565200,-0.786470 52.565204,-0.785630 52.565422,-0.785349 52.565529,-0.784992 52.565557,-0.784656 52.565538,-0.784591 52.565679,-0.784659 52.565940,-0.784661 52.566123,-0.784389 52.566154,-0.784131 52.566126,-0.783747 52.566148,-0.782902 52.566086,-0.782257 52.565935,-0.781436 52.565830,-0.780970 52.566053,-0.780489 52.566229,-0.779696 52.566069,-0.779648 52.565878,-0.779679 52.565826)))
-  </div>
-</details>
-                </td>
-        </tr>        <tr>
-            <td>2021-05-27</td>
             <td><a href="https://github.com/digital-land/site-of-special-scientific-interest-collection/tree/main/transformed/site-of-special-scientific-interest/58d5ad603e37f139c0d24a49567acb8d6c2101616133624c90eeb5aa196f8659.csv#L1547">58d5ad603e37...</a></td>
             <td>1546</td>
+                <td>2003-12-04</td> 
                 <td>Eye Brook Valley Woods</td> 
                 <td>site-of-special-scientific-interest:SP826969</td> 
-                <td>2003-12-04</td> 
                 <td class="data-table__notes-cell data-table__cell--min-width-4">
                     <details class="govuk-details">
   <summary class="govuk-details__summary">
@@ -253,11 +237,30 @@ crossorigin="" />
                 </td>
         </tr>        <tr>
             <td>2021-05-27</td>
-            <td><a href="https://github.com/digital-land/site-of-special-scientific-interest-collection/tree/main/transformed/site-of-special-scientific-interest/58d5ad603e37f139c0d24a49567acb8d6c2101616133624c90eeb5aa196f8659.csv#L1548">58d5ad603e37...</a></td>
-            <td>1547</td>
+            <td><a href="https://github.com/digital-land/site-of-special-scientific-interest-collection/tree/main/transformed/site-of-special-scientific-interest/58d5ad603e37f139c0d24a49567acb8d6c2101616133624c90eeb5aa196f8659.csv#L1546">58d5ad603e37...</a></td>
+            <td>1545</td>
+                <td>2003-12-04</td> 
                 <td>Eye Brook Valley Woods</td> 
                 <td>site-of-special-scientific-interest:SP826969</td> 
+                <td class="data-table__notes-cell data-table__cell--min-width-4">
+                    <details class="govuk-details">
+  <summary class="govuk-details__summary">
+    <span class="govuk-details__summary-text">
+      See WKT
+    </span>
+  </summary>
+  <div class="govuk-details__text">
+    MULTIPOLYGON (((-0.779679 52.565826,-0.779831 52.565639,-0.779637 52.565552,-0.778669 52.564711,-0.778128 52.564300,-0.777780 52.564080,-0.777143 52.563451,-0.776791 52.563041,-0.777093 52.562731,-0.777528 52.562486,-0.779728 52.561466,-0.780311 52.561256,-0.780599 52.561272,-0.781073 52.561364,-0.781594 52.561367,-0.781985 52.561317,-0.782147 52.561356,-0.782326 52.561340,-0.782621 52.561392,-0.782766 52.561511,-0.782979 52.561594,-0.783277 52.561906,-0.783546 52.561955,-0.783666 52.562018,-0.783941 52.562048,-0.784202 52.562126,-0.784272 52.562213,-0.784547 52.562245,-0.784777 52.562328,-0.784850 52.562417,-0.785033 52.562531,-0.785101 52.562531,-0.785305 52.562665,-0.785421 52.562678,-0.785590 52.562753,-0.785643 52.562846,-0.785746 52.562883,-0.785937 52.563022,-0.786342 52.563169,-0.786613 52.563350,-0.786714 52.563483,-0.787041 52.563540,-0.787346 52.563675,-0.787423 52.563778,-0.787510 52.563805,-0.787562 52.563868,-0.787687 52.563935,-0.787683 52.564009,-0.787883 52.564105,-0.788101 52.564268,-0.788242 52.564541,-0.788306 52.564552,-0.788391 52.564676,-0.788037 52.564860,-0.787896 52.564866,-0.787551 52.565021,-0.787171 52.565081,-0.787043 52.565140,-0.786719 52.565200,-0.786470 52.565204,-0.785630 52.565422,-0.785349 52.565529,-0.784992 52.565557,-0.784656 52.565538,-0.784591 52.565679,-0.784659 52.565940,-0.784661 52.566123,-0.784389 52.566154,-0.784131 52.566126,-0.783747 52.566148,-0.782902 52.566086,-0.782257 52.565935,-0.781436 52.565830,-0.780970 52.566053,-0.780489 52.566229,-0.779696 52.566069,-0.779648 52.565878,-0.779679 52.565826)))
+  </div>
+</details>
+                </td>
+        </tr>        <tr>
+            <td>2021-05-27</td>
+            <td><a href="https://github.com/digital-land/site-of-special-scientific-interest-collection/tree/main/transformed/site-of-special-scientific-interest/58d5ad603e37f139c0d24a49567acb8d6c2101616133624c90eeb5aa196f8659.csv#L1548">58d5ad603e37...</a></td>
+            <td>1547</td>
                 <td>2003-12-04</td> 
+                <td>Eye Brook Valley Woods</td> 
+                <td>site-of-special-scientific-interest:SP826969</td> 
                 <td class="data-table__notes-cell data-table__cell--min-width-4">
                     <details class="govuk-details">
   <summary class="govuk-details__summary">

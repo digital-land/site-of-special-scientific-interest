@@ -11,7 +11,10 @@
 <link rel="shortcut icon" sizes="32x32" href="/images/favicon-32x32.png" type="image/png">
 <link rel="shortcut icon" sizes="16x16" href="/images/favicon-16x16.png" type="image/png">
 <link rel="apple-touch-icon" href="/images/apple-touch-icon.png">
-	<meta name="digital-land:template" content="page-per-thing/record.html"><!-- should make this optional, no need to load if not showing a map -->
+	<meta name="digital-land:template" content="page-per-thing/record.html">
+<script src="https://polyfill.io/v3/polyfill.min.js?features=fetch%2CPromise%2Ces6%2Ces5%2Ces2015%2Ces2016%2CURL%2CURLSearchParams%2CObject.entries%2CObject.fromEntries%2CAbortController"></script>
+
+<!-- should make this optional, no need to load if not showing a map -->
 <link rel="stylesheet" href="https://unpkg.com/leaflet@1.6.0/dist/leaflet.css"
 integrity="sha512-xwE/Az9zrjBIphAcBb3F6JVqxf46+CDLwfLMHloNu6KEQCAWi6HcDUbeOfBIptF7tcCzusKFjFw2yuvEpDL9wQ=="
 crossorigin="" />
@@ -158,13 +161,13 @@ crossorigin="" />
             </dt>
             <dd class="govuk-summary-list__value">                site-of-special-scientific-interest:TL136664            </dd>
         </div>        <div class="govuk-summary-list__row">
-            <dt class="govuk-summary-list__key">start-date
-            </dt>
-            <dd class="govuk-summary-list__value">                2003-12-15            </dd>
-        </div>        <div class="govuk-summary-list__row">
             <dt class="govuk-summary-list__key">name
             </dt>
             <dd class="govuk-summary-list__value">                Perry Woods            </dd>
+        </div>        <div class="govuk-summary-list__row">
+            <dt class="govuk-summary-list__key">start-date
+            </dt>
+            <dd class="govuk-summary-list__value">                2003-12-15            </dd>
         </div>        <div class="govuk-summary-list__row">
             <dt class="govuk-summary-list__key">entry-date
             </dt>
@@ -207,37 +210,18 @@ crossorigin="" />
             <th>entry-date</th>
             <th>resource</th>
             <th>line</th>
-            <th>geography</th>
             <th>name</th>
+            <th>geography</th>
             <th>start-date</th>
             <th>geometry</th>
         </tr>
     </thead>
     <tbody>        <tr>
             <td>2021-05-27</td>
-            <td><a href="https://github.com/digital-land/site-of-special-scientific-interest-collection/tree/main/transformed/site-of-special-scientific-interest/58d5ad603e37f139c0d24a49567acb8d6c2101616133624c90eeb5aa196f8659.csv#L3075">58d5ad603e37...</a></td>
-            <td>3074</td>
-                <td>site-of-special-scientific-interest:TL136664</td> 
-                <td>Perry Woods</td> 
-                <td>2003-12-15</td> 
-                <td class="data-table__notes-cell data-table__cell--min-width-4">
-                    <details class="govuk-details">
-  <summary class="govuk-details__summary">
-    <span class="govuk-details__summary-text">
-      See WKT
-    </span>
-  </summary>
-  <div class="govuk-details__text">
-    MULTIPOLYGON (((-0.331581 52.281054,-0.331625 52.281023,-0.331817 52.281120,-0.332178 52.281364,-0.332474 52.281517,-0.332769 52.281625,-0.333218 52.281726,-0.334123 52.282062,-0.334566 52.282310,-0.335063 52.282407,-0.335332 52.282553,-0.335192 52.282776,-0.334652 52.283406,-0.334335 52.283686,-0.333652 52.284194,-0.333353 52.284500,-0.331487 52.284270,-0.329224 52.283814,-0.328751 52.283568,-0.328122 52.283112,-0.328984 52.282673,-0.330763 52.281587,-0.331581 52.281054)))
-  </div>
-</details>
-                </td>
-        </tr>        <tr>
-            <td>2021-05-27</td>
             <td><a href="https://github.com/digital-land/site-of-special-scientific-interest-collection/tree/main/transformed/site-of-special-scientific-interest/58d5ad603e37f139c0d24a49567acb8d6c2101616133624c90eeb5aa196f8659.csv#L3073">58d5ad603e37...</a></td>
             <td>3072</td>
-                <td>site-of-special-scientific-interest:TL136664</td> 
                 <td>Perry Woods</td> 
+                <td>site-of-special-scientific-interest:TL136664</td> 
                 <td>2003-12-15</td> 
                 <td class="data-table__notes-cell data-table__cell--min-width-4">
                     <details class="govuk-details">
@@ -253,10 +237,29 @@ crossorigin="" />
                 </td>
         </tr>        <tr>
             <td>2021-05-27</td>
+            <td><a href="https://github.com/digital-land/site-of-special-scientific-interest-collection/tree/main/transformed/site-of-special-scientific-interest/58d5ad603e37f139c0d24a49567acb8d6c2101616133624c90eeb5aa196f8659.csv#L3075">58d5ad603e37...</a></td>
+            <td>3074</td>
+                <td>Perry Woods</td> 
+                <td>site-of-special-scientific-interest:TL136664</td> 
+                <td>2003-12-15</td> 
+                <td class="data-table__notes-cell data-table__cell--min-width-4">
+                    <details class="govuk-details">
+  <summary class="govuk-details__summary">
+    <span class="govuk-details__summary-text">
+      See WKT
+    </span>
+  </summary>
+  <div class="govuk-details__text">
+    MULTIPOLYGON (((-0.331581 52.281054,-0.331625 52.281023,-0.331817 52.281120,-0.332178 52.281364,-0.332474 52.281517,-0.332769 52.281625,-0.333218 52.281726,-0.334123 52.282062,-0.334566 52.282310,-0.335063 52.282407,-0.335332 52.282553,-0.335192 52.282776,-0.334652 52.283406,-0.334335 52.283686,-0.333652 52.284194,-0.333353 52.284500,-0.331487 52.284270,-0.329224 52.283814,-0.328751 52.283568,-0.328122 52.283112,-0.328984 52.282673,-0.330763 52.281587,-0.331581 52.281054)))
+  </div>
+</details>
+                </td>
+        </tr>        <tr>
+            <td>2021-05-27</td>
             <td><a href="https://github.com/digital-land/site-of-special-scientific-interest-collection/tree/main/transformed/site-of-special-scientific-interest/58d5ad603e37f139c0d24a49567acb8d6c2101616133624c90eeb5aa196f8659.csv#L3074">58d5ad603e37...</a></td>
             <td>3073</td>
-                <td>site-of-special-scientific-interest:TL136664</td> 
                 <td>Perry Woods</td> 
+                <td>site-of-special-scientific-interest:TL136664</td> 
                 <td>2003-12-15</td> 
                 <td class="data-table__notes-cell data-table__cell--min-width-4">
                     <details class="govuk-details">

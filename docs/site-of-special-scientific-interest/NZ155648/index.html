@@ -11,7 +11,10 @@
 <link rel="shortcut icon" sizes="32x32" href="/images/favicon-32x32.png" type="image/png">
 <link rel="shortcut icon" sizes="16x16" href="/images/favicon-16x16.png" type="image/png">
 <link rel="apple-touch-icon" href="/images/apple-touch-icon.png">
-	<meta name="digital-land:template" content="page-per-thing/record.html"><!-- should make this optional, no need to load if not showing a map -->
+	<meta name="digital-land:template" content="page-per-thing/record.html">
+<script src="https://polyfill.io/v3/polyfill.min.js?features=fetch%2CPromise%2Ces6%2Ces5%2Ces2015%2Ces2016%2CURL%2CURLSearchParams%2CObject.entries%2CObject.fromEntries%2CAbortController"></script>
+
+<!-- should make this optional, no need to load if not showing a map -->
 <link rel="stylesheet" href="https://unpkg.com/leaflet@1.6.0/dist/leaflet.css"
 integrity="sha512-xwE/Az9zrjBIphAcBb3F6JVqxf46+CDLwfLMHloNu6KEQCAWi6HcDUbeOfBIptF7tcCzusKFjFw2yuvEpDL9wQ=="
 crossorigin="" />
@@ -154,10 +157,6 @@ crossorigin="" />
 <div class="govuk-grid-row">    <div class="govuk-grid-column-two-thirds"><article class="data-record govuk-!-margin-bottom-6">
     <h4 class="govuk-heading-s data-record__identifier">#/site-of-special-scientific-interest/site-of-special-scientific-interest/NZ155648</h4>
     <dl class="govuk-summary-list data-record__properties">            <div class="govuk-summary-list__row">
-            <dt class="govuk-summary-list__key">start-date
-            </dt>
-            <dd class="govuk-summary-list__value">                2003-12-18            </dd>
-        </div>        <div class="govuk-summary-list__row">
             <dt class="govuk-summary-list__key">geography
             </dt>
             <dd class="govuk-summary-list__value">                site-of-special-scientific-interest:NZ155648            </dd>
@@ -165,6 +164,10 @@ crossorigin="" />
             <dt class="govuk-summary-list__key">name
             </dt>
             <dd class="govuk-summary-list__value">                Ryton Willows            </dd>
+        </div>        <div class="govuk-summary-list__row">
+            <dt class="govuk-summary-list__key">start-date
+            </dt>
+            <dd class="govuk-summary-list__value">                2003-12-18            </dd>
         </div>        <div class="govuk-summary-list__row">
             <dt class="govuk-summary-list__key">entry-date
             </dt>
@@ -207,8 +210,8 @@ crossorigin="" />
             <th>entry-date</th>
             <th>resource</th>
             <th>line</th>
-            <th>geography</th>
             <th>name</th>
+            <th>geography</th>
             <th>start-date</th>
             <th>geometry</th>
         </tr>
@@ -217,8 +220,8 @@ crossorigin="" />
             <td>2021-05-27</td>
             <td><a href="https://github.com/digital-land/site-of-special-scientific-interest-collection/tree/main/transformed/site-of-special-scientific-interest/58d5ad603e37f139c0d24a49567acb8d6c2101616133624c90eeb5aa196f8659.csv#L3718">58d5ad603e37...</a></td>
             <td>3717</td>
-                <td>site-of-special-scientific-interest:NZ155648</td> 
                 <td>Ryton Willows</td> 
+                <td>site-of-special-scientific-interest:NZ155648</td> 
                 <td>2003-12-18</td> 
                 <td class="data-table__notes-cell data-table__cell--min-width-4">
                     <details class="govuk-details">
@@ -234,29 +237,10 @@ crossorigin="" />
                 </td>
         </tr>        <tr>
             <td>2021-05-27</td>
-            <td><a href="https://github.com/digital-land/site-of-special-scientific-interest-collection/tree/main/transformed/site-of-special-scientific-interest/58d5ad603e37f139c0d24a49567acb8d6c2101616133624c90eeb5aa196f8659.csv#L3719">58d5ad603e37...</a></td>
-            <td>3718</td>
-                <td>site-of-special-scientific-interest:NZ155648</td> 
-                <td>Ryton Willows</td> 
-                <td>2003-12-18</td> 
-                <td class="data-table__notes-cell data-table__cell--min-width-4">
-                    <details class="govuk-details">
-  <summary class="govuk-details__summary">
-    <span class="govuk-details__summary-text">
-      See WKT
-    </span>
-  </summary>
-  <div class="govuk-details__text">
-    MULTIPOLYGON (((-1.755186 54.978712,-1.754267 54.978672,-1.753247 54.978748,-1.752697 54.978866,-1.752618 54.978734,-1.752366 54.978707,-1.751957 54.978810,-1.751880 54.979022,-1.751811 54.979003,-1.751905 54.978738,-1.752109 54.978487,-1.752679 54.978292,-1.753169 54.978241,-1.753303 54.978171,-1.753314 54.978140,-1.753281 54.978109,-1.753312 54.978073,-1.753576 54.978110,-1.754012 54.978101,-1.757506 54.978694,-1.757435 54.978797,-1.757309 54.978811,-1.757278 54.978916,-1.757197 54.978926,-1.757225 54.978952,-1.757156 54.979024,-1.757200 54.979088,-1.757167 54.979152,-1.756887 54.979003,-1.756630 54.978936,-1.755186 54.978712)))
-  </div>
-</details>
-                </td>
-        </tr>        <tr>
-            <td>2021-05-27</td>
             <td><a href="https://github.com/digital-land/site-of-special-scientific-interest-collection/tree/main/transformed/site-of-special-scientific-interest/58d5ad603e37f139c0d24a49567acb8d6c2101616133624c90eeb5aa196f8659.csv#L3720">58d5ad603e37...</a></td>
             <td>3719</td>
-                <td>site-of-special-scientific-interest:NZ155648</td> 
                 <td>Ryton Willows</td> 
+                <td>site-of-special-scientific-interest:NZ155648</td> 
                 <td>2003-12-18</td> 
                 <td class="data-table__notes-cell data-table__cell--min-width-4">
                     <details class="govuk-details">
@@ -267,6 +251,25 @@ crossorigin="" />
   </summary>
   <div class="govuk-details__text">
     MULTIPOLYGON (((-1.762628 54.978887,-1.762963 54.978650,-1.763080 54.978603,-1.764153 54.978647,-1.764289 54.978746,-1.764520 54.978777,-1.764881 54.978883,-1.765395 54.978899,-1.765457 54.979091,-1.765867 54.979524,-1.766439 54.979805,-1.766408 54.979823,-1.765232 54.979683,-1.763761 54.979432,-1.761996 54.979195,-1.762452 54.979099,-1.762570 54.978989,-1.762628 54.978887)))
+  </div>
+</details>
+                </td>
+        </tr>        <tr>
+            <td>2021-05-27</td>
+            <td><a href="https://github.com/digital-land/site-of-special-scientific-interest-collection/tree/main/transformed/site-of-special-scientific-interest/58d5ad603e37f139c0d24a49567acb8d6c2101616133624c90eeb5aa196f8659.csv#L3719">58d5ad603e37...</a></td>
+            <td>3718</td>
+                <td>Ryton Willows</td> 
+                <td>site-of-special-scientific-interest:NZ155648</td> 
+                <td>2003-12-18</td> 
+                <td class="data-table__notes-cell data-table__cell--min-width-4">
+                    <details class="govuk-details">
+  <summary class="govuk-details__summary">
+    <span class="govuk-details__summary-text">
+      See WKT
+    </span>
+  </summary>
+  <div class="govuk-details__text">
+    MULTIPOLYGON (((-1.755186 54.978712,-1.754267 54.978672,-1.753247 54.978748,-1.752697 54.978866,-1.752618 54.978734,-1.752366 54.978707,-1.751957 54.978810,-1.751880 54.979022,-1.751811 54.979003,-1.751905 54.978738,-1.752109 54.978487,-1.752679 54.978292,-1.753169 54.978241,-1.753303 54.978171,-1.753314 54.978140,-1.753281 54.978109,-1.753312 54.978073,-1.753576 54.978110,-1.754012 54.978101,-1.757506 54.978694,-1.757435 54.978797,-1.757309 54.978811,-1.757278 54.978916,-1.757197 54.978926,-1.757225 54.978952,-1.757156 54.979024,-1.757200 54.979088,-1.757167 54.979152,-1.756887 54.979003,-1.756630 54.978936,-1.755186 54.978712)))
   </div>
 </details>
                 </td>

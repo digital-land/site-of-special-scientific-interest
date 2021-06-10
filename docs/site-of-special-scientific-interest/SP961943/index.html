@@ -11,7 +11,10 @@
 <link rel="shortcut icon" sizes="32x32" href="/images/favicon-32x32.png" type="image/png">
 <link rel="shortcut icon" sizes="16x16" href="/images/favicon-16x16.png" type="image/png">
 <link rel="apple-touch-icon" href="/images/apple-touch-icon.png">
-	<meta name="digital-land:template" content="page-per-thing/record.html"><!-- should make this optional, no need to load if not showing a map -->
+	<meta name="digital-land:template" content="page-per-thing/record.html">
+<script src="https://polyfill.io/v3/polyfill.min.js?features=fetch%2CPromise%2Ces6%2Ces5%2Ces2015%2Ces2016%2CURL%2CURLSearchParams%2CObject.entries%2CObject.fromEntries%2CAbortController"></script>
+
+<!-- should make this optional, no need to load if not showing a map -->
 <link rel="stylesheet" href="https://unpkg.com/leaflet@1.6.0/dist/leaflet.css"
 integrity="sha512-xwE/Az9zrjBIphAcBb3F6JVqxf46+CDLwfLMHloNu6KEQCAWi6HcDUbeOfBIptF7tcCzusKFjFw2yuvEpDL9wQ=="
 crossorigin="" />
@@ -207,38 +210,19 @@ crossorigin="" />
             <th>entry-date</th>
             <th>resource</th>
             <th>line</th>
-            <th>geography</th>
-            <th>name</th>
             <th>start-date</th>
+            <th>name</th>
+            <th>geography</th>
             <th>geometry</th>
         </tr>
     </thead>
     <tbody>        <tr>
             <td>2021-05-27</td>
-            <td><a href="https://github.com/digital-land/site-of-special-scientific-interest-collection/tree/main/transformed/site-of-special-scientific-interest/58d5ad603e37f139c0d24a49567acb8d6c2101616133624c90eeb5aa196f8659.csv#L2370">58d5ad603e37...</a></td>
-            <td>2369</td>
-                <td>site-of-special-scientific-interest:SP961943</td> 
-                <td>Bulwick Meadows</td> 
-                <td>2015-06-29</td> 
-                <td class="data-table__notes-cell data-table__cell--min-width-4">
-                    <details class="govuk-details">
-  <summary class="govuk-details__summary">
-    <span class="govuk-details__summary-text">
-      See WKT
-    </span>
-  </summary>
-  <div class="govuk-details__text">
-    MULTIPOLYGON (((-0.585231 52.538773,-0.585017 52.538980,-0.583499 52.538261,-0.583617 52.538093,-0.583640 52.537934,-0.583712 52.537899,-0.583763 52.537788,-0.584135 52.537683,-0.584231 52.537763,-0.584637 52.537943,-0.585376 52.538158,-0.586520 52.538312,-0.586848 52.538338,-0.586879 52.538293,-0.586956 52.538303,-0.586707 52.538901,-0.586572 52.539128,-0.585798 52.539023,-0.585799 52.538954,-0.585231 52.538773)))
-  </div>
-</details>
-                </td>
-        </tr>        <tr>
-            <td>2021-05-27</td>
             <td><a href="https://github.com/digital-land/site-of-special-scientific-interest-collection/tree/main/transformed/site-of-special-scientific-interest/58d5ad603e37f139c0d24a49567acb8d6c2101616133624c90eeb5aa196f8659.csv#L2369">58d5ad603e37...</a></td>
             <td>2368</td>
-                <td>site-of-special-scientific-interest:SP961943</td> 
-                <td>Bulwick Meadows</td> 
                 <td>2015-06-29</td> 
+                <td>Bulwick Meadows</td> 
+                <td>site-of-special-scientific-interest:SP961943</td> 
                 <td class="data-table__notes-cell data-table__cell--min-width-4">
                     <details class="govuk-details">
   <summary class="govuk-details__summary">
@@ -248,6 +232,25 @@ crossorigin="" />
   </summary>
   <div class="govuk-details__text">
     MULTIPOLYGON (((-0.584219 52.539819,-0.583484 52.539755,-0.581820 52.539259,-0.582088 52.539109,-0.582152 52.539010,-0.583121 52.538618,-0.583358 52.538404,-0.583641 52.538545,-0.583632 52.538609,-0.584579 52.538959,-0.584913 52.539113,-0.584630 52.539497,-0.585059 52.539633,-0.585360 52.539663,-0.585489 52.539485,-0.585767 52.539740,-0.585858 52.539990,-0.585896 52.540199,-0.584358 52.539968,-0.584297 52.539851,-0.584219 52.539819)))
+  </div>
+</details>
+                </td>
+        </tr>        <tr>
+            <td>2021-05-27</td>
+            <td><a href="https://github.com/digital-land/site-of-special-scientific-interest-collection/tree/main/transformed/site-of-special-scientific-interest/58d5ad603e37f139c0d24a49567acb8d6c2101616133624c90eeb5aa196f8659.csv#L2370">58d5ad603e37...</a></td>
+            <td>2369</td>
+                <td>2015-06-29</td> 
+                <td>Bulwick Meadows</td> 
+                <td>site-of-special-scientific-interest:SP961943</td> 
+                <td class="data-table__notes-cell data-table__cell--min-width-4">
+                    <details class="govuk-details">
+  <summary class="govuk-details__summary">
+    <span class="govuk-details__summary-text">
+      See WKT
+    </span>
+  </summary>
+  <div class="govuk-details__text">
+    MULTIPOLYGON (((-0.585231 52.538773,-0.585017 52.538980,-0.583499 52.538261,-0.583617 52.538093,-0.583640 52.537934,-0.583712 52.537899,-0.583763 52.537788,-0.584135 52.537683,-0.584231 52.537763,-0.584637 52.537943,-0.585376 52.538158,-0.586520 52.538312,-0.586848 52.538338,-0.586879 52.538293,-0.586956 52.538303,-0.586707 52.538901,-0.586572 52.539128,-0.585798 52.539023,-0.585799 52.538954,-0.585231 52.538773)))
   </div>
 </details>
                 </td>

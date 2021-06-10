@@ -11,7 +11,10 @@
 <link rel="shortcut icon" sizes="32x32" href="/images/favicon-32x32.png" type="image/png">
 <link rel="shortcut icon" sizes="16x16" href="/images/favicon-16x16.png" type="image/png">
 <link rel="apple-touch-icon" href="/images/apple-touch-icon.png">
-	<meta name="digital-land:template" content="page-per-thing/record.html"><!-- should make this optional, no need to load if not showing a map -->
+	<meta name="digital-land:template" content="page-per-thing/record.html">
+<script src="https://polyfill.io/v3/polyfill.min.js?features=fetch%2CPromise%2Ces6%2Ces5%2Ces2015%2Ces2016%2CURL%2CURLSearchParams%2CObject.entries%2CObject.fromEntries%2CAbortController"></script>
+
+<!-- should make this optional, no need to load if not showing a map -->
 <link rel="stylesheet" href="https://unpkg.com/leaflet@1.6.0/dist/leaflet.css"
 integrity="sha512-xwE/Az9zrjBIphAcBb3F6JVqxf46+CDLwfLMHloNu6KEQCAWi6HcDUbeOfBIptF7tcCzusKFjFw2yuvEpDL9wQ=="
 crossorigin="" />
@@ -154,13 +157,13 @@ crossorigin="" />
 <div class="govuk-grid-row">    <div class="govuk-grid-column-two-thirds"><article class="data-record govuk-!-margin-bottom-6">
     <h4 class="govuk-heading-s data-record__identifier">#/site-of-special-scientific-interest/site-of-special-scientific-interest/TM156134</h4>
     <dl class="govuk-summary-list data-record__properties">            <div class="govuk-summary-list__row">
-            <dt class="govuk-summary-list__key">name
-            </dt>
-            <dd class="govuk-summary-list__value">                Clacton Cliffs &amp; Foreshore            </dd>
-        </div>        <div class="govuk-summary-list__row">
             <dt class="govuk-summary-list__key">start-date
             </dt>
             <dd class="govuk-summary-list__value">                2003-12-11            </dd>
+        </div>        <div class="govuk-summary-list__row">
+            <dt class="govuk-summary-list__key">name
+            </dt>
+            <dd class="govuk-summary-list__value">                Clacton Cliffs &amp; Foreshore            </dd>
         </div>        <div class="govuk-summary-list__row">
             <dt class="govuk-summary-list__key">geography
             </dt>
@@ -207,19 +210,38 @@ crossorigin="" />
             <th>entry-date</th>
             <th>resource</th>
             <th>line</th>
+            <th>start-date</th>
             <th>name</th>
             <th>geography</th>
-            <th>start-date</th>
             <th>geometry</th>
         </tr>
     </thead>
     <tbody>        <tr>
             <td>2021-05-27</td>
-            <td><a href="https://github.com/digital-land/site-of-special-scientific-interest-collection/tree/main/transformed/site-of-special-scientific-interest/58d5ad603e37f139c0d24a49567acb8d6c2101616133624c90eeb5aa196f8659.csv#L962">58d5ad603e37...</a></td>
-            <td>961</td>
+            <td><a href="https://github.com/digital-land/site-of-special-scientific-interest-collection/tree/main/transformed/site-of-special-scientific-interest/58d5ad603e37f139c0d24a49567acb8d6c2101616133624c90eeb5aa196f8659.csv#L963">58d5ad603e37...</a></td>
+            <td>962</td>
+                <td>2003-12-11</td> 
                 <td>Clacton Cliffs &amp; Foreshore</td> 
                 <td>site-of-special-scientific-interest:TM156134</td> 
+                <td class="data-table__notes-cell data-table__cell--min-width-4">
+                    <details class="govuk-details">
+  <summary class="govuk-details__summary">
+    <span class="govuk-details__summary-text">
+      See WKT
+    </span>
+  </summary>
+  <div class="govuk-details__text">
+    MULTIPOLYGON (((1.110771 51.773063,1.111150 51.772998,1.111184 51.773030,1.111771 51.772973,1.112444 51.772952,1.112995 51.772949,1.113380 51.772984,1.113436 51.772771,1.110635 51.772799,1.110240 51.772704,1.109713 51.772736,1.107973 51.772601,1.107051 51.772580,1.104720 51.772372,1.104684 51.772532,1.105842 51.772625,1.110588 51.773138,1.110771 51.773063)))
+  </div>
+</details>
+                </td>
+        </tr>        <tr>
+            <td>2021-05-27</td>
+            <td><a href="https://github.com/digital-land/site-of-special-scientific-interest-collection/tree/main/transformed/site-of-special-scientific-interest/58d5ad603e37f139c0d24a49567acb8d6c2101616133624c90eeb5aa196f8659.csv#L962">58d5ad603e37...</a></td>
+            <td>961</td>
                 <td>2003-12-11</td> 
+                <td>Clacton Cliffs &amp; Foreshore</td> 
+                <td>site-of-special-scientific-interest:TM156134</td> 
                 <td class="data-table__notes-cell data-table__cell--min-width-4">
                     <details class="govuk-details">
   <summary class="govuk-details__summary">
@@ -236,9 +258,9 @@ crossorigin="" />
             <td>2021-05-27</td>
             <td><a href="https://github.com/digital-land/site-of-special-scientific-interest-collection/tree/main/transformed/site-of-special-scientific-interest/58d5ad603e37f139c0d24a49567acb8d6c2101616133624c90eeb5aa196f8659.csv#L961">58d5ad603e37...</a></td>
             <td>960</td>
+                <td>2003-12-11</td> 
                 <td>Clacton Cliffs &amp; Foreshore</td> 
                 <td>site-of-special-scientific-interest:TM156134</td> 
-                <td>2003-12-11</td> 
                 <td class="data-table__notes-cell data-table__cell--min-width-4">
                     <details class="govuk-details">
   <summary class="govuk-details__summary">
@@ -248,25 +270,6 @@ crossorigin="" />
   </summary>
   <div class="govuk-details__text">
     MULTIPOLYGON (((1.123396 51.780324,1.123535 51.780302,1.123745 51.780212,1.125005 51.779970,1.126581 51.779580,1.126627 51.779594,1.126608 51.779577,1.126933 51.779482,1.127394 51.779402,1.127549 51.779347,1.127779 51.779189,1.127971 51.779102,1.128437 51.779045,1.128913 51.778874,1.128933 51.778848,1.128888 51.778670,1.128907 51.778305,1.129038 51.777734,1.129192 51.777382,1.129253 51.777335,1.129501 51.776942,1.127378 51.776554,1.125647 51.776296,1.124168 51.776021,1.124053 51.776069,1.123978 51.776146,1.123912 51.776336,1.123808 51.776416,1.123470 51.776897,1.122543 51.777793,1.122346 51.778066,1.122043 51.778764,1.122047 51.778815,1.121895 51.779152,1.121658 51.779867,1.121746 51.779905,1.122602 51.780056,1.123225 51.780142,1.123407 51.780270,1.123396 51.780324)))
-  </div>
-</details>
-                </td>
-        </tr>        <tr>
-            <td>2021-05-27</td>
-            <td><a href="https://github.com/digital-land/site-of-special-scientific-interest-collection/tree/main/transformed/site-of-special-scientific-interest/58d5ad603e37f139c0d24a49567acb8d6c2101616133624c90eeb5aa196f8659.csv#L963">58d5ad603e37...</a></td>
-            <td>962</td>
-                <td>Clacton Cliffs &amp; Foreshore</td> 
-                <td>site-of-special-scientific-interest:TM156134</td> 
-                <td>2003-12-11</td> 
-                <td class="data-table__notes-cell data-table__cell--min-width-4">
-                    <details class="govuk-details">
-  <summary class="govuk-details__summary">
-    <span class="govuk-details__summary-text">
-      See WKT
-    </span>
-  </summary>
-  <div class="govuk-details__text">
-    MULTIPOLYGON (((1.110771 51.773063,1.111150 51.772998,1.111184 51.773030,1.111771 51.772973,1.112444 51.772952,1.112995 51.772949,1.113380 51.772984,1.113436 51.772771,1.110635 51.772799,1.110240 51.772704,1.109713 51.772736,1.107973 51.772601,1.107051 51.772580,1.104720 51.772372,1.104684 51.772532,1.105842 51.772625,1.110588 51.773138,1.110771 51.773063)))
   </div>
 </details>
                 </td>

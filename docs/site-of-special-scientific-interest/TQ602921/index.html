@@ -11,7 +11,10 @@
 <link rel="shortcut icon" sizes="32x32" href="/images/favicon-32x32.png" type="image/png">
 <link rel="shortcut icon" sizes="16x16" href="/images/favicon-16x16.png" type="image/png">
 <link rel="apple-touch-icon" href="/images/apple-touch-icon.png">
-	<meta name="digital-land:template" content="page-per-thing/record.html"><!-- should make this optional, no need to load if not showing a map -->
+	<meta name="digital-land:template" content="page-per-thing/record.html">
+<script src="https://polyfill.io/v3/polyfill.min.js?features=fetch%2CPromise%2Ces6%2Ces5%2Ces2015%2Ces2016%2CURL%2CURLSearchParams%2CObject.entries%2CObject.fromEntries%2CAbortController"></script>
+
+<!-- should make this optional, no need to load if not showing a map -->
 <link rel="stylesheet" href="https://unpkg.com/leaflet@1.6.0/dist/leaflet.css"
 integrity="sha512-xwE/Az9zrjBIphAcBb3F6JVqxf46+CDLwfLMHloNu6KEQCAWi6HcDUbeOfBIptF7tcCzusKFjFw2yuvEpDL9wQ=="
 crossorigin="" />
@@ -154,17 +157,17 @@ crossorigin="" />
 <div class="govuk-grid-row">    <div class="govuk-grid-column-two-thirds"><article class="data-record govuk-!-margin-bottom-6">
     <h4 class="govuk-heading-s data-record__identifier">#/site-of-special-scientific-interest/site-of-special-scientific-interest/TQ602921</h4>
     <dl class="govuk-summary-list data-record__properties">            <div class="govuk-summary-list__row">
-            <dt class="govuk-summary-list__key">geography
+            <dt class="govuk-summary-list__key">start-date
             </dt>
-            <dd class="govuk-summary-list__value">                site-of-special-scientific-interest:TQ602921            </dd>
+            <dd class="govuk-summary-list__value">                2005-04-14            </dd>
         </div>        <div class="govuk-summary-list__row">
             <dt class="govuk-summary-list__key">name
             </dt>
             <dd class="govuk-summary-list__value">                Thorndon Park            </dd>
         </div>        <div class="govuk-summary-list__row">
-            <dt class="govuk-summary-list__key">start-date
+            <dt class="govuk-summary-list__key">geography
             </dt>
-            <dd class="govuk-summary-list__value">                2005-04-14            </dd>
+            <dd class="govuk-summary-list__value">                site-of-special-scientific-interest:TQ602921            </dd>
         </div>        <div class="govuk-summary-list__row">
             <dt class="govuk-summary-list__key">entry-date
             </dt>
@@ -207,19 +210,19 @@ crossorigin="" />
             <th>entry-date</th>
             <th>resource</th>
             <th>line</th>
-            <th>geography</th>
-            <th>name</th>
             <th>start-date</th>
+            <th>name</th>
+            <th>geography</th>
             <th>geometry</th>
         </tr>
     </thead>
     <tbody>        <tr>
             <td>2021-05-27</td>
-            <td><a href="https://github.com/digital-land/site-of-special-scientific-interest-collection/tree/main/transformed/site-of-special-scientific-interest/58d5ad603e37f139c0d24a49567acb8d6c2101616133624c90eeb5aa196f8659.csv#L9051">58d5ad603e37...</a></td>
-            <td>9050</td>
-                <td>site-of-special-scientific-interest:TQ602921</td> 
-                <td>Thorndon Park</td> 
+            <td><a href="https://github.com/digital-land/site-of-special-scientific-interest-collection/tree/main/transformed/site-of-special-scientific-interest/58d5ad603e37f139c0d24a49567acb8d6c2101616133624c90eeb5aa196f8659.csv#L9054">58d5ad603e37...</a></td>
+            <td>9053</td>
                 <td>2005-04-14</td> 
+                <td>Thorndon Park</td> 
+                <td>site-of-special-scientific-interest:TQ602921</td> 
                 <td class="data-table__notes-cell data-table__cell--min-width-4">
                     <details class="govuk-details">
   <summary class="govuk-details__summary">
@@ -228,17 +231,17 @@ crossorigin="" />
     </span>
   </summary>
   <div class="govuk-details__text">
-    MULTIPOLYGON (((0.349654 51.590425,0.349727 51.589863,0.349516 51.589597,0.349229 51.589000,0.349181 51.588809,0.349207 51.587658,0.349087 51.586512,0.349011 51.586399,0.349013 51.586301,0.349872 51.583783,0.349832 51.583712,0.350887 51.582493,0.351129 51.581227,0.351001 51.581220,0.351089 51.580731,0.349575 51.580584,0.348298 51.580615,0.348096 51.580586,0.347908 51.580772,0.347640 51.581170,0.347262 51.581522,0.347113 51.581849,0.347087 51.582022,0.347012 51.582183,0.346356 51.583157,0.346210 51.583241,0.346171 51.583350,0.346234 51.583503,0.346160 51.583577,0.345882 51.584150,0.345247 51.585250,0.342908 51.586504,0.341594 51.586915,0.339962 51.587052,0.341357 51.587746,0.341545 51.587790,0.342072 51.588017,0.342354 51.588190,0.345754 51.589879,0.346079 51.590094,0.346457 51.590285,0.346911 51.590442,0.347201 51.590489,0.347565 51.590442,0.349342 51.590880,0.349597 51.590990,0.349654 51.590425)))
+    MULTIPOLYGON (((0.332135 51.598268,0.331895 51.597874,0.331681 51.597594,0.330603 51.596367,0.330472 51.596289,0.330284 51.596260,0.330066 51.596289,0.329918 51.596344,0.329241 51.597113,0.328473 51.597908,0.328214 51.598096,0.327893 51.598264,0.327904 51.598301,0.328727 51.598444,0.328873 51.598525,0.329406 51.598680,0.329717 51.598478,0.330234 51.598296,0.330609 51.598525,0.330479 51.598682,0.330509 51.598698,0.331450 51.599165,0.332188 51.599471,0.332673 51.599649,0.332972 51.599719,0.332867 51.599295,0.332535 51.598973,0.332135 51.598268)))
   </div>
 </details>
                 </td>
         </tr>        <tr>
             <td>2021-05-27</td>
-            <td><a href="https://github.com/digital-land/site-of-special-scientific-interest-collection/tree/main/transformed/site-of-special-scientific-interest/58d5ad603e37f139c0d24a49567acb8d6c2101616133624c90eeb5aa196f8659.csv#L9053">58d5ad603e37...</a></td>
-            <td>9052</td>
-                <td>site-of-special-scientific-interest:TQ602921</td> 
-                <td>Thorndon Park</td> 
+            <td><a href="https://github.com/digital-land/site-of-special-scientific-interest-collection/tree/main/transformed/site-of-special-scientific-interest/58d5ad603e37f139c0d24a49567acb8d6c2101616133624c90eeb5aa196f8659.csv#L9055">58d5ad603e37...</a></td>
+            <td>9054</td>
                 <td>2005-04-14</td> 
+                <td>Thorndon Park</td> 
+                <td>site-of-special-scientific-interest:TQ602921</td> 
                 <td class="data-table__notes-cell data-table__cell--min-width-4">
                     <details class="govuk-details">
   <summary class="govuk-details__summary">
@@ -247,7 +250,7 @@ crossorigin="" />
     </span>
   </summary>
   <div class="govuk-details__text">
-    MULTIPOLYGON (((0.314083 51.599740,0.314110 51.599602,0.315640 51.599631,0.315646 51.599589,0.315624 51.599588,0.315738 51.598875,0.315966 51.597988,0.316184 51.597526,0.316812 51.596445,0.316983 51.596040,0.317073 51.595588,0.317141 51.594710,0.317244 51.594433,0.317389 51.594233,0.317630 51.594061,0.319015 51.593524,0.318658 51.593251,0.320379 51.590226,0.320503 51.590140,0.320690 51.590075,0.320585 51.590048,0.320315 51.590125,0.319780 51.590458,0.319473 51.591309,0.319379 51.591448,0.319167 51.591634,0.316791 51.592884,0.314667 51.594045,0.314133 51.594370,0.313498 51.594678,0.312877 51.595194,0.312150 51.595865,0.311813 51.596230,0.311714 51.596524,0.311727 51.596746,0.311642 51.597512,0.311361 51.598147,0.311381 51.598171,0.311119 51.599694,0.311275 51.599826,0.311814 51.599647,0.312341 51.599642,0.312359 51.599700,0.312507 51.599706,0.312797 51.599675,0.313232 51.599682,0.313313 51.599737,0.313329 51.599817,0.314083 51.599740)))
+    MULTIPOLYGON (((0.326686 51.599647,0.326645 51.599237,0.326689 51.598998,0.326938 51.598761,0.327723 51.598321,0.326698 51.598467,0.326040 51.598621,0.325629 51.598832,0.324531 51.599584,0.324365 51.599641,0.324180 51.599654,0.323237 51.599572,0.321315 51.599868,0.321253 51.599913,0.321446 51.599985,0.321818 51.600031,0.325503 51.600795,0.325664 51.600745,0.325805 51.600458,0.326002 51.600257,0.326612 51.599867,0.326690 51.599747,0.326686 51.599647)))
   </div>
 </details>
                 </td>
@@ -255,9 +258,9 @@ crossorigin="" />
             <td>2021-05-27</td>
             <td><a href="https://github.com/digital-land/site-of-special-scientific-interest-collection/tree/main/transformed/site-of-special-scientific-interest/58d5ad603e37f139c0d24a49567acb8d6c2101616133624c90eeb5aa196f8659.csv#L9050">58d5ad603e37...</a></td>
             <td>9049</td>
-                <td>site-of-special-scientific-interest:TQ602921</td> 
-                <td>Thorndon Park</td> 
                 <td>2005-04-14</td> 
+                <td>Thorndon Park</td> 
+                <td>site-of-special-scientific-interest:TQ602921</td> 
                 <td class="data-table__notes-cell data-table__cell--min-width-4">
                     <details class="govuk-details">
   <summary class="govuk-details__summary">
@@ -274,9 +277,9 @@ crossorigin="" />
             <td>2021-05-27</td>
             <td><a href="https://github.com/digital-land/site-of-special-scientific-interest-collection/tree/main/transformed/site-of-special-scientific-interest/58d5ad603e37f139c0d24a49567acb8d6c2101616133624c90eeb5aa196f8659.csv#L9052">58d5ad603e37...</a></td>
             <td>9051</td>
-                <td>site-of-special-scientific-interest:TQ602921</td> 
-                <td>Thorndon Park</td> 
                 <td>2005-04-14</td> 
+                <td>Thorndon Park</td> 
+                <td>site-of-special-scientific-interest:TQ602921</td> 
                 <td class="data-table__notes-cell data-table__cell--min-width-4">
                     <details class="govuk-details">
   <summary class="govuk-details__summary">
@@ -291,11 +294,11 @@ crossorigin="" />
                 </td>
         </tr>        <tr>
             <td>2021-05-27</td>
-            <td><a href="https://github.com/digital-land/site-of-special-scientific-interest-collection/tree/main/transformed/site-of-special-scientific-interest/58d5ad603e37f139c0d24a49567acb8d6c2101616133624c90eeb5aa196f8659.csv#L9055">58d5ad603e37...</a></td>
-            <td>9054</td>
-                <td>site-of-special-scientific-interest:TQ602921</td> 
-                <td>Thorndon Park</td> 
+            <td><a href="https://github.com/digital-land/site-of-special-scientific-interest-collection/tree/main/transformed/site-of-special-scientific-interest/58d5ad603e37f139c0d24a49567acb8d6c2101616133624c90eeb5aa196f8659.csv#L9053">58d5ad603e37...</a></td>
+            <td>9052</td>
                 <td>2005-04-14</td> 
+                <td>Thorndon Park</td> 
+                <td>site-of-special-scientific-interest:TQ602921</td> 
                 <td class="data-table__notes-cell data-table__cell--min-width-4">
                     <details class="govuk-details">
   <summary class="govuk-details__summary">
@@ -304,17 +307,17 @@ crossorigin="" />
     </span>
   </summary>
   <div class="govuk-details__text">
-    MULTIPOLYGON (((0.326686 51.599647,0.326645 51.599237,0.326689 51.598998,0.326938 51.598761,0.327723 51.598321,0.326698 51.598467,0.326040 51.598621,0.325629 51.598832,0.324531 51.599584,0.324365 51.599641,0.324180 51.599654,0.323237 51.599572,0.321315 51.599868,0.321253 51.599913,0.321446 51.599985,0.321818 51.600031,0.325503 51.600795,0.325664 51.600745,0.325805 51.600458,0.326002 51.600257,0.326612 51.599867,0.326690 51.599747,0.326686 51.599647)))
+    MULTIPOLYGON (((0.314083 51.599740,0.314110 51.599602,0.315640 51.599631,0.315646 51.599589,0.315624 51.599588,0.315738 51.598875,0.315966 51.597988,0.316184 51.597526,0.316812 51.596445,0.316983 51.596040,0.317073 51.595588,0.317141 51.594710,0.317244 51.594433,0.317389 51.594233,0.317630 51.594061,0.319015 51.593524,0.318658 51.593251,0.320379 51.590226,0.320503 51.590140,0.320690 51.590075,0.320585 51.590048,0.320315 51.590125,0.319780 51.590458,0.319473 51.591309,0.319379 51.591448,0.319167 51.591634,0.316791 51.592884,0.314667 51.594045,0.314133 51.594370,0.313498 51.594678,0.312877 51.595194,0.312150 51.595865,0.311813 51.596230,0.311714 51.596524,0.311727 51.596746,0.311642 51.597512,0.311361 51.598147,0.311381 51.598171,0.311119 51.599694,0.311275 51.599826,0.311814 51.599647,0.312341 51.599642,0.312359 51.599700,0.312507 51.599706,0.312797 51.599675,0.313232 51.599682,0.313313 51.599737,0.313329 51.599817,0.314083 51.599740)))
   </div>
 </details>
                 </td>
         </tr>        <tr>
             <td>2021-05-27</td>
-            <td><a href="https://github.com/digital-land/site-of-special-scientific-interest-collection/tree/main/transformed/site-of-special-scientific-interest/58d5ad603e37f139c0d24a49567acb8d6c2101616133624c90eeb5aa196f8659.csv#L9054">58d5ad603e37...</a></td>
-            <td>9053</td>
-                <td>site-of-special-scientific-interest:TQ602921</td> 
-                <td>Thorndon Park</td> 
+            <td><a href="https://github.com/digital-land/site-of-special-scientific-interest-collection/tree/main/transformed/site-of-special-scientific-interest/58d5ad603e37f139c0d24a49567acb8d6c2101616133624c90eeb5aa196f8659.csv#L9051">58d5ad603e37...</a></td>
+            <td>9050</td>
                 <td>2005-04-14</td> 
+                <td>Thorndon Park</td> 
+                <td>site-of-special-scientific-interest:TQ602921</td> 
                 <td class="data-table__notes-cell data-table__cell--min-width-4">
                     <details class="govuk-details">
   <summary class="govuk-details__summary">
@@ -323,7 +326,7 @@ crossorigin="" />
     </span>
   </summary>
   <div class="govuk-details__text">
-    MULTIPOLYGON (((0.332135 51.598268,0.331895 51.597874,0.331681 51.597594,0.330603 51.596367,0.330472 51.596289,0.330284 51.596260,0.330066 51.596289,0.329918 51.596344,0.329241 51.597113,0.328473 51.597908,0.328214 51.598096,0.327893 51.598264,0.327904 51.598301,0.328727 51.598444,0.328873 51.598525,0.329406 51.598680,0.329717 51.598478,0.330234 51.598296,0.330609 51.598525,0.330479 51.598682,0.330509 51.598698,0.331450 51.599165,0.332188 51.599471,0.332673 51.599649,0.332972 51.599719,0.332867 51.599295,0.332535 51.598973,0.332135 51.598268)))
+    MULTIPOLYGON (((0.349654 51.590425,0.349727 51.589863,0.349516 51.589597,0.349229 51.589000,0.349181 51.588809,0.349207 51.587658,0.349087 51.586512,0.349011 51.586399,0.349013 51.586301,0.349872 51.583783,0.349832 51.583712,0.350887 51.582493,0.351129 51.581227,0.351001 51.581220,0.351089 51.580731,0.349575 51.580584,0.348298 51.580615,0.348096 51.580586,0.347908 51.580772,0.347640 51.581170,0.347262 51.581522,0.347113 51.581849,0.347087 51.582022,0.347012 51.582183,0.346356 51.583157,0.346210 51.583241,0.346171 51.583350,0.346234 51.583503,0.346160 51.583577,0.345882 51.584150,0.345247 51.585250,0.342908 51.586504,0.341594 51.586915,0.339962 51.587052,0.341357 51.587746,0.341545 51.587790,0.342072 51.588017,0.342354 51.588190,0.345754 51.589879,0.346079 51.590094,0.346457 51.590285,0.346911 51.590442,0.347201 51.590489,0.347565 51.590442,0.349342 51.590880,0.349597 51.590990,0.349654 51.590425)))
   </div>
 </details>
                 </td>

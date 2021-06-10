@@ -11,7 +11,10 @@
 <link rel="shortcut icon" sizes="32x32" href="/images/favicon-32x32.png" type="image/png">
 <link rel="shortcut icon" sizes="16x16" href="/images/favicon-16x16.png" type="image/png">
 <link rel="apple-touch-icon" href="/images/apple-touch-icon.png">
-	<meta name="digital-land:template" content="page-per-thing/record.html"><!-- should make this optional, no need to load if not showing a map -->
+	<meta name="digital-land:template" content="page-per-thing/record.html">
+<script src="https://polyfill.io/v3/polyfill.min.js?features=fetch%2CPromise%2Ces6%2Ces5%2Ces2015%2Ces2016%2CURL%2CURLSearchParams%2CObject.entries%2CObject.fromEntries%2CAbortController"></script>
+
+<!-- should make this optional, no need to load if not showing a map -->
 <link rel="stylesheet" href="https://unpkg.com/leaflet@1.6.0/dist/leaflet.css"
 integrity="sha512-xwE/Az9zrjBIphAcBb3F6JVqxf46+CDLwfLMHloNu6KEQCAWi6HcDUbeOfBIptF7tcCzusKFjFw2yuvEpDL9wQ=="
 crossorigin="" />
@@ -207,8 +210,8 @@ crossorigin="" />
             <th>entry-date</th>
             <th>resource</th>
             <th>line</th>
-            <th>geography</th>
             <th>name</th>
+            <th>geography</th>
             <th>start-date</th>
             <th>geometry</th>
         </tr>
@@ -217,8 +220,8 @@ crossorigin="" />
             <td>2021-05-27</td>
             <td><a href="https://github.com/digital-land/site-of-special-scientific-interest-collection/tree/main/transformed/site-of-special-scientific-interest/58d5ad603e37f139c0d24a49567acb8d6c2101616133624c90eeb5aa196f8659.csv#L391">58d5ad603e37...</a></td>
             <td>390</td>
-                <td>site-of-special-scientific-interest:SW797433</td> 
                 <td>Carrine Common &amp; Penwethers</td> 
+                <td>site-of-special-scientific-interest:SW797433</td> 
                 <td>2010-01-11</td> 
                 <td class="data-table__notes-cell data-table__cell--min-width-4">
                     <details class="govuk-details">
@@ -234,29 +237,10 @@ crossorigin="" />
                 </td>
         </tr>        <tr>
             <td>2021-05-27</td>
-            <td><a href="https://github.com/digital-land/site-of-special-scientific-interest-collection/tree/main/transformed/site-of-special-scientific-interest/58d5ad603e37f139c0d24a49567acb8d6c2101616133624c90eeb5aa196f8659.csv#L395">58d5ad603e37...</a></td>
-            <td>394</td>
-                <td>site-of-special-scientific-interest:SW797433</td> 
-                <td>Carrine Common &amp; Penwethers</td> 
-                <td>2010-01-11</td> 
-                <td class="data-table__notes-cell data-table__cell--min-width-4">
-                    <details class="govuk-details">
-  <summary class="govuk-details__summary">
-    <span class="govuk-details__summary-text">
-      See WKT
-    </span>
-  </summary>
-  <div class="govuk-details__text">
-    MULTIPOLYGON (((-5.083730 50.254611,-5.083780 50.254587,-5.084059 50.254745,-5.083921 50.254798,-5.083663 50.254655,-5.083730 50.254611)))
-  </div>
-</details>
-                </td>
-        </tr>        <tr>
-            <td>2021-05-27</td>
             <td><a href="https://github.com/digital-land/site-of-special-scientific-interest-collection/tree/main/transformed/site-of-special-scientific-interest/58d5ad603e37f139c0d24a49567acb8d6c2101616133624c90eeb5aa196f8659.csv#L393">58d5ad603e37...</a></td>
             <td>392</td>
-                <td>site-of-special-scientific-interest:SW797433</td> 
                 <td>Carrine Common &amp; Penwethers</td> 
+                <td>site-of-special-scientific-interest:SW797433</td> 
                 <td>2010-01-11</td> 
                 <td class="data-table__notes-cell data-table__cell--min-width-4">
                     <details class="govuk-details">
@@ -274,8 +258,8 @@ crossorigin="" />
             <td>2021-05-27</td>
             <td><a href="https://github.com/digital-land/site-of-special-scientific-interest-collection/tree/main/transformed/site-of-special-scientific-interest/58d5ad603e37f139c0d24a49567acb8d6c2101616133624c90eeb5aa196f8659.csv#L392">58d5ad603e37...</a></td>
             <td>391</td>
-                <td>site-of-special-scientific-interest:SW797433</td> 
                 <td>Carrine Common &amp; Penwethers</td> 
+                <td>site-of-special-scientific-interest:SW797433</td> 
                 <td>2010-01-11</td> 
                 <td class="data-table__notes-cell data-table__cell--min-width-4">
                     <details class="govuk-details">
@@ -293,8 +277,8 @@ crossorigin="" />
             <td>2021-05-27</td>
             <td><a href="https://github.com/digital-land/site-of-special-scientific-interest-collection/tree/main/transformed/site-of-special-scientific-interest/58d5ad603e37f139c0d24a49567acb8d6c2101616133624c90eeb5aa196f8659.csv#L394">58d5ad603e37...</a></td>
             <td>393</td>
-                <td>site-of-special-scientific-interest:SW797433</td> 
                 <td>Carrine Common &amp; Penwethers</td> 
+                <td>site-of-special-scientific-interest:SW797433</td> 
                 <td>2010-01-11</td> 
                 <td class="data-table__notes-cell data-table__cell--min-width-4">
                     <details class="govuk-details">
@@ -305,6 +289,25 @@ crossorigin="" />
   </summary>
   <div class="govuk-details__text">
     MULTIPOLYGON (((-5.082778 50.251260,-5.082702 50.250917,-5.082677 50.250238,-5.083118 50.250243,-5.082981 50.250520,-5.082954 50.250723,-5.082967 50.251230,-5.082870 50.251446,-5.082825 50.251298,-5.082778 50.251260)))
+  </div>
+</details>
+                </td>
+        </tr>        <tr>
+            <td>2021-05-27</td>
+            <td><a href="https://github.com/digital-land/site-of-special-scientific-interest-collection/tree/main/transformed/site-of-special-scientific-interest/58d5ad603e37f139c0d24a49567acb8d6c2101616133624c90eeb5aa196f8659.csv#L395">58d5ad603e37...</a></td>
+            <td>394</td>
+                <td>Carrine Common &amp; Penwethers</td> 
+                <td>site-of-special-scientific-interest:SW797433</td> 
+                <td>2010-01-11</td> 
+                <td class="data-table__notes-cell data-table__cell--min-width-4">
+                    <details class="govuk-details">
+  <summary class="govuk-details__summary">
+    <span class="govuk-details__summary-text">
+      See WKT
+    </span>
+  </summary>
+  <div class="govuk-details__text">
+    MULTIPOLYGON (((-5.083730 50.254611,-5.083780 50.254587,-5.084059 50.254745,-5.083921 50.254798,-5.083663 50.254655,-5.083730 50.254611)))
   </div>
 </details>
                 </td>

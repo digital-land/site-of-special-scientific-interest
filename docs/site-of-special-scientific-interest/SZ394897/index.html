@@ -11,7 +11,10 @@
 <link rel="shortcut icon" sizes="32x32" href="/images/favicon-32x32.png" type="image/png">
 <link rel="shortcut icon" sizes="16x16" href="/images/favicon-16x16.png" type="image/png">
 <link rel="apple-touch-icon" href="/images/apple-touch-icon.png">
-	<meta name="digital-land:template" content="page-per-thing/record.html"><!-- should make this optional, no need to load if not showing a map -->
+	<meta name="digital-land:template" content="page-per-thing/record.html">
+<script src="https://polyfill.io/v3/polyfill.min.js?features=fetch%2CPromise%2Ces6%2Ces5%2Ces2015%2Ces2016%2CURL%2CURLSearchParams%2CObject.entries%2CObject.fromEntries%2CAbortController"></script>
+
+<!-- should make this optional, no need to load if not showing a map -->
 <link rel="stylesheet" href="https://unpkg.com/leaflet@1.6.0/dist/leaflet.css"
 integrity="sha512-xwE/Az9zrjBIphAcBb3F6JVqxf46+CDLwfLMHloNu6KEQCAWi6HcDUbeOfBIptF7tcCzusKFjFw2yuvEpDL9wQ=="
 crossorigin="" />
@@ -154,13 +157,13 @@ crossorigin="" />
 <div class="govuk-grid-row">    <div class="govuk-grid-column-two-thirds"><article class="data-record govuk-!-margin-bottom-6">
     <h4 class="govuk-heading-s data-record__identifier">#/site-of-special-scientific-interest/site-of-special-scientific-interest/SZ394897</h4>
     <dl class="govuk-summary-list data-record__properties">            <div class="govuk-summary-list__row">
-            <dt class="govuk-summary-list__key">name
-            </dt>
-            <dd class="govuk-summary-list__value">                Cranmore            </dd>
-        </div>        <div class="govuk-summary-list__row">
             <dt class="govuk-summary-list__key">geography
             </dt>
             <dd class="govuk-summary-list__value">                site-of-special-scientific-interest:SZ394897            </dd>
+        </div>        <div class="govuk-summary-list__row">
+            <dt class="govuk-summary-list__key">name
+            </dt>
+            <dd class="govuk-summary-list__value">                Cranmore            </dd>
         </div>        <div class="govuk-summary-list__row">
             <dt class="govuk-summary-list__key">start-date
             </dt>
@@ -215,25 +218,6 @@ crossorigin="" />
     </thead>
     <tbody>        <tr>
             <td>2021-05-27</td>
-            <td><a href="https://github.com/digital-land/site-of-special-scientific-interest-collection/tree/main/transformed/site-of-special-scientific-interest/58d5ad603e37f139c0d24a49567acb8d6c2101616133624c90eeb5aa196f8659.csv#L8829">58d5ad603e37...</a></td>
-            <td>8828</td>
-                <td>Cranmore</td> 
-                <td>site-of-special-scientific-interest:SZ394897</td> 
-                <td>2003-12-18</td> 
-                <td class="data-table__notes-cell data-table__cell--min-width-4">
-                    <details class="govuk-details">
-  <summary class="govuk-details__summary">
-    <span class="govuk-details__summary-text">
-      See WKT
-    </span>
-  </summary>
-  <div class="govuk-details__text">
-    MULTIPOLYGON (((-1.439836 50.711749,-1.439048 50.711295,-1.439312 50.711118,-1.439797 50.711389,-1.440229 50.711101,-1.440558 50.711305,-1.440117 50.711579,-1.440340 50.711706,-1.440647 50.711483,-1.441026 50.711683,-1.441880 50.711044,-1.442608 50.711458,-1.442021 50.711917,-1.442401 50.712158,-1.441513 50.712721,-1.439836 50.711749)))
-  </div>
-</details>
-                </td>
-        </tr>        <tr>
-            <td>2021-05-27</td>
             <td><a href="https://github.com/digital-land/site-of-special-scientific-interest-collection/tree/main/transformed/site-of-special-scientific-interest/58d5ad603e37f139c0d24a49567acb8d6c2101616133624c90eeb5aa196f8659.csv#L8827">58d5ad603e37...</a></td>
             <td>8826</td>
                 <td>Cranmore</td> 
@@ -248,6 +232,25 @@ crossorigin="" />
   </summary>
   <div class="govuk-details__text">
     MULTIPOLYGON (((-1.441598 50.706233,-1.442119 50.705806,-1.442990 50.704982,-1.443725 50.704349,-1.445346 50.705813,-1.445396 50.705801,-1.446229 50.706603,-1.442233 50.707890,-1.441949 50.707839,-1.441617 50.707734,-1.440591 50.707297,-1.440785 50.706971,-1.441198 50.706707,-1.441354 50.706456,-1.441598 50.706233)))
+  </div>
+</details>
+                </td>
+        </tr>        <tr>
+            <td>2021-05-27</td>
+            <td><a href="https://github.com/digital-land/site-of-special-scientific-interest-collection/tree/main/transformed/site-of-special-scientific-interest/58d5ad603e37f139c0d24a49567acb8d6c2101616133624c90eeb5aa196f8659.csv#L8829">58d5ad603e37...</a></td>
+            <td>8828</td>
+                <td>Cranmore</td> 
+                <td>site-of-special-scientific-interest:SZ394897</td> 
+                <td>2003-12-18</td> 
+                <td class="data-table__notes-cell data-table__cell--min-width-4">
+                    <details class="govuk-details">
+  <summary class="govuk-details__summary">
+    <span class="govuk-details__summary-text">
+      See WKT
+    </span>
+  </summary>
+  <div class="govuk-details__text">
+    MULTIPOLYGON (((-1.439836 50.711749,-1.439048 50.711295,-1.439312 50.711118,-1.439797 50.711389,-1.440229 50.711101,-1.440558 50.711305,-1.440117 50.711579,-1.440340 50.711706,-1.440647 50.711483,-1.441026 50.711683,-1.441880 50.711044,-1.442608 50.711458,-1.442021 50.711917,-1.442401 50.712158,-1.441513 50.712721,-1.439836 50.711749)))
   </div>
 </details>
                 </td>

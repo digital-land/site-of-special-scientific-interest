@@ -11,7 +11,10 @@
 <link rel="shortcut icon" sizes="32x32" href="/images/favicon-32x32.png" type="image/png">
 <link rel="shortcut icon" sizes="16x16" href="/images/favicon-16x16.png" type="image/png">
 <link rel="apple-touch-icon" href="/images/apple-touch-icon.png">
-	<meta name="digital-land:template" content="page-per-thing/record.html"><!-- should make this optional, no need to load if not showing a map -->
+	<meta name="digital-land:template" content="page-per-thing/record.html">
+<script src="https://polyfill.io/v3/polyfill.min.js?features=fetch%2CPromise%2Ces6%2Ces5%2Ces2015%2Ces2016%2CURL%2CURLSearchParams%2CObject.entries%2CObject.fromEntries%2CAbortController"></script>
+
+<!-- should make this optional, no need to load if not showing a map -->
 <link rel="stylesheet" href="https://unpkg.com/leaflet@1.6.0/dist/leaflet.css"
 integrity="sha512-xwE/Az9zrjBIphAcBb3F6JVqxf46+CDLwfLMHloNu6KEQCAWi6HcDUbeOfBIptF7tcCzusKFjFw2yuvEpDL9wQ=="
 crossorigin="" />
@@ -215,25 +218,6 @@ crossorigin="" />
     </thead>
     <tbody>        <tr>
             <td>2021-05-27</td>
-            <td><a href="https://github.com/digital-land/site-of-special-scientific-interest-collection/tree/main/transformed/site-of-special-scientific-interest/58d5ad603e37f139c0d24a49567acb8d6c2101616133624c90eeb5aa196f8659.csv#L3333">58d5ad603e37...</a></td>
-            <td>3332</td>
-                <td>Oak Dingle</td> 
-                <td>site-of-special-scientific-interest:SO565872</td> 
-                <td>2003-12-09</td> 
-                <td class="data-table__notes-cell data-table__cell--min-width-4">
-                    <details class="govuk-details">
-  <summary class="govuk-details__summary">
-    <span class="govuk-details__summary-text">
-      See WKT
-    </span>
-  </summary>
-  <div class="govuk-details__text">
-    MULTIPOLYGON (((-2.639324 52.482678,-2.639132 52.482605,-2.638942 52.482596,-2.638546 52.482487,-2.638639 52.482439,-2.639185 52.482397,-2.639546 52.482333,-2.639917 52.482184,-2.640054 52.482088,-2.640268 52.481763,-2.640421 52.481005,-2.640477 52.480852,-2.640871 52.480475,-2.641042 52.480180,-2.641187 52.480018,-2.641427 52.479553,-2.641535 52.479476,-2.641559 52.479405,-2.641620 52.479398,-2.641599 52.479632,-2.641682 52.479843,-2.641775 52.479965,-2.641804 52.480118,-2.641877 52.480213,-2.641890 52.480291,-2.641626 52.480933,-2.641401 52.481273,-2.641275 52.481638,-2.641186 52.481753,-2.641064 52.482018,-2.640909 52.482169,-2.640828 52.482186,-2.640318 52.482477,-2.640083 52.482505,-2.639516 52.482743,-2.639324 52.482678)))
-  </div>
-</details>
-                </td>
-        </tr>        <tr>
-            <td>2021-05-27</td>
             <td><a href="https://github.com/digital-land/site-of-special-scientific-interest-collection/tree/main/transformed/site-of-special-scientific-interest/58d5ad603e37f139c0d24a49567acb8d6c2101616133624c90eeb5aa196f8659.csv#L3334">58d5ad603e37...</a></td>
             <td>3333</td>
                 <td>Oak Dingle</td> 
@@ -248,6 +232,25 @@ crossorigin="" />
   </summary>
   <div class="govuk-details__text">
     MULTIPOLYGON (((-2.640939 52.479252,-2.640844 52.479180,-2.641087 52.479158,-2.641401 52.479249,-2.642188 52.479096,-2.642185 52.479233,-2.641638 52.479339,-2.641212 52.479314,-2.640939 52.479252)))
+  </div>
+</details>
+                </td>
+        </tr>        <tr>
+            <td>2021-05-27</td>
+            <td><a href="https://github.com/digital-land/site-of-special-scientific-interest-collection/tree/main/transformed/site-of-special-scientific-interest/58d5ad603e37f139c0d24a49567acb8d6c2101616133624c90eeb5aa196f8659.csv#L3333">58d5ad603e37...</a></td>
+            <td>3332</td>
+                <td>Oak Dingle</td> 
+                <td>site-of-special-scientific-interest:SO565872</td> 
+                <td>2003-12-09</td> 
+                <td class="data-table__notes-cell data-table__cell--min-width-4">
+                    <details class="govuk-details">
+  <summary class="govuk-details__summary">
+    <span class="govuk-details__summary-text">
+      See WKT
+    </span>
+  </summary>
+  <div class="govuk-details__text">
+    MULTIPOLYGON (((-2.639324 52.482678,-2.639132 52.482605,-2.638942 52.482596,-2.638546 52.482487,-2.638639 52.482439,-2.639185 52.482397,-2.639546 52.482333,-2.639917 52.482184,-2.640054 52.482088,-2.640268 52.481763,-2.640421 52.481005,-2.640477 52.480852,-2.640871 52.480475,-2.641042 52.480180,-2.641187 52.480018,-2.641427 52.479553,-2.641535 52.479476,-2.641559 52.479405,-2.641620 52.479398,-2.641599 52.479632,-2.641682 52.479843,-2.641775 52.479965,-2.641804 52.480118,-2.641877 52.480213,-2.641890 52.480291,-2.641626 52.480933,-2.641401 52.481273,-2.641275 52.481638,-2.641186 52.481753,-2.641064 52.482018,-2.640909 52.482169,-2.640828 52.482186,-2.640318 52.482477,-2.640083 52.482505,-2.639516 52.482743,-2.639324 52.482678)))
   </div>
 </details>
                 </td>
