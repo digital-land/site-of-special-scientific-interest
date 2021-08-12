@@ -6,7 +6,6 @@
     <meta name="viewport" content="width=device-width, initial-scale=1, viewport-fit=cover">
     <meta name="theme-color" content="#0b0c0c">     <meta http-equiv="X-UA-Compatible" content="IE=edge">
 
-<link rel="manifest" href="/site.webmanifest">
 <link rel="shortcut icon" sizes="48x48" href="/images/favicon.ico" type="image/x-icon">
 <link rel="shortcut icon" sizes="32x32" href="/images/favicon-32x32.png" type="image/png">
 <link rel="shortcut icon" sizes="16x16" href="/images/favicon-16x16.png" type="image/png">
@@ -140,8 +139,7 @@ crossorigin="" />
                 <a class="dlf-subnav__list-item__link" href="#record" data-module-sub-nav="tab">
                 Record
                 </a>
-            </li>
-            <li class="dlf-subnav__list-item">
+            </li>            <li class="dlf-subnav__list-item">
                 <a class="dlf-subnav__list-item__link" href="#history" data-module-sub-nav="tab">
                 History
                 </a>
@@ -161,13 +159,13 @@ crossorigin="" />
             </dt>
             <dd class="govuk-summary-list__value">                2016-09-15            </dd>
         </div>        <div class="govuk-summary-list__row">
-            <dt class="govuk-summary-list__key">geography
-            </dt>
-            <dd class="govuk-summary-list__value">                site-of-special-scientific-interest:TQ543538            </dd>
-        </div>        <div class="govuk-summary-list__row">
             <dt class="govuk-summary-list__key">name
             </dt>
             <dd class="govuk-summary-list__value">                Knole Park            </dd>
+        </div>        <div class="govuk-summary-list__row">
+            <dt class="govuk-summary-list__key">geography
+            </dt>
+            <dd class="govuk-summary-list__value">                site-of-special-scientific-interest:TQ543538            </dd>
         </div>        <div class="govuk-summary-list__row">
             <dt class="govuk-summary-list__key">entry-date
             </dt>
@@ -201,9 +199,7 @@ crossorigin="" />
 <ul class="govuk-list govuk-list--bullet">
     <li><a href="https://digital-land.github.io/specification/schema/geography/">View the geography schema</a></li></ul>
 
-</div>
-
-<div id="history"><h2 class="govuk-heading-m dlf-subnav__heading">History</h2>
+</div><div id="history"><h2 class="govuk-heading-m dlf-subnav__heading">History</h2>
 <div class="data-table__wrapper" data-module="data-table">
     <div class="data-table-left-shadow with-transition"></div>
     <div class="wide-table">
@@ -214,35 +210,17 @@ crossorigin="" />
             <th>resource</th>
             <th>line</th>
             <th>geography</th>
+            <th>start-date</th>
             <th>geometry</th>
             <th>name</th>
-            <th>start-date</th>
         </tr>
     </thead>
     <tbody>        <tr>
             <td>2021-06-30</td>
-            <td><a href="https://github.com/digital-land/site-of-special-scientific-interest-collection/tree/main/transformed/site-of-special-scientific-interest/ebe39bdb9a2cf3fb45d2905df97afe24c9a3ec84c47a8f6e29fb3d8ff133f457.csv#L8721">ebe39bdb9a2c...</a></td>
-            <td>8720</td>
-                <td>site-of-special-scientific-interest:TQ543538</td> 
-                <td class="data-table__notes-cell data-table__cell--min-width-4">
-                    <details class="govuk-details">
-  <summary class="govuk-details__summary">
-    <span class="govuk-details__summary-text">
-      See WKT
-    </span>
-  </summary>
-  <div class="govuk-details__text">
-    MULTIPOLYGON (((0.228790 51.261141,0.228737 51.261113,0.229000 51.261507,0.229216 51.261918,0.229411 51.262205,0.229509 51.262299,0.229632 51.262705,0.229697 51.263253,0.229692 51.263523,0.229405 51.265015,0.230588 51.263255,0.231145 51.262384,0.231472 51.261806,0.231378 51.261734,0.230497 51.261723,0.229945 51.261632,0.229317 51.261419,0.228790 51.261141)))
-  </div>
-</details>
-                </td>
-                <td>Knole Park</td> 
-                <td>2016-09-15</td> 
-        </tr>        <tr>
-            <td>2021-06-30</td>
             <td><a href="https://github.com/digital-land/site-of-special-scientific-interest-collection/tree/main/transformed/site-of-special-scientific-interest/ebe39bdb9a2cf3fb45d2905df97afe24c9a3ec84c47a8f6e29fb3d8ff133f457.csv#L8719">ebe39bdb9a2c...</a></td>
             <td>8718</td>
                 <td>site-of-special-scientific-interest:TQ543538</td> 
+                <td>2016-09-15</td> 
                 <td class="data-table__notes-cell data-table__cell--min-width-4">
                     <details class="govuk-details">
   <summary class="govuk-details__summary">
@@ -256,12 +234,31 @@ crossorigin="" />
 </details>
                 </td>
                 <td>Knole Park</td> 
+        </tr>        <tr>
+            <td>2021-06-30</td>
+            <td><a href="https://github.com/digital-land/site-of-special-scientific-interest-collection/tree/main/transformed/site-of-special-scientific-interest/ebe39bdb9a2cf3fb45d2905df97afe24c9a3ec84c47a8f6e29fb3d8ff133f457.csv#L8721">ebe39bdb9a2c...</a></td>
+            <td>8720</td>
+                <td>site-of-special-scientific-interest:TQ543538</td> 
                 <td>2016-09-15</td> 
+                <td class="data-table__notes-cell data-table__cell--min-width-4">
+                    <details class="govuk-details">
+  <summary class="govuk-details__summary">
+    <span class="govuk-details__summary-text">
+      See WKT
+    </span>
+  </summary>
+  <div class="govuk-details__text">
+    MULTIPOLYGON (((0.228790 51.261141,0.228737 51.261113,0.229000 51.261507,0.229216 51.261918,0.229411 51.262205,0.229509 51.262299,0.229632 51.262705,0.229697 51.263253,0.229692 51.263523,0.229405 51.265015,0.230588 51.263255,0.231145 51.262384,0.231472 51.261806,0.231378 51.261734,0.230497 51.261723,0.229945 51.261632,0.229317 51.261419,0.228790 51.261141)))
+  </div>
+</details>
+                </td>
+                <td>Knole Park</td> 
         </tr>        <tr>
             <td>2021-06-30</td>
             <td><a href="https://github.com/digital-land/site-of-special-scientific-interest-collection/tree/main/transformed/site-of-special-scientific-interest/ebe39bdb9a2cf3fb45d2905df97afe24c9a3ec84c47a8f6e29fb3d8ff133f457.csv#L8720">ebe39bdb9a2c...</a></td>
             <td>8719</td>
                 <td>site-of-special-scientific-interest:TQ543538</td> 
+                <td>2016-09-15</td> 
                 <td class="data-table__notes-cell data-table__cell--min-width-4">
                     <details class="govuk-details">
   <summary class="govuk-details__summary">
@@ -275,12 +272,12 @@ crossorigin="" />
 </details>
                 </td>
                 <td>Knole Park</td> 
-                <td>2016-09-15</td> 
         </tr>        <tr>
             <td>2021-05-27</td>
             <td><a href="https://github.com/digital-land/site-of-special-scientific-interest-collection/tree/main/transformed/site-of-special-scientific-interest/58d5ad603e37f139c0d24a49567acb8d6c2101616133624c90eeb5aa196f8659.csv#L8695">58d5ad603e37...</a></td>
             <td>8694</td>
                 <td>site-of-special-scientific-interest:TQ543538</td> 
+                <td>2016-09-15</td> 
                 <td class="data-table__notes-cell data-table__cell--min-width-4">
                     <details class="govuk-details">
   <summary class="govuk-details__summary">
@@ -294,12 +291,31 @@ crossorigin="" />
 </details>
                 </td>
                 <td>Knole Park</td> 
+        </tr>        <tr>
+            <td>2021-05-27</td>
+            <td><a href="https://github.com/digital-land/site-of-special-scientific-interest-collection/tree/main/transformed/site-of-special-scientific-interest/58d5ad603e37f139c0d24a49567acb8d6c2101616133624c90eeb5aa196f8659.csv#L8696">58d5ad603e37...</a></td>
+            <td>8695</td>
+                <td>site-of-special-scientific-interest:TQ543538</td> 
                 <td>2016-09-15</td> 
+                <td class="data-table__notes-cell data-table__cell--min-width-4">
+                    <details class="govuk-details">
+  <summary class="govuk-details__summary">
+    <span class="govuk-details__summary-text">
+      See WKT
+    </span>
+  </summary>
+  <div class="govuk-details__text">
+    MULTIPOLYGON (((0.228628 51.259529,0.228591 51.259420,0.227846 51.259521,0.227471 51.259520,0.227212 51.259110,0.227007 51.258695,0.226653 51.258779,0.226379 51.257870,0.226848 51.257747,0.226827 51.257692,0.223752 51.258300,0.222656 51.258661,0.222560 51.258711,0.222542 51.258760,0.224480 51.259048,0.225045 51.259173,0.225685 51.259371,0.226134 51.259592,0.226907 51.260080,0.228095 51.260687,0.229284 51.261349,0.229202 51.261171,0.229193 51.261048,0.229226 51.260985,0.229199 51.260884,0.228628 51.259529)))
+  </div>
+</details>
+                </td>
+                <td>Knole Park</td> 
         </tr>        <tr>
             <td>2021-05-27</td>
             <td><a href="https://github.com/digital-land/site-of-special-scientific-interest-collection/tree/main/transformed/site-of-special-scientific-interest/58d5ad603e37f139c0d24a49567acb8d6c2101616133624c90eeb5aa196f8659.csv#L8697">58d5ad603e37...</a></td>
             <td>8696</td>
                 <td>site-of-special-scientific-interest:TQ543538</td> 
+                <td>2016-09-15</td> 
                 <td class="data-table__notes-cell data-table__cell--min-width-4">
                     <details class="govuk-details">
   <summary class="govuk-details__summary">
@@ -313,7 +329,6 @@ crossorigin="" />
 </details>
                 </td>
                 <td>Knole Park</td> 
-                <td>2016-09-15</td> 
         </tr>    </tbody>
 </table>
 

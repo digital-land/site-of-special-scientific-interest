@@ -6,7 +6,6 @@
     <meta name="viewport" content="width=device-width, initial-scale=1, viewport-fit=cover">
     <meta name="theme-color" content="#0b0c0c">     <meta http-equiv="X-UA-Compatible" content="IE=edge">
 
-<link rel="manifest" href="/site.webmanifest">
 <link rel="shortcut icon" sizes="48x48" href="/images/favicon.ico" type="image/x-icon">
 <link rel="shortcut icon" sizes="32x32" href="/images/favicon-32x32.png" type="image/png">
 <link rel="shortcut icon" sizes="16x16" href="/images/favicon-16x16.png" type="image/png">
@@ -140,8 +139,7 @@ crossorigin="" />
                 <a class="dlf-subnav__list-item__link" href="#record" data-module-sub-nav="tab">
                 Record
                 </a>
-            </li>
-            <li class="dlf-subnav__list-item">
+            </li>            <li class="dlf-subnav__list-item">
                 <a class="dlf-subnav__list-item__link" href="#history" data-module-sub-nav="tab">
                 History
                 </a>
@@ -157,13 +155,13 @@ crossorigin="" />
 <div class="govuk-grid-row">    <div class="govuk-grid-column-two-thirds"><article class="data-record govuk-!-margin-bottom-6">
     <h4 class="govuk-heading-s data-record__identifier">#/site-of-special-scientific-interest/site-of-special-scientific-interest/ST451744</h4>
     <dl class="govuk-summary-list data-record__properties">            <div class="govuk-summary-list__row">
-            <dt class="govuk-summary-list__key">name
-            </dt>
-            <dd class="govuk-summary-list__value">                Weston-in-Gordano            </dd>
-        </div>        <div class="govuk-summary-list__row">
             <dt class="govuk-summary-list__key">start-date
             </dt>
             <dd class="govuk-summary-list__value">                2015-10-01            </dd>
+        </div>        <div class="govuk-summary-list__row">
+            <dt class="govuk-summary-list__key">name
+            </dt>
+            <dd class="govuk-summary-list__value">                Weston-in-Gordano            </dd>
         </div>        <div class="govuk-summary-list__row">
             <dt class="govuk-summary-list__key">geography
             </dt>
@@ -201,9 +199,7 @@ crossorigin="" />
 <ul class="govuk-list govuk-list--bullet">
     <li><a href="https://digital-land.github.io/specification/schema/geography/">View the geography schema</a></li></ul>
 
-</div>
-
-<div id="history"><h2 class="govuk-heading-m dlf-subnav__heading">History</h2>
+</div><div id="history"><h2 class="govuk-heading-m dlf-subnav__heading">History</h2>
 <div class="data-table__wrapper" data-module="data-table">
     <div class="data-table-left-shadow with-transition"></div>
     <div class="wide-table">
@@ -214,35 +210,17 @@ crossorigin="" />
             <th>resource</th>
             <th>line</th>
             <th>geography</th>
+            <th>start-date</th>
             <th>geometry</th>
             <th>name</th>
-            <th>start-date</th>
         </tr>
     </thead>
     <tbody>        <tr>
             <td>2021-06-30</td>
-            <td><a href="https://github.com/digital-land/site-of-special-scientific-interest-collection/tree/main/transformed/site-of-special-scientific-interest/ebe39bdb9a2cf3fb45d2905df97afe24c9a3ec84c47a8f6e29fb3d8ff133f457.csv#L5692">ebe39bdb9a2c...</a></td>
-            <td>5691</td>
-                <td>site-of-special-scientific-interest:ST451744</td> 
-                <td class="data-table__notes-cell data-table__cell--min-width-4">
-                    <details class="govuk-details">
-  <summary class="govuk-details__summary">
-    <span class="govuk-details__summary-text">
-      See WKT
-    </span>
-  </summary>
-  <div class="govuk-details__text">
-    MULTIPOLYGON (((-2.789659 51.468110,-2.789186 51.468101,-2.787997 51.466434,-2.789771 51.466149,-2.789946 51.466183,-2.790833 51.467319,-2.790751 51.467504,-2.791030 51.467835,-2.791117 51.468034,-2.790856 51.467968,-2.789659 51.468110)))
-  </div>
-</details>
-                </td>
-                <td>Weston-in-Gordano</td> 
-                <td>2015-10-01</td> 
-        </tr>        <tr>
-            <td>2021-06-30</td>
             <td><a href="https://github.com/digital-land/site-of-special-scientific-interest-collection/tree/main/transformed/site-of-special-scientific-interest/ebe39bdb9a2cf3fb45d2905df97afe24c9a3ec84c47a8f6e29fb3d8ff133f457.csv#L5691">ebe39bdb9a2c...</a></td>
             <td>5690</td>
                 <td>site-of-special-scientific-interest:ST451744</td> 
+                <td>2015-10-01</td> 
                 <td class="data-table__notes-cell data-table__cell--min-width-4">
                     <details class="govuk-details">
   <summary class="govuk-details__summary">
@@ -256,12 +234,31 @@ crossorigin="" />
 </details>
                 </td>
                 <td>Weston-in-Gordano</td> 
+        </tr>        <tr>
+            <td>2021-06-30</td>
+            <td><a href="https://github.com/digital-land/site-of-special-scientific-interest-collection/tree/main/transformed/site-of-special-scientific-interest/ebe39bdb9a2cf3fb45d2905df97afe24c9a3ec84c47a8f6e29fb3d8ff133f457.csv#L5692">ebe39bdb9a2c...</a></td>
+            <td>5691</td>
+                <td>site-of-special-scientific-interest:ST451744</td> 
                 <td>2015-10-01</td> 
+                <td class="data-table__notes-cell data-table__cell--min-width-4">
+                    <details class="govuk-details">
+  <summary class="govuk-details__summary">
+    <span class="govuk-details__summary-text">
+      See WKT
+    </span>
+  </summary>
+  <div class="govuk-details__text">
+    MULTIPOLYGON (((-2.789659 51.468110,-2.789186 51.468101,-2.787997 51.466434,-2.789771 51.466149,-2.789946 51.466183,-2.790833 51.467319,-2.790751 51.467504,-2.791030 51.467835,-2.791117 51.468034,-2.790856 51.467968,-2.789659 51.468110)))
+  </div>
+</details>
+                </td>
+                <td>Weston-in-Gordano</td> 
         </tr>        <tr>
             <td>2021-06-30</td>
             <td><a href="https://github.com/digital-land/site-of-special-scientific-interest-collection/tree/main/transformed/site-of-special-scientific-interest/ebe39bdb9a2cf3fb45d2905df97afe24c9a3ec84c47a8f6e29fb3d8ff133f457.csv#L5690">ebe39bdb9a2c...</a></td>
             <td>5689</td>
                 <td>site-of-special-scientific-interest:ST451744</td> 
+                <td>2015-10-01</td> 
                 <td class="data-table__notes-cell data-table__cell--min-width-4">
                     <details class="govuk-details">
   <summary class="govuk-details__summary">
@@ -275,12 +272,12 @@ crossorigin="" />
 </details>
                 </td>
                 <td>Weston-in-Gordano</td> 
-                <td>2015-10-01</td> 
         </tr>        <tr>
             <td>2021-05-27</td>
             <td><a href="https://github.com/digital-land/site-of-special-scientific-interest-collection/tree/main/transformed/site-of-special-scientific-interest/58d5ad603e37f139c0d24a49567acb8d6c2101616133624c90eeb5aa196f8659.csv#L5692">58d5ad603e37...</a></td>
             <td>5691</td>
                 <td>site-of-special-scientific-interest:ST451744</td> 
+                <td>2015-10-01</td> 
                 <td class="data-table__notes-cell data-table__cell--min-width-4">
                     <details class="govuk-details">
   <summary class="govuk-details__summary">
@@ -294,12 +291,12 @@ crossorigin="" />
 </details>
                 </td>
                 <td>Weston-in-Gordano</td> 
-                <td>2015-10-01</td> 
         </tr>        <tr>
             <td>2021-05-27</td>
             <td><a href="https://github.com/digital-land/site-of-special-scientific-interest-collection/tree/main/transformed/site-of-special-scientific-interest/58d5ad603e37f139c0d24a49567acb8d6c2101616133624c90eeb5aa196f8659.csv#L5693">58d5ad603e37...</a></td>
             <td>5692</td>
                 <td>site-of-special-scientific-interest:ST451744</td> 
+                <td>2015-10-01</td> 
                 <td class="data-table__notes-cell data-table__cell--min-width-4">
                     <details class="govuk-details">
   <summary class="govuk-details__summary">
@@ -313,26 +310,6 @@ crossorigin="" />
 </details>
                 </td>
                 <td>Weston-in-Gordano</td> 
-                <td>2015-10-01</td> 
-        </tr>        <tr>
-            <td>2021-05-27</td>
-            <td><a href="https://github.com/digital-land/site-of-special-scientific-interest-collection/tree/main/transformed/site-of-special-scientific-interest/58d5ad603e37f139c0d24a49567acb8d6c2101616133624c90eeb5aa196f8659.csv#L5691">58d5ad603e37...</a></td>
-            <td>5690</td>
-                <td>site-of-special-scientific-interest:ST451744</td> 
-                <td class="data-table__notes-cell data-table__cell--min-width-4">
-                    <details class="govuk-details">
-  <summary class="govuk-details__summary">
-    <span class="govuk-details__summary-text">
-      See WKT
-    </span>
-  </summary>
-  <div class="govuk-details__text">
-    MULTIPOLYGON (((-2.791174 51.467602,-2.790908 51.467218,-2.790114 51.466231,-2.790096 51.466172,-2.790134 51.466118,-2.790822 51.466016,-2.791581 51.465950,-2.793652 51.465603,-2.794217 51.466463,-2.794724 51.467099,-2.794169 51.467250,-2.793620 51.467320,-2.793127 51.467446,-2.791515 51.468093,-2.791174 51.467602)))
-  </div>
-</details>
-                </td>
-                <td>Weston-in-Gordano</td> 
-                <td>2015-10-01</td> 
         </tr>    </tbody>
 </table>
 

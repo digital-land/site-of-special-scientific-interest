@@ -6,7 +6,6 @@
     <meta name="viewport" content="width=device-width, initial-scale=1, viewport-fit=cover">
     <meta name="theme-color" content="#0b0c0c">     <meta http-equiv="X-UA-Compatible" content="IE=edge">
 
-<link rel="manifest" href="/site.webmanifest">
 <link rel="shortcut icon" sizes="48x48" href="/images/favicon.ico" type="image/x-icon">
 <link rel="shortcut icon" sizes="32x32" href="/images/favicon-32x32.png" type="image/png">
 <link rel="shortcut icon" sizes="16x16" href="/images/favicon-16x16.png" type="image/png">
@@ -140,8 +139,7 @@ crossorigin="" />
                 <a class="dlf-subnav__list-item__link" href="#record" data-module-sub-nav="tab">
                 Record
                 </a>
-            </li>
-            <li class="dlf-subnav__list-item">
+            </li>            <li class="dlf-subnav__list-item">
                 <a class="dlf-subnav__list-item__link" href="#history" data-module-sub-nav="tab">
                 History
                 </a>
@@ -157,6 +155,10 @@ crossorigin="" />
 <div class="govuk-grid-row">    <div class="govuk-grid-column-two-thirds"><article class="data-record govuk-!-margin-bottom-6">
     <h4 class="govuk-heading-s data-record__identifier">#/site-of-special-scientific-interest/site-of-special-scientific-interest/SK627747</h4>
     <dl class="govuk-summary-list data-record__properties">            <div class="govuk-summary-list__row">
+            <dt class="govuk-summary-list__key">geography
+            </dt>
+            <dd class="govuk-summary-list__value">                site-of-special-scientific-interest:SK627747            </dd>
+        </div>        <div class="govuk-summary-list__row">
             <dt class="govuk-summary-list__key">name
             </dt>
             <dd class="govuk-summary-list__value">                Clumber Park            </dd>
@@ -164,10 +166,6 @@ crossorigin="" />
             <dt class="govuk-summary-list__key">start-date
             </dt>
             <dd class="govuk-summary-list__value">                2009-09-25            </dd>
-        </div>        <div class="govuk-summary-list__row">
-            <dt class="govuk-summary-list__key">geography
-            </dt>
-            <dd class="govuk-summary-list__value">                site-of-special-scientific-interest:SK627747            </dd>
         </div>        <div class="govuk-summary-list__row">
             <dt class="govuk-summary-list__key">entry-date
             </dt>
@@ -201,9 +199,7 @@ crossorigin="" />
 <ul class="govuk-list govuk-list--bullet">
     <li><a href="https://digital-land.github.io/specification/schema/geography/">View the geography schema</a></li></ul>
 
-</div>
-
-<div id="history"><h2 class="govuk-heading-m dlf-subnav__heading">History</h2>
+</div><div id="history"><h2 class="govuk-heading-m dlf-subnav__heading">History</h2>
 <div class="data-table__wrapper" data-module="data-table">
     <div class="data-table-left-shadow with-transition"></div>
     <div class="wide-table">
@@ -214,35 +210,17 @@ crossorigin="" />
             <th>resource</th>
             <th>line</th>
             <th>geography</th>
+            <th>start-date</th>
             <th>geometry</th>
             <th>name</th>
-            <th>start-date</th>
         </tr>
     </thead>
     <tbody>        <tr>
             <td>2021-06-30</td>
-            <td><a href="https://github.com/digital-land/site-of-special-scientific-interest-collection/tree/main/transformed/site-of-special-scientific-interest/ebe39bdb9a2cf3fb45d2905df97afe24c9a3ec84c47a8f6e29fb3d8ff133f457.csv#L1179">ebe39bdb9a2c...</a></td>
-            <td>1178</td>
-                <td>site-of-special-scientific-interest:SK627747</td> 
-                <td class="data-table__notes-cell data-table__cell--min-width-4">
-                    <details class="govuk-details">
-  <summary class="govuk-details__summary">
-    <span class="govuk-details__summary-text">
-      See WKT
-    </span>
-  </summary>
-  <div class="govuk-details__text">
-    MULTIPOLYGON (((-1.032037 53.277972,-1.030872 53.277856,-1.030006 53.277978,-1.029222 53.277981,-1.029210 53.277784,-1.029321 53.277130,-1.029209 53.275361,-1.029433 53.275355,-1.029697 53.275434,-1.030372 53.275962,-1.030698 53.275772,-1.031035 53.275520,-1.031382 53.275376,-1.032147 53.275331,-1.032724 53.275391,-1.033059 53.275459,-1.033306 53.275566,-1.033661 53.275832,-1.034141 53.276232,-1.034521 53.276649,-1.034529 53.276805,-1.034492 53.276917,-1.034304 53.277127,-1.033612 53.277555,-1.032873 53.277907,-1.032766 53.277980,-1.032687 53.278084,-1.032037 53.277972)))
-  </div>
-</details>
-                </td>
-                <td>Clumber Park</td> 
-                <td>2009-09-25</td> 
-        </tr>        <tr>
-            <td>2021-06-30</td>
             <td><a href="https://github.com/digital-land/site-of-special-scientific-interest-collection/tree/main/transformed/site-of-special-scientific-interest/ebe39bdb9a2cf3fb45d2905df97afe24c9a3ec84c47a8f6e29fb3d8ff133f457.csv#L1180">ebe39bdb9a2c...</a></td>
             <td>1179</td>
                 <td>site-of-special-scientific-interest:SK627747</td> 
+                <td>2009-09-25</td> 
                 <td class="data-table__notes-cell data-table__cell--min-width-4">
                     <details class="govuk-details">
   <summary class="govuk-details__summary">
@@ -256,12 +234,31 @@ crossorigin="" />
 </details>
                 </td>
                 <td>Clumber Park</td> 
+        </tr>        <tr>
+            <td>2021-06-30</td>
+            <td><a href="https://github.com/digital-land/site-of-special-scientific-interest-collection/tree/main/transformed/site-of-special-scientific-interest/ebe39bdb9a2cf3fb45d2905df97afe24c9a3ec84c47a8f6e29fb3d8ff133f457.csv#L1179">ebe39bdb9a2c...</a></td>
+            <td>1178</td>
+                <td>site-of-special-scientific-interest:SK627747</td> 
                 <td>2009-09-25</td> 
+                <td class="data-table__notes-cell data-table__cell--min-width-4">
+                    <details class="govuk-details">
+  <summary class="govuk-details__summary">
+    <span class="govuk-details__summary-text">
+      See WKT
+    </span>
+  </summary>
+  <div class="govuk-details__text">
+    MULTIPOLYGON (((-1.032037 53.277972,-1.030872 53.277856,-1.030006 53.277978,-1.029222 53.277981,-1.029210 53.277784,-1.029321 53.277130,-1.029209 53.275361,-1.029433 53.275355,-1.029697 53.275434,-1.030372 53.275962,-1.030698 53.275772,-1.031035 53.275520,-1.031382 53.275376,-1.032147 53.275331,-1.032724 53.275391,-1.033059 53.275459,-1.033306 53.275566,-1.033661 53.275832,-1.034141 53.276232,-1.034521 53.276649,-1.034529 53.276805,-1.034492 53.276917,-1.034304 53.277127,-1.033612 53.277555,-1.032873 53.277907,-1.032766 53.277980,-1.032687 53.278084,-1.032037 53.277972)))
+  </div>
+</details>
+                </td>
+                <td>Clumber Park</td> 
         </tr>        <tr>
             <td>2021-06-30</td>
             <td><a href="https://github.com/digital-land/site-of-special-scientific-interest-collection/tree/main/transformed/site-of-special-scientific-interest/ebe39bdb9a2cf3fb45d2905df97afe24c9a3ec84c47a8f6e29fb3d8ff133f457.csv#L1178">ebe39bdb9a2c...</a></td>
             <td>1177</td>
                 <td>site-of-special-scientific-interest:SK627747</td> 
+                <td>2009-09-25</td> 
                 <td class="data-table__notes-cell data-table__cell--min-width-4">
                     <details class="govuk-details">
   <summary class="govuk-details__summary">
@@ -275,31 +272,12 @@ crossorigin="" />
 </details>
                 </td>
                 <td>Clumber Park</td> 
-                <td>2009-09-25</td> 
-        </tr>        <tr>
-            <td>2021-05-27</td>
-            <td><a href="https://github.com/digital-land/site-of-special-scientific-interest-collection/tree/main/transformed/site-of-special-scientific-interest/58d5ad603e37f139c0d24a49567acb8d6c2101616133624c90eeb5aa196f8659.csv#L1181">58d5ad603e37...</a></td>
-            <td>1180</td>
-                <td>site-of-special-scientific-interest:SK627747</td> 
-                <td class="data-table__notes-cell data-table__cell--min-width-4">
-                    <details class="govuk-details">
-  <summary class="govuk-details__summary">
-    <span class="govuk-details__summary-text">
-      See WKT
-    </span>
-  </summary>
-  <div class="govuk-details__text">
-    MULTIPOLYGON (((-1.036122 53.288285,-1.039825 53.287486,-1.040077 53.287731,-1.040046 53.287731,-1.040156 53.287866,-1.040354 53.287987,-1.040385 53.288055,-1.040468 53.288053,-1.040830 53.288321,-1.041303 53.288582,-1.034756 53.289765,-1.034339 53.288819,-1.034217 53.288709,-1.036122 53.288285)))
-  </div>
-</details>
-                </td>
-                <td>Clumber Park</td> 
-                <td>2009-09-25</td> 
         </tr>        <tr>
             <td>2021-05-27</td>
             <td><a href="https://github.com/digital-land/site-of-special-scientific-interest-collection/tree/main/transformed/site-of-special-scientific-interest/58d5ad603e37f139c0d24a49567acb8d6c2101616133624c90eeb5aa196f8659.csv#L1180">58d5ad603e37...</a></td>
             <td>1179</td>
                 <td>site-of-special-scientific-interest:SK627747</td> 
+                <td>2009-09-25</td> 
                 <td class="data-table__notes-cell data-table__cell--min-width-4">
                     <details class="govuk-details">
   <summary class="govuk-details__summary">
@@ -313,12 +291,12 @@ crossorigin="" />
 </details>
                 </td>
                 <td>Clumber Park</td> 
-                <td>2009-09-25</td> 
         </tr>        <tr>
             <td>2021-05-27</td>
             <td><a href="https://github.com/digital-land/site-of-special-scientific-interest-collection/tree/main/transformed/site-of-special-scientific-interest/58d5ad603e37f139c0d24a49567acb8d6c2101616133624c90eeb5aa196f8659.csv#L1179">58d5ad603e37...</a></td>
             <td>1178</td>
                 <td>site-of-special-scientific-interest:SK627747</td> 
+                <td>2009-09-25</td> 
                 <td class="data-table__notes-cell data-table__cell--min-width-4">
                     <details class="govuk-details">
   <summary class="govuk-details__summary">
@@ -332,7 +310,25 @@ crossorigin="" />
 </details>
                 </td>
                 <td>Clumber Park</td> 
+        </tr>        <tr>
+            <td>2021-05-27</td>
+            <td><a href="https://github.com/digital-land/site-of-special-scientific-interest-collection/tree/main/transformed/site-of-special-scientific-interest/58d5ad603e37f139c0d24a49567acb8d6c2101616133624c90eeb5aa196f8659.csv#L1181">58d5ad603e37...</a></td>
+            <td>1180</td>
+                <td>site-of-special-scientific-interest:SK627747</td> 
                 <td>2009-09-25</td> 
+                <td class="data-table__notes-cell data-table__cell--min-width-4">
+                    <details class="govuk-details">
+  <summary class="govuk-details__summary">
+    <span class="govuk-details__summary-text">
+      See WKT
+    </span>
+  </summary>
+  <div class="govuk-details__text">
+    MULTIPOLYGON (((-1.036122 53.288285,-1.039825 53.287486,-1.040077 53.287731,-1.040046 53.287731,-1.040156 53.287866,-1.040354 53.287987,-1.040385 53.288055,-1.040468 53.288053,-1.040830 53.288321,-1.041303 53.288582,-1.034756 53.289765,-1.034339 53.288819,-1.034217 53.288709,-1.036122 53.288285)))
+  </div>
+</details>
+                </td>
+                <td>Clumber Park</td> 
         </tr>    </tbody>
 </table>
 

@@ -6,7 +6,6 @@
     <meta name="viewport" content="width=device-width, initial-scale=1, viewport-fit=cover">
     <meta name="theme-color" content="#0b0c0c">     <meta http-equiv="X-UA-Compatible" content="IE=edge">
 
-<link rel="manifest" href="/site.webmanifest">
 <link rel="shortcut icon" sizes="48x48" href="/images/favicon.ico" type="image/x-icon">
 <link rel="shortcut icon" sizes="32x32" href="/images/favicon-32x32.png" type="image/png">
 <link rel="shortcut icon" sizes="16x16" href="/images/favicon-16x16.png" type="image/png">
@@ -140,8 +139,7 @@ crossorigin="" />
                 <a class="dlf-subnav__list-item__link" href="#record" data-module-sub-nav="tab">
                 Record
                 </a>
-            </li>
-            <li class="dlf-subnav__list-item">
+            </li>            <li class="dlf-subnav__list-item">
                 <a class="dlf-subnav__list-item__link" href="#history" data-module-sub-nav="tab">
                 History
                 </a>
@@ -161,13 +159,13 @@ crossorigin="" />
             </dt>
             <dd class="govuk-summary-list__value">                Foulness            </dd>
         </div>        <div class="govuk-summary-list__row">
-            <dt class="govuk-summary-list__key">start-date
-            </dt>
-            <dd class="govuk-summary-list__value">                2015-11-05            </dd>
-        </div>        <div class="govuk-summary-list__row">
             <dt class="govuk-summary-list__key">geography
             </dt>
             <dd class="govuk-summary-list__value">                site-of-special-scientific-interest:TR022902            </dd>
+        </div>        <div class="govuk-summary-list__row">
+            <dt class="govuk-summary-list__key">start-date
+            </dt>
+            <dd class="govuk-summary-list__value">                2015-11-05            </dd>
         </div>        <div class="govuk-summary-list__row">
             <dt class="govuk-summary-list__key">entry-date
             </dt>
@@ -201,9 +199,7 @@ crossorigin="" />
 <ul class="govuk-list govuk-list--bullet">
     <li><a href="https://digital-land.github.io/specification/schema/geography/">View the geography schema</a></li></ul>
 
-</div>
-
-<div id="history"><h2 class="govuk-heading-m dlf-subnav__heading">History</h2>
+</div><div id="history"><h2 class="govuk-heading-m dlf-subnav__heading">History</h2>
 <div class="data-table__wrapper" data-module="data-table">
     <div class="data-table-left-shadow with-transition"></div>
     <div class="wide-table">
@@ -214,16 +210,36 @@ crossorigin="" />
             <th>resource</th>
             <th>line</th>
             <th>geography</th>
+            <th>start-date</th>
             <th>geometry</th>
             <th>name</th>
-            <th>start-date</th>
         </tr>
     </thead>
     <tbody>        <tr>
             <td>2021-06-30</td>
+            <td><a href="https://github.com/digital-land/site-of-special-scientific-interest-collection/tree/main/transformed/site-of-special-scientific-interest/ebe39bdb9a2cf3fb45d2905df97afe24c9a3ec84c47a8f6e29fb3d8ff133f457.csv#L9034">ebe39bdb9a2c...</a></td>
+            <td>9033</td>
+                <td>site-of-special-scientific-interest:TR022902</td> 
+                <td>2015-11-05</td> 
+                <td class="data-table__notes-cell data-table__cell--min-width-4">
+                    <details class="govuk-details">
+  <summary class="govuk-details__summary">
+    <span class="govuk-details__summary-text">
+      See WKT
+    </span>
+  </summary>
+  <div class="govuk-details__text">
+    MULTIPOLYGON (((0.782777 51.521885,0.782692 51.521659,0.782643 51.521628,0.782366 51.521662,0.782430 51.521827,0.782274 51.521857,0.781802 51.521589,0.780216 51.521912,0.779928 51.521937,0.779245 51.522118,0.777339 51.522538,0.776606 51.522810,0.776923 51.523532,0.779089 51.523913,0.780291 51.523400,0.781306 51.523037,0.781938 51.522751,0.782498 51.522603,0.782976 51.522526,0.782811 51.522088,0.782849 51.522078,0.782777 51.521885)))
+  </div>
+</details>
+                </td>
+                <td>Foulness</td> 
+        </tr>        <tr>
+            <td>2021-06-30</td>
             <td><a href="https://github.com/digital-land/site-of-special-scientific-interest-collection/tree/main/transformed/site-of-special-scientific-interest/ebe39bdb9a2cf3fb45d2905df97afe24c9a3ec84c47a8f6e29fb3d8ff133f457.csv#L9033">ebe39bdb9a2c...</a></td>
             <td>9032</td>
                 <td>site-of-special-scientific-interest:TR022902</td> 
+                <td>2015-11-05</td> 
                 <td class="data-table__notes-cell data-table__cell--min-width-4">
                     <details class="govuk-details">
   <summary class="govuk-details__summary">
@@ -237,12 +253,12 @@ crossorigin="" />
 </details>
                 </td>
                 <td>Foulness</td> 
-                <td>2015-11-05</td> 
         </tr>        <tr>
             <td>2021-06-30</td>
             <td><a href="https://github.com/digital-land/site-of-special-scientific-interest-collection/tree/main/transformed/site-of-special-scientific-interest/ebe39bdb9a2cf3fb45d2905df97afe24c9a3ec84c47a8f6e29fb3d8ff133f457.csv#L9032">ebe39bdb9a2c...</a></td>
             <td>9031</td>
                 <td>site-of-special-scientific-interest:TR022902</td> 
+                <td>2015-11-05</td> 
                 <td class="data-table__notes-cell data-table__cell--min-width-4">
                     <details class="govuk-details">
   <summary class="govuk-details__summary">
@@ -256,50 +272,12 @@ crossorigin="" />
 </details>
                 </td>
                 <td>Foulness</td> 
-                <td>2015-11-05</td> 
-        </tr>        <tr>
-            <td>2021-06-30</td>
-            <td><a href="https://github.com/digital-land/site-of-special-scientific-interest-collection/tree/main/transformed/site-of-special-scientific-interest/ebe39bdb9a2cf3fb45d2905df97afe24c9a3ec84c47a8f6e29fb3d8ff133f457.csv#L9035">ebe39bdb9a2c...</a></td>
-            <td>9034</td>
-                <td>site-of-special-scientific-interest:TR022902</td> 
-                <td class="data-table__notes-cell data-table__cell--min-width-4">
-                    <details class="govuk-details">
-  <summary class="govuk-details__summary">
-    <span class="govuk-details__summary-text">
-      See WKT
-    </span>
-  </summary>
-  <div class="govuk-details__text">
-    MULTIPOLYGON (((0.946323 51.618537,0.946470 51.618515,0.946533 51.618445,0.946714 51.618476,0.947565 51.618308,0.948612 51.617305,0.948363 51.616654,0.948198 51.616604,0.948215 51.616533,0.947902 51.616250,0.947503 51.616112,0.945987 51.617846,0.945014 51.617535,0.944810 51.618052,0.946323 51.618537)))
-  </div>
-</details>
-                </td>
-                <td>Foulness</td> 
-                <td>2015-11-05</td> 
-        </tr>        <tr>
-            <td>2021-06-30</td>
-            <td><a href="https://github.com/digital-land/site-of-special-scientific-interest-collection/tree/main/transformed/site-of-special-scientific-interest/ebe39bdb9a2cf3fb45d2905df97afe24c9a3ec84c47a8f6e29fb3d8ff133f457.csv#L9034">ebe39bdb9a2c...</a></td>
-            <td>9033</td>
-                <td>site-of-special-scientific-interest:TR022902</td> 
-                <td class="data-table__notes-cell data-table__cell--min-width-4">
-                    <details class="govuk-details">
-  <summary class="govuk-details__summary">
-    <span class="govuk-details__summary-text">
-      See WKT
-    </span>
-  </summary>
-  <div class="govuk-details__text">
-    MULTIPOLYGON (((0.782777 51.521885,0.782692 51.521659,0.782643 51.521628,0.782366 51.521662,0.782430 51.521827,0.782274 51.521857,0.781802 51.521589,0.780216 51.521912,0.779928 51.521937,0.779245 51.522118,0.777339 51.522538,0.776606 51.522810,0.776923 51.523532,0.779089 51.523913,0.780291 51.523400,0.781306 51.523037,0.781938 51.522751,0.782498 51.522603,0.782976 51.522526,0.782811 51.522088,0.782849 51.522078,0.782777 51.521885)))
-  </div>
-</details>
-                </td>
-                <td>Foulness</td> 
-                <td>2015-11-05</td> 
         </tr>        <tr>
             <td>2021-06-30</td>
             <td><a href="https://github.com/digital-land/site-of-special-scientific-interest-collection/tree/main/transformed/site-of-special-scientific-interest/ebe39bdb9a2cf3fb45d2905df97afe24c9a3ec84c47a8f6e29fb3d8ff133f457.csv#L9031">ebe39bdb9a2c...</a></td>
             <td>9030</td>
                 <td>site-of-special-scientific-interest:TR022902</td> 
+                <td>2015-11-05</td> 
                 <td class="data-table__notes-cell data-table__cell--min-width-4">
                     <details class="govuk-details">
   <summary class="govuk-details__summary">
@@ -313,12 +291,12 @@ crossorigin="" />
 </details>
                 </td>
                 <td>Foulness</td> 
-                <td>2015-11-05</td> 
         </tr>        <tr>
-            <td>2021-05-27</td>
-            <td><a href="https://github.com/digital-land/site-of-special-scientific-interest-collection/tree/main/transformed/site-of-special-scientific-interest/58d5ad603e37f139c0d24a49567acb8d6c2101616133624c90eeb5aa196f8659.csv#L9011">58d5ad603e37...</a></td>
-            <td>9010</td>
+            <td>2021-06-30</td>
+            <td><a href="https://github.com/digital-land/site-of-special-scientific-interest-collection/tree/main/transformed/site-of-special-scientific-interest/ebe39bdb9a2cf3fb45d2905df97afe24c9a3ec84c47a8f6e29fb3d8ff133f457.csv#L9035">ebe39bdb9a2c...</a></td>
+            <td>9034</td>
                 <td>site-of-special-scientific-interest:TR022902</td> 
+                <td>2015-11-05</td> 
                 <td class="data-table__notes-cell data-table__cell--min-width-4">
                     <details class="govuk-details">
   <summary class="govuk-details__summary">
@@ -332,12 +310,12 @@ crossorigin="" />
 </details>
                 </td>
                 <td>Foulness</td> 
-                <td>2015-11-05</td> 
         </tr>        <tr>
             <td>2021-05-27</td>
             <td><a href="https://github.com/digital-land/site-of-special-scientific-interest-collection/tree/main/transformed/site-of-special-scientific-interest/58d5ad603e37f139c0d24a49567acb8d6c2101616133624c90eeb5aa196f8659.csv#L9008">58d5ad603e37...</a></td>
             <td>9007</td>
                 <td>site-of-special-scientific-interest:TR022902</td> 
+                <td>2015-11-05</td> 
                 <td class="data-table__notes-cell data-table__cell--min-width-4">
                     <details class="govuk-details">
   <summary class="govuk-details__summary">
@@ -351,31 +329,12 @@ crossorigin="" />
 </details>
                 </td>
                 <td>Foulness</td> 
-                <td>2015-11-05</td> 
-        </tr>        <tr>
-            <td>2021-05-27</td>
-            <td><a href="https://github.com/digital-land/site-of-special-scientific-interest-collection/tree/main/transformed/site-of-special-scientific-interest/58d5ad603e37f139c0d24a49567acb8d6c2101616133624c90eeb5aa196f8659.csv#L9010">58d5ad603e37...</a></td>
-            <td>9009</td>
-                <td>site-of-special-scientific-interest:TR022902</td> 
-                <td class="data-table__notes-cell data-table__cell--min-width-4">
-                    <details class="govuk-details">
-  <summary class="govuk-details__summary">
-    <span class="govuk-details__summary-text">
-      See WKT
-    </span>
-  </summary>
-  <div class="govuk-details__text">
-    MULTIPOLYGON (((0.782777 51.521885,0.782692 51.521659,0.782643 51.521628,0.782366 51.521662,0.782430 51.521827,0.782274 51.521857,0.781802 51.521589,0.780216 51.521912,0.779928 51.521937,0.779245 51.522118,0.777339 51.522538,0.776606 51.522810,0.776923 51.523532,0.779089 51.523913,0.780291 51.523400,0.781306 51.523037,0.781938 51.522751,0.782498 51.522603,0.782976 51.522526,0.782811 51.522088,0.782849 51.522078,0.782777 51.521885)))
-  </div>
-</details>
-                </td>
-                <td>Foulness</td> 
-                <td>2015-11-05</td> 
         </tr>        <tr>
             <td>2021-05-27</td>
             <td><a href="https://github.com/digital-land/site-of-special-scientific-interest-collection/tree/main/transformed/site-of-special-scientific-interest/58d5ad603e37f139c0d24a49567acb8d6c2101616133624c90eeb5aa196f8659.csv#L9007">58d5ad603e37...</a></td>
             <td>9006</td>
                 <td>site-of-special-scientific-interest:TR022902</td> 
+                <td>2015-11-05</td> 
                 <td class="data-table__notes-cell data-table__cell--min-width-4">
                     <details class="govuk-details">
   <summary class="govuk-details__summary">
@@ -389,12 +348,50 @@ crossorigin="" />
 </details>
                 </td>
                 <td>Foulness</td> 
+        </tr>        <tr>
+            <td>2021-05-27</td>
+            <td><a href="https://github.com/digital-land/site-of-special-scientific-interest-collection/tree/main/transformed/site-of-special-scientific-interest/58d5ad603e37f139c0d24a49567acb8d6c2101616133624c90eeb5aa196f8659.csv#L9011">58d5ad603e37...</a></td>
+            <td>9010</td>
+                <td>site-of-special-scientific-interest:TR022902</td> 
                 <td>2015-11-05</td> 
+                <td class="data-table__notes-cell data-table__cell--min-width-4">
+                    <details class="govuk-details">
+  <summary class="govuk-details__summary">
+    <span class="govuk-details__summary-text">
+      See WKT
+    </span>
+  </summary>
+  <div class="govuk-details__text">
+    MULTIPOLYGON (((0.946323 51.618537,0.946470 51.618515,0.946533 51.618445,0.946714 51.618476,0.947565 51.618308,0.948612 51.617305,0.948363 51.616654,0.948198 51.616604,0.948215 51.616533,0.947902 51.616250,0.947503 51.616112,0.945987 51.617846,0.945014 51.617535,0.944810 51.618052,0.946323 51.618537)))
+  </div>
+</details>
+                </td>
+                <td>Foulness</td> 
+        </tr>        <tr>
+            <td>2021-05-27</td>
+            <td><a href="https://github.com/digital-land/site-of-special-scientific-interest-collection/tree/main/transformed/site-of-special-scientific-interest/58d5ad603e37f139c0d24a49567acb8d6c2101616133624c90eeb5aa196f8659.csv#L9010">58d5ad603e37...</a></td>
+            <td>9009</td>
+                <td>site-of-special-scientific-interest:TR022902</td> 
+                <td>2015-11-05</td> 
+                <td class="data-table__notes-cell data-table__cell--min-width-4">
+                    <details class="govuk-details">
+  <summary class="govuk-details__summary">
+    <span class="govuk-details__summary-text">
+      See WKT
+    </span>
+  </summary>
+  <div class="govuk-details__text">
+    MULTIPOLYGON (((0.782777 51.521885,0.782692 51.521659,0.782643 51.521628,0.782366 51.521662,0.782430 51.521827,0.782274 51.521857,0.781802 51.521589,0.780216 51.521912,0.779928 51.521937,0.779245 51.522118,0.777339 51.522538,0.776606 51.522810,0.776923 51.523532,0.779089 51.523913,0.780291 51.523400,0.781306 51.523037,0.781938 51.522751,0.782498 51.522603,0.782976 51.522526,0.782811 51.522088,0.782849 51.522078,0.782777 51.521885)))
+  </div>
+</details>
+                </td>
+                <td>Foulness</td> 
         </tr>        <tr>
             <td>2021-05-27</td>
             <td><a href="https://github.com/digital-land/site-of-special-scientific-interest-collection/tree/main/transformed/site-of-special-scientific-interest/58d5ad603e37f139c0d24a49567acb8d6c2101616133624c90eeb5aa196f8659.csv#L9009">58d5ad603e37...</a></td>
             <td>9008</td>
                 <td>site-of-special-scientific-interest:TR022902</td> 
+                <td>2015-11-05</td> 
                 <td class="data-table__notes-cell data-table__cell--min-width-4">
                     <details class="govuk-details">
   <summary class="govuk-details__summary">
@@ -408,7 +405,6 @@ crossorigin="" />
 </details>
                 </td>
                 <td>Foulness</td> 
-                <td>2015-11-05</td> 
         </tr>    </tbody>
 </table>
 
