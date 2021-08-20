@@ -159,13 +159,13 @@ crossorigin="" />
             </dt>
             <dd class="govuk-summary-list__value">                2014-01-16            </dd>
         </div>        <div class="govuk-summary-list__row">
-            <dt class="govuk-summary-list__key">Geography
-            </dt>
-            <dd class="govuk-summary-list__value">                site-of-special-scientific-interest:NZ186505            </dd>
-        </div>        <div class="govuk-summary-list__row">
             <dt class="govuk-summary-list__key">Name
             </dt>
             <dd class="govuk-summary-list__value">                Green Croft and Langley Moor            </dd>
+        </div>        <div class="govuk-summary-list__row">
+            <dt class="govuk-summary-list__key">Geography
+            </dt>
+            <dd class="govuk-summary-list__value">                site-of-special-scientific-interest:NZ186505            </dd>
         </div>        <div class="govuk-summary-list__row">
             <dt class="govuk-summary-list__key">Entry date
             </dt>
@@ -178,20 +178,18 @@ crossorigin="" />
 
     <h2 class="govuk-heading-m">Geographical area</h2>
 
-    <div class="dl-map__wrapper"><div 
-    class="dl-map govuk-!-margin-top-4"
-    id="dlMap"
-    data-module="boundary-map"
-    style="height: 460px;"   
->
-    <noscript>To view this map, you need to enable JavaScript.</noscript>
-</div>
-<div class="dl-map__note-panel">
-            <a class="js-hidden dl-link-national-map" href="#">See on national map.</a>
-        </div>
+<div class="dl-map__wrapper govuk-!-margin-top-4  dl-map__wrapper--bottom-margin" style="min-height: 460px;"><div 
+        class="dl-map"
+        id="dlMap"
+        data-module="boundary-map"   
+    >
+        <noscript>To view this map, you need to enable JavaScript.</noscript>
     </div>
 
-    <div class="govuk-!-margin-top-2 govuk-!-margin-bottom-6">
+        <a class="js-hidden dl-link-national-map" href="#">See on national map.</a>
+
+</div>
+<div class="govuk-!-margin-top-2 govuk-!-margin-bottom-6">
         <a class="dl-page-action-button" href="geometry.geojson">Download geojson</a>
     </div>
 <h3 class="govuk-heading-m">Associated information</h3>
@@ -209,35 +207,19 @@ crossorigin="" />
             <th>entry-date</th>
             <th>resource</th>
             <th>line</th>
-            <th>geometry</th>
             <th>name</th>
-            <th>geography</th>
             <th>start-date</th>
+            <th>geography</th>
+            <th>geometry</th>
         </tr>
     </thead>
     <tbody>        <tr>
             <td>2021-06-30</td>
-            <td><a href="https://github.com/digital-land/site-of-special-scientific-interest-collection/tree/main/transformed/site-of-special-scientific-interest/ebe39bdb9a2cf3fb45d2905df97afe24c9a3ec84c47a8f6e29fb3d8ff133f457.csv#L1080">ebe39bdb9a2c...</a></td>
-            <td>1079</td>
-                <td class="data-table__notes-cell data-table__cell--min-width-4">
-                    <details class="govuk-details">
-  <summary class="govuk-details__summary">
-    <span class="govuk-details__summary-text">
-      See WKT
-    </span>
-  </summary>
-  <div class="govuk-details__text">
-    MULTIPOLYGON (((-1.707030 54.850942,-1.706512 54.849431,-1.708295 54.849058,-1.707412 54.847580,-1.707450 54.847548,-1.706668 54.846273,-1.706724 54.846262,-1.707029 54.846379,-1.707386 54.846386,-1.707643 54.846318,-1.707891 54.846181,-1.708881 54.847901,-1.709388 54.847997,-1.709368 54.847959,-1.714322 54.849394,-1.714496 54.849560,-1.711474 54.850358,-1.711316 54.850199,-1.709779 54.850386,-1.709217 54.850598,-1.709346 54.850773,-1.707170 54.851333,-1.707030 54.850942)))
-  </div>
-</details>
-                </td>
-                <td>Green Croft and Langley Moor</td> 
-                <td>site-of-special-scientific-interest:NZ186505</td> 
-                <td>2014-01-16</td> 
-        </tr>        <tr>
-            <td>2021-06-30</td>
             <td><a href="https://github.com/digital-land/site-of-special-scientific-interest-collection/tree/main/transformed/site-of-special-scientific-interest/ebe39bdb9a2cf3fb45d2905df97afe24c9a3ec84c47a8f6e29fb3d8ff133f457.csv#L1082">ebe39bdb9a2c...</a></td>
             <td>1081</td>
+                <td>Green Croft and Langley Moor</td> 
+                <td>2014-01-16</td> 
+                <td>site-of-special-scientific-interest:NZ186505</td> 
                 <td class="data-table__notes-cell data-table__cell--min-width-4">
                     <details class="govuk-details">
   <summary class="govuk-details__summary">
@@ -250,13 +232,32 @@ crossorigin="" />
   </div>
 </details>
                 </td>
+        </tr>        <tr>
+            <td>2021-06-30</td>
+            <td><a href="https://github.com/digital-land/site-of-special-scientific-interest-collection/tree/main/transformed/site-of-special-scientific-interest/ebe39bdb9a2cf3fb45d2905df97afe24c9a3ec84c47a8f6e29fb3d8ff133f457.csv#L1080">ebe39bdb9a2c...</a></td>
+            <td>1079</td>
                 <td>Green Croft and Langley Moor</td> 
-                <td>site-of-special-scientific-interest:NZ186505</td> 
                 <td>2014-01-16</td> 
+                <td>site-of-special-scientific-interest:NZ186505</td> 
+                <td class="data-table__notes-cell data-table__cell--min-width-4">
+                    <details class="govuk-details">
+  <summary class="govuk-details__summary">
+    <span class="govuk-details__summary-text">
+      See WKT
+    </span>
+  </summary>
+  <div class="govuk-details__text">
+    MULTIPOLYGON (((-1.707030 54.850942,-1.706512 54.849431,-1.708295 54.849058,-1.707412 54.847580,-1.707450 54.847548,-1.706668 54.846273,-1.706724 54.846262,-1.707029 54.846379,-1.707386 54.846386,-1.707643 54.846318,-1.707891 54.846181,-1.708881 54.847901,-1.709388 54.847997,-1.709368 54.847959,-1.714322 54.849394,-1.714496 54.849560,-1.711474 54.850358,-1.711316 54.850199,-1.709779 54.850386,-1.709217 54.850598,-1.709346 54.850773,-1.707170 54.851333,-1.707030 54.850942)))
+  </div>
+</details>
+                </td>
         </tr>        <tr>
             <td>2021-06-30</td>
             <td><a href="https://github.com/digital-land/site-of-special-scientific-interest-collection/tree/main/transformed/site-of-special-scientific-interest/ebe39bdb9a2cf3fb45d2905df97afe24c9a3ec84c47a8f6e29fb3d8ff133f457.csv#L1081">ebe39bdb9a2c...</a></td>
             <td>1080</td>
+                <td>Green Croft and Langley Moor</td> 
+                <td>2014-01-16</td> 
+                <td>site-of-special-scientific-interest:NZ186505</td> 
                 <td class="data-table__notes-cell data-table__cell--min-width-4">
                     <details class="govuk-details">
   <summary class="govuk-details__summary">
@@ -269,13 +270,13 @@ crossorigin="" />
   </div>
 </details>
                 </td>
-                <td>Green Croft and Langley Moor</td> 
-                <td>site-of-special-scientific-interest:NZ186505</td> 
-                <td>2014-01-16</td> 
         </tr>        <tr>
             <td>2021-05-27</td>
             <td><a href="https://github.com/digital-land/site-of-special-scientific-interest-collection/tree/main/transformed/site-of-special-scientific-interest/58d5ad603e37f139c0d24a49567acb8d6c2101616133624c90eeb5aa196f8659.csv#L1083">58d5ad603e37...</a></td>
             <td>1082</td>
+                <td>Green Croft and Langley Moor</td> 
+                <td>2014-01-16</td> 
+                <td>site-of-special-scientific-interest:NZ186505</td> 
                 <td class="data-table__notes-cell data-table__cell--min-width-4">
                     <details class="govuk-details">
   <summary class="govuk-details__summary">
@@ -288,32 +289,13 @@ crossorigin="" />
   </div>
 </details>
                 </td>
-                <td>Green Croft and Langley Moor</td> 
-                <td>site-of-special-scientific-interest:NZ186505</td> 
-                <td>2014-01-16</td> 
-        </tr>        <tr>
-            <td>2021-05-27</td>
-            <td><a href="https://github.com/digital-land/site-of-special-scientific-interest-collection/tree/main/transformed/site-of-special-scientific-interest/58d5ad603e37f139c0d24a49567acb8d6c2101616133624c90eeb5aa196f8659.csv#L1081">58d5ad603e37...</a></td>
-            <td>1080</td>
-                <td class="data-table__notes-cell data-table__cell--min-width-4">
-                    <details class="govuk-details">
-  <summary class="govuk-details__summary">
-    <span class="govuk-details__summary-text">
-      See WKT
-    </span>
-  </summary>
-  <div class="govuk-details__text">
-    MULTIPOLYGON (((-1.707030 54.850942,-1.706512 54.849431,-1.708295 54.849058,-1.707412 54.847580,-1.707450 54.847548,-1.706668 54.846273,-1.706724 54.846262,-1.707029 54.846379,-1.707386 54.846386,-1.707643 54.846318,-1.707891 54.846181,-1.708881 54.847901,-1.709388 54.847997,-1.709368 54.847959,-1.714322 54.849394,-1.714496 54.849560,-1.711474 54.850358,-1.711316 54.850199,-1.709779 54.850386,-1.709217 54.850598,-1.709346 54.850773,-1.707170 54.851333,-1.707030 54.850942)))
-  </div>
-</details>
-                </td>
-                <td>Green Croft and Langley Moor</td> 
-                <td>site-of-special-scientific-interest:NZ186505</td> 
-                <td>2014-01-16</td> 
         </tr>        <tr>
             <td>2021-05-27</td>
             <td><a href="https://github.com/digital-land/site-of-special-scientific-interest-collection/tree/main/transformed/site-of-special-scientific-interest/58d5ad603e37f139c0d24a49567acb8d6c2101616133624c90eeb5aa196f8659.csv#L1082">58d5ad603e37...</a></td>
             <td>1081</td>
+                <td>Green Croft and Langley Moor</td> 
+                <td>2014-01-16</td> 
+                <td>site-of-special-scientific-interest:NZ186505</td> 
                 <td class="data-table__notes-cell data-table__cell--min-width-4">
                     <details class="govuk-details">
   <summary class="govuk-details__summary">
@@ -326,9 +308,25 @@ crossorigin="" />
   </div>
 </details>
                 </td>
+        </tr>        <tr>
+            <td>2021-05-27</td>
+            <td><a href="https://github.com/digital-land/site-of-special-scientific-interest-collection/tree/main/transformed/site-of-special-scientific-interest/58d5ad603e37f139c0d24a49567acb8d6c2101616133624c90eeb5aa196f8659.csv#L1081">58d5ad603e37...</a></td>
+            <td>1080</td>
                 <td>Green Croft and Langley Moor</td> 
-                <td>site-of-special-scientific-interest:NZ186505</td> 
                 <td>2014-01-16</td> 
+                <td>site-of-special-scientific-interest:NZ186505</td> 
+                <td class="data-table__notes-cell data-table__cell--min-width-4">
+                    <details class="govuk-details">
+  <summary class="govuk-details__summary">
+    <span class="govuk-details__summary-text">
+      See WKT
+    </span>
+  </summary>
+  <div class="govuk-details__text">
+    MULTIPOLYGON (((-1.707030 54.850942,-1.706512 54.849431,-1.708295 54.849058,-1.707412 54.847580,-1.707450 54.847548,-1.706668 54.846273,-1.706724 54.846262,-1.707029 54.846379,-1.707386 54.846386,-1.707643 54.846318,-1.707891 54.846181,-1.708881 54.847901,-1.709388 54.847997,-1.709368 54.847959,-1.714322 54.849394,-1.714496 54.849560,-1.711474 54.850358,-1.711316 54.850199,-1.709779 54.850386,-1.709217 54.850598,-1.709346 54.850773,-1.707170 54.851333,-1.707030 54.850942)))
+  </div>
+</details>
+                </td>
         </tr>    </tbody>
 </table>
 
