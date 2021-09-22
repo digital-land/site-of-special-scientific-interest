@@ -152,16 +152,13 @@ crossorigin="" />
     </nav>
 
 <div id="record">
-<div class="govuk-grid-row">    <div class="govuk-grid-column-two-thirds"><article class="data-record govuk-!-margin-bottom-6">
+<div class="govuk-grid-row">    <div class="govuk-grid-column-two-thirds">
+        <!-- this section can probably be removed. Entities no longer have a resource field<article class="data-record govuk-!-margin-bottom-6">
     <h4 class="govuk-heading-s data-record__identifier">#/site-of-special-scientific-interest/site-of-special-scientific-interest/SU297799</h4>
     <dl class="govuk-summary-list data-record__properties">            <div class="govuk-summary-list__row">
             <dt class="govuk-summary-list__key">Geography
             </dt>
             <dd class="govuk-summary-list__value">                site-of-special-scientific-interest:SU297799            </dd>
-        </div>        <div class="govuk-summary-list__row">
-            <dt class="govuk-summary-list__key">Start date
-            </dt>
-            <dd class="govuk-summary-list__value">                2003-12-05            </dd>
         </div>        <div class="govuk-summary-list__row">
             <dt class="govuk-summary-list__key">Name
             </dt>
@@ -172,6 +169,10 @@ crossorigin="" />
             <dd class="govuk-summary-list__value">
 <span title="Organisation identifier: government-organisation:PB202" class="govuk-!-font-size-16 secondary-text data-reference">(<span class="govuk-visually-hidden">Organisation identifier is </span>government-organisation:PB202)</span>
             </dd>
+        </div>        <div class="govuk-summary-list__row">
+            <dt class="govuk-summary-list__key">Start date
+            </dt>
+            <dd class="govuk-summary-list__value">                2003-12-05            </dd>
         </div>        <div class="govuk-summary-list__row">
             <dt class="govuk-summary-list__key">Entity
             </dt>
@@ -218,10 +219,10 @@ crossorigin="" />
             <th>resource</th>
             <th>line</th>
             <th>organisation</th>
-            <th>name</th>
-            <th>geography</th>
-            <th>start-date</th>
             <th>geometry</th>
+            <th>start-date</th>
+            <th>geography</th>
+            <th>name</th>
         </tr>
     </thead>
     <tbody>        <tr>
@@ -229,9 +230,6 @@ crossorigin="" />
             <td><a href="https://github.com/digital-land/site-of-special-scientific-interest-collection/tree/main/transformed/site-of-special-scientific-interest/ebe39bdb9a2cf3fb45d2905df97afe24c9a3ec84c47a8f6e29fb3d8ff133f457.csv#L1369">ebe39bdb9a2c...</a></td>
             <td>1368</td>
                 <td>government-organisation:PB202</td> 
-                <td>Fognam Chalk Quarry</td> 
-                <td>site-of-special-scientific-interest:SU297799</td> 
-                <td>2003-12-05</td> 
                 <td class="data-table__notes-cell data-table__cell--min-width-4">
                     <details class="govuk-details">
   <summary class="govuk-details__summary">
@@ -244,6 +242,9 @@ crossorigin="" />
   </div>
 </details>
                 </td>
+                <td>2003-12-05</td> 
+                <td>site-of-special-scientific-interest:SU297799</td> 
+                <td>Fognam Chalk Quarry</td> 
         </tr>    </tbody>
 </table>
 

@@ -152,16 +152,13 @@ crossorigin="" />
     </nav>
 
 <div id="record">
-<div class="govuk-grid-row">    <div class="govuk-grid-column-two-thirds"><article class="data-record govuk-!-margin-bottom-6">
+<div class="govuk-grid-row">    <div class="govuk-grid-column-two-thirds">
+        <!-- this section can probably be removed. Entities no longer have a resource field<article class="data-record govuk-!-margin-bottom-6">
     <h4 class="govuk-heading-s data-record__identifier">#/site-of-special-scientific-interest/site-of-special-scientific-interest/SK358513</h4>
     <dl class="govuk-summary-list data-record__properties">            <div class="govuk-summary-list__row">
             <dt class="govuk-summary-list__key">Geography
             </dt>
             <dd class="govuk-summary-list__value">                site-of-special-scientific-interest:SK358513            </dd>
-        </div>        <div class="govuk-summary-list__row">
-            <dt class="govuk-summary-list__key">Start date
-            </dt>
-            <dd class="govuk-summary-list__value">                2015-10-01            </dd>
         </div>        <div class="govuk-summary-list__row">
             <dt class="govuk-summary-list__key">Name
             </dt>
@@ -172,6 +169,10 @@ crossorigin="" />
             <dd class="govuk-summary-list__value">
 <span title="Organisation identifier: government-organisation:PB202" class="govuk-!-font-size-16 secondary-text data-reference">(<span class="govuk-visually-hidden">Organisation identifier is </span>government-organisation:PB202)</span>
             </dd>
+        </div>        <div class="govuk-summary-list__row">
+            <dt class="govuk-summary-list__key">Start date
+            </dt>
+            <dd class="govuk-summary-list__value">                2015-10-01            </dd>
         </div>        <div class="govuk-summary-list__row">
             <dt class="govuk-summary-list__key">Entity
             </dt>
@@ -218,40 +219,17 @@ crossorigin="" />
             <th>resource</th>
             <th>line</th>
             <th>organisation</th>
-            <th>name</th>
-            <th>geography</th>
-            <th>start-date</th>
             <th>geometry</th>
+            <th>start-date</th>
+            <th>geography</th>
+            <th>name</th>
         </tr>
     </thead>
     <tbody>        <tr>
             <td>2021-06-30</td>
-            <td><a href="https://github.com/digital-land/site-of-special-scientific-interest-collection/tree/main/transformed/site-of-special-scientific-interest/ebe39bdb9a2cf3fb45d2905df97afe24c9a3ec84c47a8f6e29fb3d8ff133f457.csv#L4687">ebe39bdb9a2c...</a></td>
-            <td>4686</td>
-                <td>government-organisation:PB202</td> 
-                <td>Ambergate and Ridgeway Quarries</td> 
-                <td>site-of-special-scientific-interest:SK358513</td> 
-                <td>2015-10-01</td> 
-                <td class="data-table__notes-cell data-table__cell--min-width-4">
-                    <details class="govuk-details">
-  <summary class="govuk-details__summary">
-    <span class="govuk-details__summary-text">
-      See WKT
-    </span>
-  </summary>
-  <div class="govuk-details__text">
-    MULTIPOLYGON (((-1.462023 53.060883,-1.462935 53.060817,-1.462950 53.060986,-1.462490 53.061548,-1.461925 53.061546,-1.462023 53.060883)))
-  </div>
-</details>
-                </td>
-        </tr>        <tr>
-            <td>2021-06-30</td>
             <td><a href="https://github.com/digital-land/site-of-special-scientific-interest-collection/tree/main/transformed/site-of-special-scientific-interest/ebe39bdb9a2cf3fb45d2905df97afe24c9a3ec84c47a8f6e29fb3d8ff133f457.csv#L4686">ebe39bdb9a2c...</a></td>
             <td>4685</td>
                 <td>government-organisation:PB202</td> 
-                <td>Ambergate and Ridgeway Quarries</td> 
-                <td>site-of-special-scientific-interest:SK358513</td> 
-                <td>2015-10-01</td> 
                 <td class="data-table__notes-cell data-table__cell--min-width-4">
                     <details class="govuk-details">
   <summary class="govuk-details__summary">
@@ -264,14 +242,14 @@ crossorigin="" />
   </div>
 </details>
                 </td>
-        </tr>        <tr>
-            <td>2021-05-27</td>
-            <td><a href="https://github.com/digital-land/site-of-special-scientific-interest-collection/tree/main/transformed/site-of-special-scientific-interest/58d5ad603e37f139c0d24a49567acb8d6c2101616133624c90eeb5aa196f8659.csv#L4688">58d5ad603e37...</a></td>
-            <td>4687</td>
-                <td>government-organisation:PB202</td> 
-                <td>Ambergate and Ridgeway Quarries</td> 
-                <td>site-of-special-scientific-interest:SK358513</td> 
                 <td>2015-10-01</td> 
+                <td>site-of-special-scientific-interest:SK358513</td> 
+                <td>Ambergate and Ridgeway Quarries</td> 
+        </tr>        <tr>
+            <td>2021-06-30</td>
+            <td><a href="https://github.com/digital-land/site-of-special-scientific-interest-collection/tree/main/transformed/site-of-special-scientific-interest/ebe39bdb9a2cf3fb45d2905df97afe24c9a3ec84c47a8f6e29fb3d8ff133f457.csv#L4687">ebe39bdb9a2c...</a></td>
+            <td>4686</td>
+                <td>government-organisation:PB202</td> 
                 <td class="data-table__notes-cell data-table__cell--min-width-4">
                     <details class="govuk-details">
   <summary class="govuk-details__summary">
@@ -284,6 +262,29 @@ crossorigin="" />
   </div>
 </details>
                 </td>
+                <td>2015-10-01</td> 
+                <td>site-of-special-scientific-interest:SK358513</td> 
+                <td>Ambergate and Ridgeway Quarries</td> 
+        </tr>        <tr>
+            <td>2021-05-27</td>
+            <td><a href="https://github.com/digital-land/site-of-special-scientific-interest-collection/tree/main/transformed/site-of-special-scientific-interest/58d5ad603e37f139c0d24a49567acb8d6c2101616133624c90eeb5aa196f8659.csv#L4687">58d5ad603e37...</a></td>
+            <td>4686</td>
+                <td>government-organisation:PB202</td> 
+                <td class="data-table__notes-cell data-table__cell--min-width-4">
+                    <details class="govuk-details">
+  <summary class="govuk-details__summary">
+    <span class="govuk-details__summary-text">
+      See WKT
+    </span>
+  </summary>
+  <div class="govuk-details__text">
+    MULTIPOLYGON (((-1.467533 53.059039,-1.467329 53.058986,-1.466330 53.059023,-1.466744 53.058643,-1.466763 53.058349,-1.466703 53.058191,-1.467318 53.058274,-1.467951 53.058607,-1.467709 53.058846,-1.467557 53.059046,-1.467533 53.059039)))
+  </div>
+</details>
+                </td>
+                <td>2015-10-01</td> 
+                <td>site-of-special-scientific-interest:SK358513</td> 
+                <td>Ambergate and Ridgeway Quarries</td> 
         </tr>    </tbody>
 </table>
 
